@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Coding Project\\C-Sharp\\Console\\Learning\\DatatypeVariables\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E964F810-B9A4-4436-BEA6-3873CD390520}|DatatypeVariables\\DatatypeVariables.csproj|d:\\coding project\\c-sharp\\console\\learning\\datatypevariables\\datatypevariables\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E964F810-B9A4-4436-BEA6-3873CD390520}|DatatypeVariables\\DatatypeVariables.csproj|solutionrelative:datatypevariables\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Learning\\DatatypeVariables\\DatatypeVariables\\Program.cs",
+              "RelativeDocumentMoniker": "DatatypeVariables\\Program.cs",
+              "ToolTip": "D:\\Coding Project\\C-Sharp\\Console\\Learning\\DatatypeVariables\\DatatypeVariables\\Program.cs",
+              "RelativeToolTip": "DatatypeVariables\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAmwBQAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T09:57:27.319Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
