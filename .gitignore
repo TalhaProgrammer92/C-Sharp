@@ -114,6 +114,4 @@ node_modules/
 *.cache
 *.vspscc
 *.vssscc
-
-# Log files
-*.log
+*.vsidx
