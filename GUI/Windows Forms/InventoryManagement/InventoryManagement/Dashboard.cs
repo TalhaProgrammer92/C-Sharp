@@ -36,6 +36,14 @@ namespace InventoryManagement
         private void Dashboard_Load(object sender, EventArgs e)
         {
             _instance = this;
+
+            // Set the form to be maximized
+            this.WindowState = FormWindowState.Maximized;
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
