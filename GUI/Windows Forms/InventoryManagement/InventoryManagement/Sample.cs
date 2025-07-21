@@ -15,6 +15,14 @@ namespace InventoryManagement
         public Sample()
         {
             InitializeComponent();
+
+            // Initialize the Sample form
+            msg_dialog.Parent = Dashboard.Instance;
+        }
+
+        private void Sample_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

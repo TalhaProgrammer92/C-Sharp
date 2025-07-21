@@ -31,5 +31,27 @@ namespace InventoryManagement
         {
 
         }
+
+        private void logInButton_Click(object sender, EventArgs e)
+        {
+            // Check if the username and password are correct
+            if (userNameInput.Text == "admin" && passwordInput.Text == "password")
+            {
+                // If correct, open the Dashboard form
+                Dashboard dashboard = Dashboard.Instance;
+                dashboard.Show();
+                this.Hide(); // Hide the login form
+            }
+            else
+            {
+                // If incorrect, show an error message
+                MessageBox.Show(
+                    "Invalid username or password. Please try again.", 
+                    "Login Failed", 
+                    MessageBoxButtons.OK, 
+                    MessageBoxIcon.Error
+                );
+            }
+        }
     }
 }

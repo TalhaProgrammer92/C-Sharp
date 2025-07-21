@@ -33,9 +33,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.passwordInput = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2VSeparator1 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2VSeparator1 = new Guna.UI2.WinForms.Guna2VSeparator();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -77,6 +77,7 @@
             this.logInButton.TabIndex = 2;
             this.logInButton.Tag = "";
             this.logInButton.Text = "Login";
+            this.logInButton.Click += new System.EventHandler(this.logInButton_Click);
             // 
             // label2
             // 
@@ -120,6 +121,13 @@
             this.passwordInput.Tag = "";
             this.passwordInput.UseSystemPasswordChar = true;
             // 
+            // guna2VSeparator1
+            // 
+            this.guna2VSeparator1.Location = new System.Drawing.Point(308, 61);
+            this.guna2VSeparator1.Name = "guna2VSeparator1";
+            this.guna2VSeparator1.Size = new System.Drawing.Size(10, 229);
+            this.guna2VSeparator1.TabIndex = 5;
+            // 
             // guna2CirclePictureBox1
             // 
             this.guna2CirclePictureBox1.Image = global::InventoryManagement.Properties.Resources.profile_512_removebg_preview;
@@ -144,13 +152,6 @@
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
             this.guna2PictureBox1.UseTransparentBackground = true;
-            // 
-            // guna2VSeparator1
-            // 
-            this.guna2VSeparator1.Location = new System.Drawing.Point(308, 61);
-            this.guna2VSeparator1.Name = "guna2VSeparator1";
-            this.guna2VSeparator1.Size = new System.Drawing.Size(10, 229);
-            this.guna2VSeparator1.TabIndex = 5;
             // 
             // Login
             // 

@@ -1,6 +1,6 @@
 ﻿namespace InventoryManagement
 {
-    partial class Sample
+    partial class Dashboard
     {
         /// <summary>
         /// Required designer variable.
@@ -28,37 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.msg_dialog = new Guna.UI2.WinForms.Guna2MessageDialog();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // msg_dialog
+            // textBox1
             // 
-            this.msg_dialog.Buttons = Guna.UI2.WinForms.MessageDialogButtons.OK;
-            this.msg_dialog.Caption = null;
-            this.msg_dialog.Icon = Guna.UI2.WinForms.MessageDialogIcon.None;
-            this.msg_dialog.Parent = null;
-            this.msg_dialog.Style = Guna.UI2.WinForms.MessageDialogStyle.Default;
-            this.msg_dialog.Text = null;
+            this.textBox1.Location = new System.Drawing.Point(164, 97);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 23);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.Text = "Dashboard!";
             // 
-            // Sample
+            // Dashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.ClientSize = new System.Drawing.Size(933, 519);
+            this.Controls.Add(this.textBox1);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Sample";
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Load += new System.EventHandler(this.Sample_Load);
+            this.Text = "Dashboard";
+            this.Load += new System.EventHandler(this.Dashboard_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2MessageDialog msg_dialog;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
-
