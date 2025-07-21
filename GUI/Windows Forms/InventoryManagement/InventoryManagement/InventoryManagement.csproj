@@ -99,5 +99,11 @@
   <ItemGroup>
     <None Include="Resources\report-pic.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\730_generated-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile-512-removebg-preview.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

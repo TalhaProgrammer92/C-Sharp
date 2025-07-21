@@ -63,6 +63,26 @@ namespace InventoryManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _730_generated_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("730_generated-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap profile_512_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("profile-512-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap report_pic {
             get {
                 object obj = ResourceManager.GetObject("report-pic", resourceCulture);
