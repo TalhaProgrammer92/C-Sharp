@@ -3,8 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
 using System.Reflection;
+using System.Drawing;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web.UI.WebControls;
@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace InventoryManagement
 {
-    class SQLValidations
+    class SQLUtils
     {
         // Username Property
         public static string user;
@@ -24,9 +24,9 @@ namespace InventoryManagement
         }
 
         // User image Property
-        public static Image image;
+        public static System.Drawing.Image image;
 
-        public static Image IMAGE
+        public static System.Drawing.Image IMAGE
         {
             get { return image; }           // Getter
             private set { image = value; }  // Setter
@@ -59,7 +59,10 @@ namespace InventoryManagement
                 USER = data.Rows[0]["name"].ToString();
 
                 // Set user image
-                //Byte[] imageArray = 
+                Byte[] imageArray = (byte[])data.Rows[0]["image"];
+                //byte[] imageByteArray = imageArray; // Can be used in debugging
+
+                IMAGE = System.Drawing.Image.FromStream(new System.IO.MemoryStream(imageArray));
             }
 
             return isValid;

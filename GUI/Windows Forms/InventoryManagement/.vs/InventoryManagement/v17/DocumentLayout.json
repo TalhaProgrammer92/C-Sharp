@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "D:\\Coding Project\\C-Sharp\\GUI\\Windows Forms\\InventoryManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{35D3FB60-B729-4B93-93B5-EBA76F5C5005}|InventoryManagement\\InventoryManagement.csproj|d:\\coding project\\c-sharp\\gui\\windows forms\\inventorymanagement\\inventorymanagement\\sqlvalidations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35D3FB60-B729-4B93-93B5-EBA76F5C5005}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\sqlvalidations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{35D3FB60-B729-4B93-93B5-EBA76F5C5005}|InventoryManagement\\InventoryManagement.csproj|d:\\coding project\\c-sharp\\gui\\windows forms\\inventorymanagement\\inventorymanagement\\sqlutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35D3FB60-B729-4B93-93B5-EBA76F5C5005}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\sqlutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35D3FB60-B729-4B93-93B5-EBA76F5C5005}|InventoryManagement\\InventoryManagement.csproj|D:\\Coding Project\\C-Sharp\\GUI\\Windows Forms\\InventoryManagement\\inventorymanagement\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35D3FB60-B729-4B93-93B5-EBA76F5C5005}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{35D3FB60-B729-4B93-93B5-EBA76F5C5005}|InventoryManagement\\InventoryManagement.csproj|D:\\Coding Project\\C-Sharp\\GUI\\Windows Forms\\InventoryManagement\\inventorymanagement\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{35D3FB60-B729-4B93-93B5-EBA76F5C5005}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35D3FB60-B729-4B93-93B5-EBA76F5C5005}|InventoryManagement\\InventoryManagement.csproj|d:\\coding project\\c-sharp\\gui\\windows forms\\inventorymanagement\\inventorymanagement\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{35D3FB60-B729-4B93-93B5-EBA76F5C5005}|InventoryManagement\\InventoryManagement.csproj|D:\\Coding Project\\C-Sharp\\GUI\\Windows Forms\\InventoryManagement\\inventorymanagement\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{35D3FB60-B729-4B93-93B5-EBA76F5C5005}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{35D3FB60-B729-4B93-93B5-EBA76F5C5005}|InventoryManagement\\InventoryManagement.csproj|D:\\Coding Project\\C-Sharp\\GUI\\Windows Forms\\InventoryManagement\\inventorymanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{35D3FB60-B729-4B93-93B5-EBA76F5C5005}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35D3FB60-B729-4B93-93B5-EBA76F5C5005}|InventoryManagement\\InventoryManagement.csproj|D:\\Coding Project\\C-Sharp\\GUI\\Windows Forms\\InventoryManagement\\inventorymanagement\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35D3FB60-B729-4B93-93B5-EBA76F5C5005}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{35D3FB60-B729-4B93-93B5-EBA76F5C5005}|InventoryManagement\\InventoryManagement.csproj|D:\\Coding Project\\C-Sharp\\GUI\\Windows Forms\\InventoryManagement\\inventorymanagement\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -51,12 +51,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SQLValidations.cs",
-              "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\GUI\\Windows Forms\\InventoryManagement\\InventoryManagement\\SQLValidations.cs",
-              "RelativeDocumentMoniker": "InventoryManagement\\SQLValidations.cs",
-              "ToolTip": "D:\\Coding Project\\C-Sharp\\GUI\\Windows Forms\\InventoryManagement\\InventoryManagement\\SQLValidations.cs",
-              "RelativeToolTip": "InventoryManagement\\SQLValidations.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAowD0AAAAmAAAAAAAAAA==",
+              "Title": "SQLUtils.cs",
+              "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\GUI\\Windows Forms\\InventoryManagement\\InventoryManagement\\SQLUtils.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\SQLUtils.cs",
+              "ToolTip": "D:\\Coding Project\\C-Sharp\\GUI\\Windows Forms\\InventoryManagement\\InventoryManagement\\SQLUtils.cs",
+              "RelativeToolTip": "InventoryManagement\\SQLUtils.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAwwEAAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-22T03:53:14.05Z",
               "EditorCaption": ""
@@ -67,7 +67,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Dashboard.cs [Design]",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\GUI\\Windows Forms\\InventoryManagement\\InventoryManagement\\Dashboard.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Dashboard.cs",
@@ -102,7 +102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Dashboard.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\GUI\\Windows Forms\\InventoryManagement\\InventoryManagement\\Dashboard.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Dashboard.cs",
@@ -110,11 +110,12 @@
               "RelativeToolTip": "InventoryManagement\\Dashboard.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAmwCQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-21T09:33:19.758Z"
+              "WhenOpened": "2025-07-21T09:33:19.758Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Login.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\GUI\\Windows Forms\\InventoryManagement\\InventoryManagement\\Login.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Login.cs",
@@ -122,12 +123,11 @@
               "RelativeToolTip": "InventoryManagement\\Login.cs",
               "ViewState": "AgIAACUAAAAAAAAAAADwvzQAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T14:44:37.235Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T14:44:37.235Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\GUI\\Windows Forms\\InventoryManagement\\InventoryManagement\\Program.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Program.cs",
@@ -146,8 +146,7 @@
               "ToolTip": "D:\\Coding Project\\C-Sharp\\GUI\\Windows Forms\\InventoryManagement\\InventoryManagement\\Login.cs [Design]",
               "RelativeToolTip": "InventoryManagement\\Login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T13:12:37.116Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-07-20T13:12:37.116Z"
             }
           ]
         }
