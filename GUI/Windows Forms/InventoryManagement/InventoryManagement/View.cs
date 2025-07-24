@@ -10,17 +10,14 @@ using System.Windows.Forms;
 
 namespace InventoryManagement
 {
-    public partial class Sample : Form
+    public partial class View : InventoryManagement.SamplePanel
     {
-        public Sample()
+        public View()
         {
             InitializeComponent();
-
-            // Initialize the Sample form
-            msg_dialog.Parent = Dashboard.Instance;
         }
 
-        private void Sample_Load(object sender, EventArgs e)
+        private void View_Load(object sender, EventArgs e)
         {
 
         }

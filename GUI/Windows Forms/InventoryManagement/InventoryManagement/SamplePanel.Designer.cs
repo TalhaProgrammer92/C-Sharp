@@ -1,6 +1,6 @@
 ﻿namespace InventoryManagement
 {
-    partial class Sample
+    partial class SamplePanel
     {
         /// <summary>
         /// Required designer variable.
