@@ -1,4 +1,5 @@
 ﻿using Chess.GamePlayer;
+using Chess.Menu;
 
 namespace Chess
 {
@@ -6,12 +7,8 @@ namespace Chess
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine("Hello, World!");
-            bool valid = Name.isValid("DON");
-            Console.WriteLine($"Valid: {valid}");
-
-            bool equal = Name.areEqual("DON", "dan");
-            Console.WriteLine($"Equal: {equal}");
+            Header header = new Header("Chess Game", 4, 4, new Decorator('*', ConsoleColor.Cyan), ConsoleColor.Yellow);
+            header.display();
         }
     }
 }
