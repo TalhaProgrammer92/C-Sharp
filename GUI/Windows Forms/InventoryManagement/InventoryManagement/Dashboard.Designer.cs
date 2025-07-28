@@ -34,14 +34,14 @@
             this.topPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.activityPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.sidePanel = new Guna.UI2.WinForms.Guna2Panel();
-            this.userPicture = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.homeButton = new Guna.UI2.WinForms.Guna2Button();
             this.usernameLabel = new System.Windows.Forms.Label();
-            this.categoryButton = new Guna.UI2.WinForms.Guna2Button();
-            this.productsButton = new Guna.UI2.WinForms.Guna2Button();
-            this.purchasesButton = new Guna.UI2.WinForms.Guna2Button();
-            this.customersButton = new Guna.UI2.WinForms.Guna2Button();
             this.salesButton = new Guna.UI2.WinForms.Guna2Button();
+            this.customersButton = new Guna.UI2.WinForms.Guna2Button();
+            this.purchasesButton = new Guna.UI2.WinForms.Guna2Button();
+            this.productsButton = new Guna.UI2.WinForms.Guna2Button();
+            this.categoryButton = new Guna.UI2.WinForms.Guna2Button();
+            this.homeButton = new Guna.UI2.WinForms.Guna2Button();
+            this.userPicture = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.topPanel.SuspendLayout();
             this.sidePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.userPicture)).BeginInit();
@@ -128,39 +128,6 @@
             this.sidePanel.Size = new System.Drawing.Size(168, 464);
             this.sidePanel.TabIndex = 5;
             // 
-            // userPicture
-            // 
-            this.userPicture.BackColor = System.Drawing.Color.Transparent;
-            this.userPicture.ImageRotate = 0F;
-            this.userPicture.Location = new System.Drawing.Point(36, 6);
-            this.userPicture.Name = "userPicture";
-            this.userPicture.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.userPicture.Size = new System.Drawing.Size(80, 80);
-            this.userPicture.TabIndex = 0;
-            this.userPicture.TabStop = false;
-            this.userPicture.UseTransparentBackground = true;
-            // 
-            // homeButton
-            // 
-            this.homeButton.AutoRoundedCorners = true;
-            this.homeButton.BackColor = System.Drawing.Color.Transparent;
-            this.homeButton.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.homeButton.CheckedState.FillColor = System.Drawing.Color.CornflowerBlue;
-            this.homeButton.CustomizableEdges.BottomRight = false;
-            this.homeButton.CustomizableEdges.TopRight = false;
-            this.homeButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.homeButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.homeButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.homeButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.homeButton.FillColor = System.Drawing.Color.RoyalBlue;
-            this.homeButton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.homeButton.ForeColor = System.Drawing.Color.White;
-            this.homeButton.Location = new System.Drawing.Point(23, 128);
-            this.homeButton.Name = "homeButton";
-            this.homeButton.Size = new System.Drawing.Size(145, 31);
-            this.homeButton.TabIndex = 0;
-            this.homeButton.Text = "Home";
-            // 
             // usernameLabel
             // 
             this.usernameLabel.AutoSize = true;
@@ -172,90 +139,6 @@
             this.usernameLabel.Size = new System.Drawing.Size(69, 17);
             this.usernameLabel.TabIndex = 0;
             this.usernameLabel.Text = "Username";
-            // 
-            // categoryButton
-            // 
-            this.categoryButton.AutoRoundedCorners = true;
-            this.categoryButton.BackColor = System.Drawing.Color.Transparent;
-            this.categoryButton.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.categoryButton.CheckedState.FillColor = System.Drawing.Color.CornflowerBlue;
-            this.categoryButton.CustomizableEdges.BottomRight = false;
-            this.categoryButton.CustomizableEdges.TopRight = false;
-            this.categoryButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.categoryButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.categoryButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.categoryButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.categoryButton.FillColor = System.Drawing.Color.RoyalBlue;
-            this.categoryButton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.categoryButton.ForeColor = System.Drawing.Color.White;
-            this.categoryButton.Location = new System.Drawing.Point(23, 165);
-            this.categoryButton.Name = "categoryButton";
-            this.categoryButton.Size = new System.Drawing.Size(145, 31);
-            this.categoryButton.TabIndex = 1;
-            this.categoryButton.Text = "Category";
-            // 
-            // productsButton
-            // 
-            this.productsButton.AutoRoundedCorners = true;
-            this.productsButton.BackColor = System.Drawing.Color.Transparent;
-            this.productsButton.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.productsButton.CheckedState.FillColor = System.Drawing.Color.CornflowerBlue;
-            this.productsButton.CustomizableEdges.BottomRight = false;
-            this.productsButton.CustomizableEdges.TopRight = false;
-            this.productsButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.productsButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.productsButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.productsButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.productsButton.FillColor = System.Drawing.Color.RoyalBlue;
-            this.productsButton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.productsButton.ForeColor = System.Drawing.Color.White;
-            this.productsButton.Location = new System.Drawing.Point(23, 202);
-            this.productsButton.Name = "productsButton";
-            this.productsButton.Size = new System.Drawing.Size(145, 31);
-            this.productsButton.TabIndex = 2;
-            this.productsButton.Text = "Products";
-            // 
-            // purchasesButton
-            // 
-            this.purchasesButton.AutoRoundedCorners = true;
-            this.purchasesButton.BackColor = System.Drawing.Color.Transparent;
-            this.purchasesButton.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.purchasesButton.CheckedState.FillColor = System.Drawing.Color.CornflowerBlue;
-            this.purchasesButton.CustomizableEdges.BottomRight = false;
-            this.purchasesButton.CustomizableEdges.TopRight = false;
-            this.purchasesButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.purchasesButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.purchasesButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.purchasesButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.purchasesButton.FillColor = System.Drawing.Color.RoyalBlue;
-            this.purchasesButton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.purchasesButton.ForeColor = System.Drawing.Color.White;
-            this.purchasesButton.Location = new System.Drawing.Point(23, 239);
-            this.purchasesButton.Name = "purchasesButton";
-            this.purchasesButton.Size = new System.Drawing.Size(145, 31);
-            this.purchasesButton.TabIndex = 3;
-            this.purchasesButton.Text = "Purchases";
-            // 
-            // customersButton
-            // 
-            this.customersButton.AutoRoundedCorners = true;
-            this.customersButton.BackColor = System.Drawing.Color.Transparent;
-            this.customersButton.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.customersButton.CheckedState.FillColor = System.Drawing.Color.CornflowerBlue;
-            this.customersButton.CustomizableEdges.BottomRight = false;
-            this.customersButton.CustomizableEdges.TopRight = false;
-            this.customersButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.customersButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.customersButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.customersButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.customersButton.FillColor = System.Drawing.Color.RoyalBlue;
-            this.customersButton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.customersButton.ForeColor = System.Drawing.Color.White;
-            this.customersButton.Location = new System.Drawing.Point(23, 276);
-            this.customersButton.Name = "customersButton";
-            this.customersButton.Size = new System.Drawing.Size(145, 31);
-            this.customersButton.TabIndex = 4;
-            this.customersButton.Text = "Customers";
             // 
             // salesButton
             // 
@@ -270,13 +153,142 @@
             this.salesButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.salesButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.salesButton.FillColor = System.Drawing.Color.RoyalBlue;
-            this.salesButton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.salesButton.ForeColor = System.Drawing.Color.White;
+            this.salesButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.salesButton.ForeColor = System.Drawing.Color.LightGray;
+            this.salesButton.Image = global::InventoryManagement.Properties.Resources.increase;
+            this.salesButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.salesButton.Location = new System.Drawing.Point(23, 313);
             this.salesButton.Name = "salesButton";
             this.salesButton.Size = new System.Drawing.Size(145, 31);
             this.salesButton.TabIndex = 5;
             this.salesButton.Text = "Sales";
+            // 
+            // customersButton
+            // 
+            this.customersButton.AutoRoundedCorners = true;
+            this.customersButton.BackColor = System.Drawing.Color.Transparent;
+            this.customersButton.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.customersButton.CheckedState.FillColor = System.Drawing.Color.CornflowerBlue;
+            this.customersButton.CustomizableEdges.BottomRight = false;
+            this.customersButton.CustomizableEdges.TopRight = false;
+            this.customersButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.customersButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.customersButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.customersButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.customersButton.FillColor = System.Drawing.Color.RoyalBlue;
+            this.customersButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.customersButton.ForeColor = System.Drawing.Color.LightGray;
+            this.customersButton.Image = global::InventoryManagement.Properties.Resources.group;
+            this.customersButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.customersButton.Location = new System.Drawing.Point(23, 276);
+            this.customersButton.Name = "customersButton";
+            this.customersButton.Size = new System.Drawing.Size(145, 31);
+            this.customersButton.TabIndex = 4;
+            this.customersButton.Text = "Customers";
+            // 
+            // purchasesButton
+            // 
+            this.purchasesButton.AutoRoundedCorners = true;
+            this.purchasesButton.BackColor = System.Drawing.Color.Transparent;
+            this.purchasesButton.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.purchasesButton.CheckedState.FillColor = System.Drawing.Color.CornflowerBlue;
+            this.purchasesButton.CustomizableEdges.BottomRight = false;
+            this.purchasesButton.CustomizableEdges.TopRight = false;
+            this.purchasesButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.purchasesButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.purchasesButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.purchasesButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.purchasesButton.FillColor = System.Drawing.Color.RoyalBlue;
+            this.purchasesButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.purchasesButton.ForeColor = System.Drawing.Color.LightGray;
+            this.purchasesButton.Image = global::InventoryManagement.Properties.Resources.shopping_bag;
+            this.purchasesButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.purchasesButton.Location = new System.Drawing.Point(23, 239);
+            this.purchasesButton.Name = "purchasesButton";
+            this.purchasesButton.Size = new System.Drawing.Size(145, 31);
+            this.purchasesButton.TabIndex = 3;
+            this.purchasesButton.Text = "Purchases";
+            // 
+            // productsButton
+            // 
+            this.productsButton.AutoRoundedCorners = true;
+            this.productsButton.BackColor = System.Drawing.Color.Transparent;
+            this.productsButton.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.productsButton.CheckedState.FillColor = System.Drawing.Color.CornflowerBlue;
+            this.productsButton.CustomizableEdges.BottomRight = false;
+            this.productsButton.CustomizableEdges.TopRight = false;
+            this.productsButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.productsButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.productsButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.productsButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.productsButton.FillColor = System.Drawing.Color.RoyalBlue;
+            this.productsButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.productsButton.ForeColor = System.Drawing.Color.LightGray;
+            this.productsButton.Image = global::InventoryManagement.Properties.Resources.box;
+            this.productsButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.productsButton.Location = new System.Drawing.Point(23, 202);
+            this.productsButton.Name = "productsButton";
+            this.productsButton.Size = new System.Drawing.Size(145, 31);
+            this.productsButton.TabIndex = 2;
+            this.productsButton.Text = "Products";
+            // 
+            // categoryButton
+            // 
+            this.categoryButton.AutoRoundedCorners = true;
+            this.categoryButton.BackColor = System.Drawing.Color.Transparent;
+            this.categoryButton.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.categoryButton.CheckedState.FillColor = System.Drawing.Color.CornflowerBlue;
+            this.categoryButton.CustomizableEdges.BottomRight = false;
+            this.categoryButton.CustomizableEdges.TopRight = false;
+            this.categoryButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.categoryButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.categoryButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.categoryButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.categoryButton.FillColor = System.Drawing.Color.RoyalBlue;
+            this.categoryButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.categoryButton.ForeColor = System.Drawing.Color.LightGray;
+            this.categoryButton.Image = global::InventoryManagement.Properties.Resources.menu;
+            this.categoryButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.categoryButton.Location = new System.Drawing.Point(23, 165);
+            this.categoryButton.Name = "categoryButton";
+            this.categoryButton.Size = new System.Drawing.Size(145, 31);
+            this.categoryButton.TabIndex = 1;
+            this.categoryButton.Text = "Category";
+            // 
+            // homeButton
+            // 
+            this.homeButton.AutoRoundedCorners = true;
+            this.homeButton.BackColor = System.Drawing.Color.Transparent;
+            this.homeButton.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.homeButton.CheckedState.FillColor = System.Drawing.Color.CornflowerBlue;
+            this.homeButton.CustomizableEdges.BottomRight = false;
+            this.homeButton.CustomizableEdges.TopRight = false;
+            this.homeButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.homeButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.homeButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.homeButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.homeButton.FillColor = System.Drawing.Color.RoyalBlue;
+            this.homeButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.homeButton.ForeColor = System.Drawing.Color.LightGray;
+            this.homeButton.Image = global::InventoryManagement.Properties.Resources.home;
+            this.homeButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.homeButton.Location = new System.Drawing.Point(23, 128);
+            this.homeButton.Name = "homeButton";
+            this.homeButton.Size = new System.Drawing.Size(145, 31);
+            this.homeButton.TabIndex = 0;
+            this.homeButton.Text = "Home";
+            // 
+            // userPicture
+            // 
+            this.userPicture.BackColor = System.Drawing.Color.Transparent;
+            this.userPicture.ImageRotate = 0F;
+            this.userPicture.Location = new System.Drawing.Point(36, 6);
+            this.userPicture.Name = "userPicture";
+            this.userPicture.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.userPicture.Size = new System.Drawing.Size(80, 80);
+            this.userPicture.TabIndex = 0;
+            this.userPicture.TabStop = false;
+            this.userPicture.UseTransparentBackground = true;
             // 
             // Dashboard
             // 
