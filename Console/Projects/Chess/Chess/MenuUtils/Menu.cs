@@ -1,11 +1,4 @@
 ﻿using Chess.MiscUtils;
-using Chess.MenuUtils;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace Chess.MenuUtils
 {
@@ -39,7 +32,7 @@ namespace Chess.MenuUtils
         public void AddOption(Text option)
         {
             options.Add(option);
-            
+
             // Update max length if the new option is longer
             if (option.text.Length > maxLength)
                 maxLength = option.text.Length;
@@ -55,7 +48,7 @@ namespace Chess.MenuUtils
             // Display the options
             for (int i = 0; i < options.Count; i++)
             {
-                string text = $"[{i}] {options[i].text}";
+                string text = $"[{i + 1}] {options[i].text}";
                 //int totalLength = header.padding_left + header.padding_right + text.Length;
                 offset = new Offset(Math.Abs(options[i].text.Length - maxLength));
 
@@ -73,6 +66,25 @@ namespace Chess.MenuUtils
             // Separator line
             offset = new Offset(Math.Abs(header.text.Length - maxLength) + Convert.ToString(options.Count).Length + 3);
             Misc.PrintSeparator(header.decorator, header.GetTotalLength() + offset.GetValue());
+        }
+
+        // Take input
+        public int TakeInput()
+        {
+            int choice;
+            do
+            {
+                char key = Console.ReadKey(true).KeyChar;   // Read a key from the console
+                choice = (int)char.GetNumericValue(key);    // Direct numeric conversion
+
+                if (choice > 0 && choice <= options.Count)
+                    break;  // Valid choice, exit the loop
+            }
+            while (!(choice > 0 && choice <= options.Count));
+
+            Console.Clear();  // Clear the console after input - Debugging purpose
+
+            return choice;
         }
     }
 }
