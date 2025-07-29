@@ -7,7 +7,7 @@ namespace Chess
     {
         static void Main(string[] args)
         {
-            Header header = new Header("Welcome to Chess Game", 4, 4, new Decorator('*', ConsoleColor.Cyan), ConsoleColor.Yellow);
+            Header header = new Header("Main Menu", 4, 4, new Decorator('*', ConsoleColor.Cyan), ConsoleColor.Yellow);
             //header.display();
 
             Menu menu = new Menu(

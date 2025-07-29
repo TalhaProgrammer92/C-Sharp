@@ -21,10 +21,11 @@ namespace Chess.MenuUtils
             this.header = header;
             this.options = options;
             maxLength = header.text.Length;
+            FindMaxLength();
         }
 
         // Find max length
-        protected void findMaxLength()
+        protected void FindMaxLength()
         {
             foreach (Text option in options)
             {
@@ -37,7 +38,7 @@ namespace Chess.MenuUtils
         public void display()
         {
             // Display the header
-            header.display();
+            header.display(Math.Abs(header.padding_left + header.padding_right + header.text.Length - maxLength));
 
             // Display the options
             for (int i = 0; i < options.Count; i++)

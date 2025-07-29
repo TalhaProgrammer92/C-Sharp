@@ -24,11 +24,20 @@ namespace Chess.MenuUtils
             this.decorator = decorator;
         }
 
+        // Print separator line
+        void PrintSeparator(int? offset = null)
+        {
+            if (offset.HasValue)
+                Misc.PrintSeparator(decorator, padding_left + text.Length + padding_right + 2 + offset.Value);
+            else
+                Misc.PrintSeparator(decorator, padding_left + text.Length + padding_right + 2);
+        }
+
         // Display the header
-        public void display()
+        public void display(int? offset)
         {
             // Decorator - Top
-            Misc.PrintSeparator(decorator, padding_left + text.Length + padding_right + 2);
+            PrintSeparator(offset);
 
             // Text with padding
             Misc.PrintTextWithPadding(
@@ -39,7 +48,7 @@ namespace Chess.MenuUtils
                 );
 
             // Decorator - Bottom
-            Misc.PrintSeparator(decorator, padding_left + text.Length + padding_right + 2);
+            PrintSeparator(offset);
         }
     }
 }
