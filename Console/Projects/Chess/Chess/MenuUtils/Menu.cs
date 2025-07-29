@@ -1,4 +1,5 @@
-﻿using Chess.MenuUtils;
+﻿using Chess.MiscUtils;
+using Chess.MenuUtils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,26 +35,44 @@ namespace Chess.MenuUtils
             }
         }
 
+        // Add an option to the menu
+        public void AddOption(Text option)
+        {
+            options.Add(option);
+            
+            // Update max length if the new option is longer
+            if (option.text.Length > maxLength)
+                maxLength = option.text.Length;
+        }
+
         // Display the menu
         public void display()
         {
             // Display the header
-            header.display(Math.Abs(header.padding_left + header.padding_right + header.text.Length - maxLength));
+            Offset offset = new Offset(Math.Abs(header.text.Length - maxLength) + Convert.ToString(options.Count).Length + 3);
+            header.display(offset);
 
             // Display the options
             for (int i = 0; i < options.Count; i++)
             {
                 string text = $"[{i}] {options[i].text}";
+                //int totalLength = header.padding_left + header.padding_right + text.Length;
+                offset = new Offset(Math.Abs(options[i].text.Length - maxLength));
+
+                // Debugging purpose
+                //Console.WriteLine($"Text: {text.Length} - Padding (Left): {header.padding_left} - Padding (Right): {header.padding_right} - Total: {totalLength} - Max (Text): {maxLength} - Max (Length): {GetMaxLength()} - Offset: {offset.GetValue()}");
+
                 Misc.PrintTextWithPadding(
                     new Text(text, options[i].color),
                     header.padding_left,
-                    Math.Abs(text.Length - maxLength) + header.padding_right,
+                    header.padding_right + offset.GetValue(),
                     header.decorator
                     );
             }
 
             // Separator line
-            Misc.PrintSeparator(header.decorator, header.padding_left + maxLength + header.padding_right + 2);
+            offset = new Offset(Math.Abs(header.text.Length - maxLength) + Convert.ToString(options.Count).Length + 3);
+            Misc.PrintSeparator(header.decorator, header.GetTotalLength() + offset.GetValue());
         }
     }
 }

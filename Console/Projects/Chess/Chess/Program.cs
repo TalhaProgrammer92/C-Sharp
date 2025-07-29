@@ -16,6 +16,7 @@ namespace Chess
                 {
                     new Text("Start Game", ConsoleColor.Green),
                     new Text("Load Game", ConsoleColor.Blue),
+                    new Text("Leaderboard", ConsoleColor.DarkYellow),
                     new Text("Settings", ConsoleColor.Magenta),
                     new Text("Exit", ConsoleColor.Red)
                 }

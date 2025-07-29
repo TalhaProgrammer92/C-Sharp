@@ -1,6 +1,6 @@
-﻿
-using System;
+﻿using System;
 using Chess.MenuUtils;
+using Chess.MiscUtils;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,26 +24,28 @@ namespace Chess.MenuUtils
             this.decorator = decorator;
         }
 
-        // Print separator line
-        void PrintSeparator(int? offset = null)
+        // Get total length of the header
+        public int GetTotalLength()
         {
-            if (offset.HasValue)
-                Misc.PrintSeparator(decorator, padding_left + text.Length + padding_right + 2 + offset.Value);
-            else
-                Misc.PrintSeparator(decorator, padding_left + text.Length + padding_right + 2);
+            return padding_left + text.Length + padding_right + 2; // +2 for the decorators on both sides
+        }
+
+        // Print separator line
+        void PrintSeparator(Offset offset)
+        {
+            Misc.PrintSeparator(decorator, GetTotalLength() + offset.GetValue());
         }
 
         // Display the header
-        public void display(int? offset)
+        public void display(Offset offset)
         {
             // Decorator - Top
             PrintSeparator(offset);
 
-            // Text with padding
             Misc.PrintTextWithPadding(
                 new Text(base.text, base.color), 
-                padding_left, 
-                padding_right, 
+                padding_left + offset.GetValue() / 2,
+                padding_right + offset.GetValue() / 2 + offset.GetValue() % 2,
                 decorator
                 );
 
