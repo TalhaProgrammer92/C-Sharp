@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Chess.Menu
+namespace Chess.MenuUtils
 {
     class Text
     {
         // Attributes
-        protected string text;
-        protected ConsoleColor color;
+        public string text { get; }
+        public ConsoleColor color { get; }
 
         // Constructor
         public Text(string text, ConsoleColor color)
