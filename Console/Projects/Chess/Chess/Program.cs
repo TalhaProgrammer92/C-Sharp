@@ -21,18 +21,18 @@ namespace Chess
             //        new Text("Exit", ConsoleColor.Red)
             //    }
             //);
-            //MainMenu menu = new MainMenu();
+            MainMenu menu = new MainMenu();
 
-            //// Display
-            //menu.display();
+            // Display
+            menu.display();
 
-            //// Take input
-            //Console.WriteLine(menu.TakeInput());
+            // Take input
+            Console.WriteLine(menu.TakeInput());
 
-            MiscUtils.Utils.SetUTF8Encoding();
+            //MiscUtils.Utils.SetUTF8Encoding();
 
-            Console.WriteLine(Pieces.Unicode.WhiteKing);
-            Console.WriteLine(Pieces.Unicode.BlackKing);
+            //Console.WriteLine(Pieces.Unicode.WhiteKing);
+            //Console.WriteLine(Pieces.Unicode.BlackKing);
         }
     }
 }
