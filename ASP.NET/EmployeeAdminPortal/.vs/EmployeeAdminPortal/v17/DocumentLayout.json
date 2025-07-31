@@ -11,20 +11,12 @@
       "RelativeMoniker": "D:0:0:{48D4AA6E-66A3-485C-84FC-7BC06F3283B4}|EmployeeAdminPortal\\EmployeeAdminPortal.csproj|solutionrelative:employeeadminportal\\models\\employeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48D4AA6E-66A3-485C-84FC-7BC06F3283B4}|EmployeeAdminPortal\\EmployeeAdminPortal.csproj|d:\\coding project\\c-sharp\\asp.net\\employeeadminportal\\employeeadminportal\\models\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48D4AA6E-66A3-485C-84FC-7BC06F3283B4}|EmployeeAdminPortal\\EmployeeAdminPortal.csproj|solutionrelative:employeeadminportal\\models\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Coding Project\\C-Sharp\\ASP.NET\\EmployeeAdminPortal\\EmployeeAdminPortal\\Migrations\\20250731095338_initial migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EmployeeAdminPortal\\Migrations\\20250731095338_initial migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{48D4AA6E-66A3-485C-84FC-7BC06F3283B4}|EmployeeAdminPortal\\EmployeeAdminPortal.csproj|d:\\coding project\\c-sharp\\asp.net\\employeeadminportal\\employeeadminportal\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{48D4AA6E-66A3-485C-84FC-7BC06F3283B4}|EmployeeAdminPortal\\EmployeeAdminPortal.csproj|solutionrelative:employeeadminportal\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48D4AA6E-66A3-485C-84FC-7BC06F3283B4}|EmployeeAdminPortal\\EmployeeAdminPortal.csproj|d:\\coding project\\c-sharp\\asp.net\\employeeadminportal\\employeeadminportal\\employeeadminportal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{48D4AA6E-66A3-485C-84FC-7BC06F3283B4}|EmployeeAdminPortal\\EmployeeAdminPortal.csproj|solutionrelative:employeeadminportal\\employeeadminportal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{48D4AA6E-66A3-485C-84FC-7BC06F3283B4}|EmployeeAdminPortal\\EmployeeAdminPortal.csproj|d:\\coding project\\c-sharp\\asp.net\\employeeadminportal\\employeeadminportal\\models\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48D4AA6E-66A3-485C-84FC-7BC06F3283B4}|EmployeeAdminPortal\\EmployeeAdminPortal.csproj|solutionrelative:employeeadminportal\\models\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{48D4AA6E-66A3-485C-84FC-7BC06F3283B4}|EmployeeAdminPortal\\EmployeeAdminPortal.csproj|d:\\coding project\\c-sharp\\asp.net\\employeeadminportal\\employeeadminportal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -56,7 +48,7 @@
               "RelativeDocumentMoniker": "EmployeeAdminPortal\\Models\\EmployeeDto.cs",
               "ToolTip": "D:\\Coding Project\\C-Sharp\\ASP.NET\\EmployeeAdminPortal\\EmployeeAdminPortal\\Models\\EmployeeDto.cs",
               "RelativeToolTip": "EmployeeAdminPortal\\Models\\EmployeeDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-31T10:23:30.339Z",
               "EditorCaption": ""
@@ -69,27 +61,14 @@
               "RelativeDocumentMoniker": "EmployeeAdminPortal\\Controllers\\EmployeesController.cs",
               "ToolTip": "D:\\Coding Project\\C-Sharp\\ASP.NET\\EmployeeAdminPortal\\EmployeeAdminPortal\\Controllers\\EmployeesController.cs",
               "RelativeToolTip": "EmployeeAdminPortal\\Controllers\\EmployeesController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAABUAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-31T10:04:20.132Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "20250731095338_initial migration.cs",
-              "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\ASP.NET\\EmployeeAdminPortal\\EmployeeAdminPortal\\Migrations\\20250731095338_initial migration.cs",
-              "RelativeDocumentMoniker": "EmployeeAdminPortal\\Migrations\\20250731095338_initial migration.cs",
-              "ToolTip": "D:\\Coding Project\\C-Sharp\\ASP.NET\\EmployeeAdminPortal\\EmployeeAdminPortal\\Migrations\\20250731095338_initial migration.cs",
-              "RelativeToolTip": "EmployeeAdminPortal\\Migrations\\20250731095338_initial migration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T09:53:39.188Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\ASP.NET\\EmployeeAdminPortal\\EmployeeAdminPortal\\appsettings.json",
               "RelativeDocumentMoniker": "EmployeeAdminPortal\\appsettings.json",
@@ -102,7 +81,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Employee.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\ASP.NET\\EmployeeAdminPortal\\EmployeeAdminPortal\\Models\\Entities\\Employee.cs",
               "RelativeDocumentMoniker": "EmployeeAdminPortal\\Models\\Entities\\Employee.cs",
@@ -115,7 +94,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\ASP.NET\\EmployeeAdminPortal\\EmployeeAdminPortal\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "EmployeeAdminPortal\\Data\\ApplicationDbContext.cs",
@@ -128,20 +107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "EmployeeAdminPortal",
-              "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\ASP.NET\\EmployeeAdminPortal\\EmployeeAdminPortal\\EmployeeAdminPortal.csproj",
-              "RelativeDocumentMoniker": "EmployeeAdminPortal\\EmployeeAdminPortal.csproj",
-              "ToolTip": "D:\\Coding Project\\C-Sharp\\ASP.NET\\EmployeeAdminPortal\\EmployeeAdminPortal\\EmployeeAdminPortal.csproj",
-              "RelativeToolTip": "EmployeeAdminPortal\\EmployeeAdminPortal.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-31T09:30:53.51Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\ASP.NET\\EmployeeAdminPortal\\EmployeeAdminPortal\\Program.cs",
               "RelativeDocumentMoniker": "EmployeeAdminPortal\\Program.cs",
@@ -154,7 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "EmployeeAdminPortal.http",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\ASP.NET\\EmployeeAdminPortal\\EmployeeAdminPortal\\EmployeeAdminPortal.http",
               "RelativeDocumentMoniker": "EmployeeAdminPortal\\EmployeeAdminPortal.http",
