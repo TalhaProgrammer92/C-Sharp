@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\Coding Project\\C-Sharp\\ASP.NET\\RepositoryPatternTutorial\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{39790BBB-7C4B-4DAA-8BEC-5127912DAD8F}|RepositoryPatternTutorial\\RepositoryPatternTutorial.csproj|d:\\coding project\\c-sharp\\asp.net\\repositorypatterntutorial\\repositorypatterntutorial\\data\\productcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39790BBB-7C4B-4DAA-8BEC-5127912DAD8F}|RepositoryPatternTutorial\\RepositoryPatternTutorial.csproj|solutionrelative:repositorypatterntutorial\\data\\productcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{39790BBB-7C4B-4DAA-8BEC-5127912DAD8F}|RepositoryPatternTutorial\\RepositoryPatternTutorial.csproj|d:\\coding project\\c-sharp\\asp.net\\repositorypatterntutorial\\repositorypatterntutorial\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{39790BBB-7C4B-4DAA-8BEC-5127912DAD8F}|RepositoryPatternTutorial\\RepositoryPatternTutorial.csproj|solutionrelative:repositorypatterntutorial\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{39790BBB-7C4B-4DAA-8BEC-5127912DAD8F}|RepositoryPatternTutorial\\RepositoryPatternTutorial.csproj|d:\\coding project\\c-sharp\\asp.net\\repositorypatterntutorial\\repositorypatterntutorial\\repository\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{39790BBB-7C4B-4DAA-8BEC-5127912DAD8F}|RepositoryPatternTutorial\\RepositoryPatternTutorial.csproj|solutionrelative:repositorypatterntutorial\\repository\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39790BBB-7C4B-4DAA-8BEC-5127912DAD8F}|RepositoryPatternTutorial\\RepositoryPatternTutorial.csproj|d:\\coding project\\c-sharp\\asp.net\\repositorypatterntutorial\\repositorypatterntutorial\\data\\productcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39790BBB-7C4B-4DAA-8BEC-5127912DAD8F}|RepositoryPatternTutorial\\RepositoryPatternTutorial.csproj|solutionrelative:repositorypatterntutorial\\data\\productcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{39790BBB-7C4B-4DAA-8BEC-5127912DAD8F}|RepositoryPatternTutorial\\RepositoryPatternTutorial.csproj|d:\\coding project\\c-sharp\\asp.net\\repositorypatterntutorial\\repositorypatterntutorial\\repository\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,11 +30,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ProductController.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\ASP.NET\\RepositoryPatternTutorial\\RepositoryPatternTutorial\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "RepositoryPatternTutorial\\Controllers\\ProductController.cs",
@@ -47,7 +51,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "ProductContext.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\ASP.NET\\RepositoryPatternTutorial\\RepositoryPatternTutorial\\Data\\ProductContext.cs",
               "RelativeDocumentMoniker": "RepositoryPatternTutorial\\Data\\ProductContext.cs",
@@ -59,12 +63,8 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ProductService.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\ASP.NET\\RepositoryPatternTutorial\\RepositoryPatternTutorial\\Repository\\ProductService.cs",
               "RelativeDocumentMoniker": "RepositoryPatternTutorial\\Repository\\ProductService.cs",
@@ -72,8 +72,7 @@
               "RelativeToolTip": "RepositoryPatternTutorial\\Repository\\ProductService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T13:29:09.385Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-31T13:29:09.385Z"
             },
             {
               "$type": "Document",
@@ -85,8 +84,7 @@
               "RelativeToolTip": "RepositoryPatternTutorial\\Repository\\IProductService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T13:28:19.365Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-31T13:28:19.365Z"
             },
             {
               "$type": "Document",
@@ -98,8 +96,7 @@
               "RelativeToolTip": "RepositoryPatternTutorial\\Models\\Product.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T13:24:53.018Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-31T13:24:53.018Z"
             }
           ]
         }

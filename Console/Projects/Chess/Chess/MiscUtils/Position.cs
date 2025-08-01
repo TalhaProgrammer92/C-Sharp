@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace Chess.MiscUtils
 {
@@ -39,9 +40,11 @@ namespace Chess.MiscUtils
         }
 
         // Method - Print the position
-        public void Print()
+        public static string GetString(Position? position)
         {
-            Console.WriteLine($"Position: Row = {Row}, Column = {Column}");
+            if (position is null) return "Null";
+            
+            return $"({position.Row}, {position.Column})";
         }
 
         // Method - Convert labeled position to numeric position

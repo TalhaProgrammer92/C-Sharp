@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "D:\\Coding Project\\C-Sharp\\ASP.NET\\RepositoryPatternTutorial\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{39790BBB-7C4B-4DAA-8BEC-5127912DAD8F}|RepositoryPatternTutorial\\RepositoryPatternTutorial.csproj|d:\\coding project\\c-sharp\\asp.net\\repositorypatterntutorial\\repositorypatterntutorial\\data\\productcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39790BBB-7C4B-4DAA-8BEC-5127912DAD8F}|RepositoryPatternTutorial\\RepositoryPatternTutorial.csproj|solutionrelative:repositorypatterntutorial\\data\\productcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{39790BBB-7C4B-4DAA-8BEC-5127912DAD8F}|RepositoryPatternTutorial\\RepositoryPatternTutorial.csproj|d:\\coding project\\c-sharp\\asp.net\\repositorypatterntutorial\\repositorypatterntutorial\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39790BBB-7C4B-4DAA-8BEC-5127912DAD8F}|RepositoryPatternTutorial\\RepositoryPatternTutorial.csproj|solutionrelative:repositorypatterntutorial\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{39790BBB-7C4B-4DAA-8BEC-5127912DAD8F}|RepositoryPatternTutorial\\RepositoryPatternTutorial.csproj|d:\\coding project\\c-sharp\\asp.net\\repositorypatterntutorial\\repositorypatterntutorial\\repository\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{39790BBB-7C4B-4DAA-8BEC-5127912DAD8F}|RepositoryPatternTutorial\\RepositoryPatternTutorial.csproj|solutionrelative:repositorypatterntutorial\\repository\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39790BBB-7C4B-4DAA-8BEC-5127912DAD8F}|RepositoryPatternTutorial\\RepositoryPatternTutorial.csproj|d:\\coding project\\c-sharp\\asp.net\\repositorypatterntutorial\\repositorypatterntutorial\\data\\productcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39790BBB-7C4B-4DAA-8BEC-5127912DAD8F}|RepositoryPatternTutorial\\RepositoryPatternTutorial.csproj|solutionrelative:repositorypatterntutorial\\data\\productcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{39790BBB-7C4B-4DAA-8BEC-5127912DAD8F}|RepositoryPatternTutorial\\RepositoryPatternTutorial.csproj|d:\\coding project\\c-sharp\\asp.net\\repositorypatterntutorial\\repositorypatterntutorial\\repository\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,12 +35,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\ASP.NET\\RepositoryPatternTutorial\\RepositoryPatternTutorial\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "RepositoryPatternTutorial\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\Coding Project\\C-Sharp\\ASP.NET\\RepositoryPatternTutorial\\RepositoryPatternTutorial\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "RepositoryPatternTutorial\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-31T13:45:47.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ProductContext.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\ASP.NET\\RepositoryPatternTutorial\\RepositoryPatternTutorial\\Data\\ProductContext.cs",
               "RelativeDocumentMoniker": "RepositoryPatternTutorial\\Data\\ProductContext.cs",
               "ToolTip": "D:\\Coding Project\\C-Sharp\\ASP.NET\\RepositoryPatternTutorial\\RepositoryPatternTutorial\\Data\\ProductContext.cs",
               "RelativeToolTip": "RepositoryPatternTutorial\\Data\\ProductContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-31T13:35:30.768Z",
               "EditorCaption": ""
@@ -53,14 +70,14 @@
               "RelativeDocumentMoniker": "RepositoryPatternTutorial\\Repository\\ProductService.cs",
               "ToolTip": "D:\\Coding Project\\C-Sharp\\ASP.NET\\RepositoryPatternTutorial\\RepositoryPatternTutorial\\Repository\\ProductService.cs",
               "RelativeToolTip": "RepositoryPatternTutorial\\Repository\\ProductService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-31T13:29:09.385Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "IProductService.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\ASP.NET\\RepositoryPatternTutorial\\RepositoryPatternTutorial\\Repository\\IProductService.cs",
               "RelativeDocumentMoniker": "RepositoryPatternTutorial\\Repository\\IProductService.cs",
@@ -73,7 +90,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Product.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\ASP.NET\\RepositoryPatternTutorial\\RepositoryPatternTutorial\\Models\\Product.cs",
               "RelativeDocumentMoniker": "RepositoryPatternTutorial\\Models\\Product.cs",

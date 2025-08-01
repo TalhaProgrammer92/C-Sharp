@@ -9,23 +9,41 @@ namespace Chess.Pieces
 {
     class Pawn : Piece
     {
-        // Constructor
-        public Pawn(string symbol) : base(symbol)
-        {
-            isSymbolChangeable = true; // Pawns can change their symbol when they promote
-        }
-        
-        // Method - Is valid destination
-        public bool IsValidDestination(Position destination)
-        {
-            // Logic to check if the destination is valid for a pawn
-            // For simplicity, let's assume pawns can only move one step forward
-            // and can capture diagonally.
-            Position absDifference = Position.GetAbsoluteDifference(CurrentPosition, destination);
+        // Attributes
+        bool IsEnPassantPossible;
 
-            return  (absDifference.Row == 1 && absDifference.Column == 0) ||    // Move forward (Top to Bottom)
-                    (absDifference.Row == 0 && absDifference.Column == 1) ||    // Move forword (Bottom to Top)
-                    (absDifference.Row == 1 && absDifference.Column == 1);      // Capture diagonally
+        // Method - Get valid displacements
+        public static List<Position> GetValidDisplacementPositions()
+        {
+            var displacementPositions = new List<Position>();
+            
+            displacementPositions.Add(new Position(1, 0));
+            displacementPositions.Add(new Position(1, 1));
+            displacementPositions.Add(new Position(2, 0));
+
+            return displacementPositions;
+        }
+
+        // Constructor
+        public Pawn(Symbol symbol, Position position) : 
+            base(symbol, position, Pawn.GetValidDisplacementPositions()) {}
+
+        // Method - Update position
+        public new void UpdatePosition(Position position)
+        {
+            // Update the position
+            base.UpdatePosition(position);
+
+            // Remove the (2, 0) position
+            Position doubleJump = new Position(2, 0);
+            if (allowedDisplacementPositions.Contains(doubleJump))
+                allowedDisplacementPositions.Remove(doubleJump);
+        }
+
+        // Method - Check if en passant allowed
+        public bool CanEnPassant(Position destination)
+        {
+            return (IsValidDestination(destination) && IsEnPassantPossible);
         }
     }
 }

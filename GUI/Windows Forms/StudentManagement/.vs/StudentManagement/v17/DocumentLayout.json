@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{DF8E5E43-F2FF-4168-A3C8-37BCF0BF98F6}|StudentManagement\\StudentManagement.csproj|solutionrelative:studentmanagement\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF8E5E43-F2FF-4168-A3C8-37BCF0BF98F6}|StudentManagement\\StudentManagement.csproj|d:\\coding project\\c-sharp\\gui\\windows forms\\studentmanagement\\studentmanagement\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DF8E5E43-F2FF-4168-A3C8-37BCF0BF98F6}|StudentManagement\\StudentManagement.csproj|D:\\Coding Project\\C-Sharp\\GUI\\Windows Forms\\StudentManagement\\studentmanagement\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DF8E5E43-F2FF-4168-A3C8-37BCF0BF98F6}|StudentManagement\\StudentManagement.csproj|solutionrelative:studentmanagement\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -42,8 +42,7 @@
               "RelativeToolTip": "StudentManagement\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T11:14:45.023Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-30T11:14:45.023Z"
             },
             {
               "$type": "Document",
@@ -55,8 +54,7 @@
               "RelativeToolTip": "StudentManagement\\DBMS.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T10:34:55.805Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-30T10:34:55.805Z"
             },
             {
               "$type": "Document",
@@ -66,7 +64,7 @@
               "RelativeDocumentMoniker": "StudentManagement\\Manager.cs",
               "ToolTip": "D:\\Coding Project\\C-Sharp\\GUI\\Windows Forms\\StudentManagement\\StudentManagement\\Manager.cs",
               "RelativeToolTip": "StudentManagement\\Manager.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAiwFcAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-30T10:34:32.89Z",
               "EditorCaption": ""
@@ -80,8 +78,7 @@
               "ToolTip": "D:\\Coding Project\\C-Sharp\\GUI\\Windows Forms\\StudentManagement\\StudentManagement\\Manager.cs [Design]",
               "RelativeToolTip": "StudentManagement\\Manager.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T10:03:18.232Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-07-30T10:03:18.232Z"
             }
           ]
         }
