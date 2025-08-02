@@ -2,6 +2,7 @@
 using Chess.MenuUtils;
 using Chess.Pieces;
 using Chess.MiscUtils;
+using Chess.GameBoard;
 
 namespace Chess
 {
@@ -31,20 +32,23 @@ namespace Chess
             //// Take input
             //Console.WriteLine(menu.TakeInput());
 
-            MiscUtils.Utils.SetUTF8Encoding();
+            //MiscUtils.Utils.SetUTF8Encoding();
 
             //Console.WriteLine(Pieces.Unicode.WhiteKing);
             //Console.WriteLine(Pieces.Unicode.BlackKing);
 
-            Pawn pawn = new Pawn(Unicode.WhitePawn, new Position(1, 2));
-            pawn.Print();
+            //Pawn pawn = new Pawn(Unicode.WhitePawn, new Position(1, 2));
+            //pawn.Print();
 
-            Position destination = new Position(2, 2);
-            bool isValidDestination = pawn.IsValidDestination(destination);
-            Console.WriteLine($"Is the destination {Position.GetString(destination)} valid: {isValidDestination}");
+            //Position destination = new Position(2, 2);
+            //bool isValidDestination = pawn.IsValidDestination(destination);
+            //Console.WriteLine($"Is the destination {Position.GetString(destination)} valid: {isValidDestination}");
 
-            if (isValidDestination) pawn.UpdatePosition(destination); 
-            pawn.Print();
+            //if (isValidDestination) pawn.UpdatePosition(destination); 
+            //pawn.Print();
+
+            Board board = new Board();
+            board.Display();
         }
     }
 }

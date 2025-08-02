@@ -26,5 +26,16 @@ namespace Chess.MiscUtils
             Console.Write(Unicode);
             Console.ResetColor();
         }
+
+        // Methods - Comparision
+        public static bool operator ==(Symbol symbol1, Symbol symbol2)
+        {
+            return symbol1.Unicode == symbol2.Unicode;
+        }
+
+        public static bool operator !=(Symbol symbol1, Symbol symbol2)
+        {
+            return !(symbol1 == symbol2);
+        }
     }
 }
