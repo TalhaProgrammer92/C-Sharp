@@ -37,9 +37,53 @@ namespace CodeFirstApproach.Controllers
             // Adding a new car to the database
             context.Cars.Add(car);
             context.SaveChanges();
-            
+
             // Returning a success message
             return "Car added successfully!";
+        }
+
+        // Delete: api/car
+        [HttpDelete]
+        [Route("RemoveCar")]
+        public string DeleteCar(Car car)
+        {
+            // Checking if the car exists in the database
+            var existingCar = context.Cars.Find(car.Id);
+
+            if (existingCar == null)
+            {
+                return "Car not found!";
+            }
+
+            // Removing the car from the database
+            context.Cars.Remove(existingCar);
+            context.SaveChanges();
+
+            // Returning a success message
+            return "Car removed successfully!";
+        }
+
+        // Update: api/car
+        [HttpPut]
+        [Route("UpdateCar")]
+        public string UpdateCar(Car car)
+        {
+            // Checking if the car exists in the database
+            var existingCar = context.Cars.Find(car.Id);
+            
+            if (existingCar == null)
+            {
+                return "Car not found!";
+            }
+            
+            // Updating the car details
+            existingCar.Name = car.Name;
+            existingCar.Model = car.Model;
+            existingCar.Price = car.Price;
+            context.SaveChanges();
+            
+            // Returning a success message
+            return "Car updated successfully!";
         }
     }
 }
