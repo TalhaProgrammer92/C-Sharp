@@ -1,5 +1,9 @@
 
+using CodeFirstApproach.Models;
+using CodeFirstApproach.Services;
+using CodeFirstApproach.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
+//using CodeFirstApproach.Services;
 
 namespace CodeFirstApproach
 {
@@ -12,10 +16,18 @@ namespace CodeFirstApproach
             // Add services to the container.
 
             // Injecting the (Car Entity) DbContext with SQL Server
-            builder.Services.AddDbContext<Models.CarContext>(options =>
+            builder.Services.AddDbContext<CarContext>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+            builder.Services.AddDbContext<CustomerContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+
+            // Register Services & Interfaces for Dependency Injection
+            builder.Services.AddScoped<ICarService, CarService>();
+            builder.Services.AddScoped<ICustomerService, CustomerService>();
+
             builder.Services.AddControllers();
+
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
