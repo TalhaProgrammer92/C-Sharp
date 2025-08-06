@@ -39,7 +39,7 @@ namespace Chess.MenuUtils
         }
 
         // Display the menu
-        public void display()
+        public void Display()
         {
             // Display the header
             Offset offset = new Offset(Math.Abs(header.text.Length - maxLength) + Convert.ToString(options.Count).Length + 3);

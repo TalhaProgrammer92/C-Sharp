@@ -47,8 +47,12 @@ namespace Chess
             //if (isValidDestination) pawn.UpdatePosition(destination); 
             //pawn.Print();
 
-            Board board = new Board();
-            board.Display();
+            //Board board = new Board();
+            //board.Display();
+
+            PawnPromotionMenu promotionMenu = new PawnPromotionMenu();
+            promotionMenu.Display();
+            promotionMenu.TakeInput();
         }
     }
 }
