@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace EcommerceBackend.Models
+namespace EcommerceBackend.Models.Entities
 {
     public class Product
     {

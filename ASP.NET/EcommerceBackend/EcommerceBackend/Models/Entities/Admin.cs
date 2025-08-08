@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Identity;
 
-namespace EcommerceBackend.Models
+namespace EcommerceBackend.Models.Entities
 {
     public class Admin : IdentityUser
     {

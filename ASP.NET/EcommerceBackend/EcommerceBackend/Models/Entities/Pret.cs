@@ -1,4 +1,4 @@
-﻿namespace EcommerceBackend.Models
+﻿namespace EcommerceBackend.Models.Entities
 {
     public class Pret : Product
     {

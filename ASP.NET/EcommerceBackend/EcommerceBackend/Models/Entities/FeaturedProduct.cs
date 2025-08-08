@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System;
 
-namespace EcommerceBackend.Models
+namespace EcommerceBackend.Models.Entities
 {
     public class FeaturedProduct
     {

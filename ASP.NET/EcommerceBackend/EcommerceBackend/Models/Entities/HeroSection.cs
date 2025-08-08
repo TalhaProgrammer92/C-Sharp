@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace EcommerceBackend.Models
+namespace EcommerceBackend.Models.Entities
 {
     public class HeroSection
     {

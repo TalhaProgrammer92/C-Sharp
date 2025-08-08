@@ -1,4 +1,7 @@
 
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+
 namespace EcommerceBackend
 {
     public class Program
@@ -14,6 +17,32 @@ namespace EcommerceBackend
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
+            // Cofigure JWT Authentication
+            builder.Services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(options =>
+            {
+                //options.Authority = "https://your-auth-server.com"; // Replace with your auth server URL
+                //options.Audience = "your-api-audience"; // Replace with your API audience
+                options.RequireHttpsMetadata = true; // Set to false if not using HTTPS in development
+                options.SaveToken = true; // Save the token in the authentication properties
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidIssuer = builder.Configuration["JwtConfig:Issuer"],
+                    ValidAudience = builder.Configuration["JwtConfig:Audience"],
+                    IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(builder.Configuration["JwtConfig:Key"]!)),
+
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+                };
+            });
+            builder.Services.AddAuthorization();
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -25,8 +54,8 @@ namespace EcommerceBackend
 
             app.UseHttpsRedirection();
 
+            app.UseAuthentication(); // Enable authentication middleware (JWT)
             app.UseAuthorization();
-
 
             app.MapControllers();
 

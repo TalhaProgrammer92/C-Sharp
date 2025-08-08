@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace EcommerceBackend.Models
+namespace EcommerceBackend.Models.Entities
 {
     public class Luxury : Product
     {
