@@ -17,10 +17,10 @@ namespace Chess.MenuUtils
 
             new List<Text>
             {
-                    new Text("Queen", ConsoleColor.Green),
-                    new Text("Bishop", ConsoleColor.Cyan),
+                    new Text("Queen", ConsoleColor.Yellow),
+                    new Text("Bishop", ConsoleColor.Yellow),
                     new Text("Rook", ConsoleColor.Yellow),
-                    new Text("Knight", ConsoleColor.White),
+                    new Text("Knight", ConsoleColor.Yellow),
             }
         ) {}
     }
