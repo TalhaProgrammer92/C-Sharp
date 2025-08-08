@@ -40,3 +40,4 @@ namespace EcommerceBackend.Models
         public bool IsPrimary { get; set; } // Flag for primary image
         public string MimeType { get; set; } // MIME type (e.g., "image/jpeg", "image/png")
     }
+}
