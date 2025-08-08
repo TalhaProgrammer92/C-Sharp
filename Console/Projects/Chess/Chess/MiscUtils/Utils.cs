@@ -16,5 +16,13 @@ namespace Chess.MiscUtils
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
         }
+
+        // Method - Get accent color based on index, for pieces and empty cells of board
+        public static ConsoleColor GetAccentColor(int index /* 0-White | 1-Black */)
+        {
+            ConsoleColor accentColor = (index == 0) ? ConsoleColor.Cyan : ConsoleColor.Red;
+
+            return accentColor;
+        }
     }
 }

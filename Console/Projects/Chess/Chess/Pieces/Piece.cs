@@ -10,10 +10,12 @@ namespace Chess.Pieces
     abstract class Piece
     {
         // Attributes
+        public bool IsCaptured { get; set; } = false; // Indicates if the piece is captured
         protected Symbol symbol;
 
         protected Position? currentPosition = null;
         protected Position? recentPosition = null;
+        protected Position? initialPosition = null;
         protected List<Position> allowedDisplacementPositions;
 
         // Constructor
@@ -23,6 +25,7 @@ namespace Chess.Pieces
             this.allowedDisplacementPositions = allowedDisplacementPositions;
             currentPosition = position;
             recentPosition = null;
+            initialPosition = position;
         }
 
         // Getters
@@ -33,6 +36,10 @@ namespace Chess.Pieces
         public Position? RecentPosition
         {
             get { return recentPosition; }
+        }
+        public Symbol Symbol_
+        {
+            get { return symbol; }
         }
 
         // Method - Print the piece
@@ -68,6 +75,18 @@ namespace Chess.Pieces
             return IsValidDisplacementPosition(
                 Position.
                     GetAbsoluteDifference(CurrentPosition, destination));
+        }
+
+        // Method - Move to initial position
+        public void MoveToInitialPosition(bool makeAlive = true)
+        {
+            if (initialPosition is not null)
+            {
+                UpdatePosition(initialPosition);
+                recentPosition = null; // Reset recent position
+
+                IsCaptured = makeAlive;
+            }
         }
     }
 }

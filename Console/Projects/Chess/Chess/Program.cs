@@ -32,7 +32,7 @@ namespace Chess
             //// Take input
             //Console.WriteLine(menu.TakeInput());
 
-            //MiscUtils.Utils.SetUTF8Encoding();
+            MiscUtils.Utils.SetUTF8Encoding();
 
             //Console.WriteLine(Pieces.Unicode.WhiteKing);
             //Console.WriteLine(Pieces.Unicode.BlackKing);
@@ -47,12 +47,13 @@ namespace Chess
             //if (isValidDestination) pawn.UpdatePosition(destination); 
             //pawn.Print();
 
-            //Board board = new Board();
-            //board.Display();
+            Board board = new Board();
+            board.PlaceAllPieces(new PieceHandler());
+            board.Display();
 
-            PawnPromotionMenu promotionMenu = new PawnPromotionMenu();
-            promotionMenu.Display();
-            promotionMenu.TakeInput();
+            //PawnPromotionMenu promotionMenu = new PawnPromotionMenu();
+            //promotionMenu.Display();
+            //promotionMenu.TakeInput();
         }
     }
 }
