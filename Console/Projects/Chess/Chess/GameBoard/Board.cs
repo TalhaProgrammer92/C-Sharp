@@ -1,4 +1,5 @@
 ﻿using Chess.MiscUtils;
+using Chess.Pieces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -96,66 +97,136 @@ namespace Chess.GameBoard
             DisplayColumnLabels();
         }
 
+        // Method - Check position validity
+        public bool IsValidPosition(Position position)
+        {
+            return position.Row >= 0 && position.Row < 8 && position.Column >= 0 && position.Column < 8;
+        }
+
+        // Method - Update the board with a new cell
+        public void UpdateCell(Position position, Symbol symbol)
+        {
+            // Validate position
+            if (!IsValidPosition(position))
+                throw new ArgumentOutOfRangeException("Position is out of bounds.");
+
+            // Update the cell at the specified position
+            Grid[position.Row, position.Column].Symbol_ = symbol;
+        }
+
+        // Method - Update the piece token at a specific position
+        public void UpdatePieceToken(Position position, PieceToken pieceToken)
+        {
+            // Validate position
+            if (!IsValidPosition(position))
+                throw new ArgumentOutOfRangeException("Position is out of bounds.");
+            
+            // Update the piece token at the specified position
+            Grid[position.Row, position.Column].PieceToken_ = pieceToken;
+        }
+
         // Method - Place pieces
         public void PlaceAllPieces(Pieces.PieceHandler handler)
         {
             // Pawns
-            foreach (var pawn in handler.Pawns)
+            for (int i = 0; i < handler.Pawns.Count; i++)
             {
+                var pawn = handler.Pawns[i];
+
                 if (pawn.CurrentPosition is not null)
                 {
                     Position position = pawn.CurrentPosition;
-                    Grid[position.Row, position.Column].Symbol_ = pawn.Symbol_;
+
+                    // Update the cell with the pawn's symbol
+                    UpdateCell(position, pawn.Symbol_);
+
+                    // Update the piece token for the pawn
+                    UpdatePieceToken(position, new PieceToken(i, 1, i % 2));
                 }
             }
 
             // Rooks
-            foreach (var rook in handler.Rooks)
+            for (int i = 0; i < handler.Rooks.Count; i++)
             {
+                var rook = handler.Rooks[i];
+                
                 if (rook.CurrentPosition is not null)
                 {
                     Position position = rook.CurrentPosition;
-                    Grid[position.Row, position.Column].Symbol_ = rook.Symbol_;
+                    
+                    // Update the cell with the rook's symbol
+                    UpdateCell(position, rook.Symbol_);
+                    
+                    // Update the piece token for the rook
+                    UpdatePieceToken(position, new PieceToken(i, 4, i % 2));
                 }
             }
 
             // Knights
-            foreach (var knight in handler.Knights)
+            for (int i = 0; i < handler.Knights.Count; i++)
             {
+                var knight = handler.Knights[i];
+                
                 if (knight.CurrentPosition is not null)
                 {
                     Position position = knight.CurrentPosition;
-                    Grid[position.Row, position.Column].Symbol_ = knight.Symbol_;
+                    
+                    // Update the cell with the knight's symbol
+                    UpdateCell(position, knight.Symbol_);
+                    
+                    // Update the piece token for the knight
+                    UpdatePieceToken(position, new PieceToken(i, 3, i % 2));
                 }
             }
 
             // Bishops
-            foreach (var bishop in handler.Bishops)
+            for (int i = 0; i < handler.Bishops.Count; i++)
             {
+                var bishop = handler.Bishops[i];
+                
                 if (bishop.CurrentPosition is not null)
                 {
                     Position position = bishop.CurrentPosition;
-                    Grid[position.Row, position.Column].Symbol_ = bishop.Symbol_;
+                    
+                    // Update the cell with the bishop's symbol
+                    UpdateCell(position, bishop.Symbol_);
+                    
+                    // Update the piece token for the bishop
+                    UpdatePieceToken(position, new PieceToken(i, 2, i % 2));
                 }
             }
 
             // Queens
-            foreach (var queen in handler.Queens)
+            for (int i = 0; i < handler.Queens.Count; i++)
             {
+                var queen = handler.Queens[i];
+                
                 if (queen.CurrentPosition is not null)
                 {
                     Position position = queen.CurrentPosition;
-                    Grid[position.Row, position.Column].Symbol_ = queen.Symbol_;
+                    
+                    // Update the cell with the queen's symbol
+                    UpdateCell(position, queen.Symbol_);
+                    
+                    // Update the piece token for the queen
+                    UpdatePieceToken(position, new PieceToken(i, 5, i % 2));
                 }
             }
 
             // Kings
-            foreach (var king in handler.Kings)
+            for (int i = 0; i < handler.Kings.Count; i++)
             {
+                var king = handler.Kings[i];
+                
                 if (king.CurrentPosition is not null)
                 {
                     Position position = king.CurrentPosition;
-                    Grid[position.Row, position.Column].Symbol_ = king.Symbol_;
+                    
+                    // Update the cell with the king's symbol
+                    UpdateCell(position, king.Symbol_);
+                    
+                    // Update the piece token for the king
+                    UpdatePieceToken(position, new PieceToken(i, 0, i % 2));
                 }
             }
         }

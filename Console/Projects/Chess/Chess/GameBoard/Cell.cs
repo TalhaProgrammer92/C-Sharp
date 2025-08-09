@@ -1,4 +1,5 @@
 ﻿using Chess.MiscUtils;
+using Chess.Pieces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,14 +14,14 @@ namespace Chess.GameBoard
         public Symbol Symbol_ {  get; set; }
         public Position Position_ { get; }
         public bool IsOccupied { get { return Symbol_.Unicode != Unicode.WhiteCell && Symbol_.Unicode != Unicode.BlackCell; } }
-        public int GroupIndex { get; set; } = -1; // Used for grouping pieces on the board
-        public int PieceIndex { get; set; } = -1; // Used for indexing pieces on the board
+        public PieceToken PieceToken_ { get; set; } // Token to hold the piece (ID) information for piece handler
 
         // Cpmstructpr
         public Cell(Symbol symbol, Position position)
         {
             this.Symbol_ = symbol;
             this.Position_ = position;
+            PieceToken_ = new PieceToken();
         }
 
         // Method - Display the cell

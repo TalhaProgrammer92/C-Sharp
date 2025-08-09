@@ -12,6 +12,27 @@ namespace Chess.Pieces
         int pieceIndex;     // Index of the piece in a list of piece handler object
         int pieceType;      // Type of the piece [0-King, 1-Pawn, 2-Bishop, 3-Knight, 4-Rook, 5-Queen]
         int groupIndex;     // Index of the group the piece belongs to [0-White, 1-Black]
+        public bool HoldsPiece { get; set; } = false; // Indicates if the piece is currently held by a (board) cell
+
+        // Constructor
+        public PieceToken(int pieceIndex = 0, int pieceType = 1, int groupIndex = 0)
+        {
+            PieceIndex = pieceIndex;    // Validate and set piece index
+            PieceType = pieceType;      // Validate and set piece type
+            GroupIndex = groupIndex;    // Validate and set group index
+            HoldsPiece = true;          // Default to true, indicating the piece is held by a cell
+        }
+        public PieceToken(PieceToken other)
+        {
+            if (other == null)
+                throw new ArgumentNullException(nameof(other), "PieceToken cannot be null.");
+            
+            pieceIndex = other.pieceIndex;
+            pieceType = other.pieceType;
+            groupIndex = other.groupIndex;
+            HoldsPiece = other.HoldsPiece;
+        }
+        public PieceToken() { }
 
         // Getters and Setters
         public int PieceIndex
@@ -92,5 +113,17 @@ namespace Chess.Pieces
 
             Console.WriteLine($"Group: {group}, Type: {type}, Index: {pieceIndex}");
         }
+
+        // Methods - Check piece types
+        public bool IsKing() => pieceType == 0;
+        public bool IsPawn() => pieceType == 1;
+        public bool IsBishop() => pieceType == 2;
+        public bool IsKnight() => pieceType == 3;
+        public bool IsRook() => pieceType == 4;
+        public bool IsQueen() => pieceType == 5;
+
+        // Methods - Check group types
+        public bool IsWhite() => groupIndex == 0;
+        public bool IsBlack() => groupIndex == 1;
     }
 }
