@@ -106,11 +106,13 @@ namespace Chess.GameBoard
             {
                 for (int col = 0; col < 8; col++)
                 {
+                    // Display position and symbol
                     Console.Write($"Position: ({row}, {col}), Symbol: ");
                     Cell cell = Grid[row, col];
                     cell.Display();
                     Console.WriteLine();
 
+                    // Display piece token information
                     cell.PieceToken_.Display();
 
                     Console.WriteLine();

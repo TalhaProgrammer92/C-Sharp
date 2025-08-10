@@ -17,8 +17,8 @@ namespace Chess.Pieces
         // Constructor
         public PieceToken(int pieceIndex, int pieceType, int groupIndex, bool holdsPiece = true)
         {
-            PieceIndex = pieceIndex;    // Validate and set piece index
             PieceType = pieceType;      // Validate and set piece type
+            PieceIndex = pieceIndex;    // Validate and set piece index
             GroupIndex = groupIndex;    // Validate and set group index
             HoldsPiece = holdsPiece;    // Default to true, indicating the piece is held by a cell
         }
@@ -26,9 +26,9 @@ namespace Chess.Pieces
         {
             if (other == null)
                 throw new ArgumentNullException(nameof(other), "PieceToken cannot be null.");
-            
-            pieceIndex = other.pieceIndex;
+
             pieceType = other.pieceType;
+            pieceIndex = other.pieceIndex;
             groupIndex = other.groupIndex;
             HoldsPiece = other.HoldsPiece;
         }
@@ -41,7 +41,29 @@ namespace Chess.Pieces
             set {
                 if (value >= 0)
                 {
-                    pieceIndex = value;
+                    // Pawn type
+                    if (IsPawn)
+                    {
+                        // There can be 8 pawns for each group (0-7 for white, 8-15 for black)
+                        if (value < 16)
+                            pieceIndex = value;
+                    }
+                    // King type
+                    else if (IsKing)
+                    {
+                        // There can be only 1 king for each group (0 for white, 1 for black)
+                        if (value < 2)
+                            pieceIndex = value;
+                    }
+                    // Other types (Bishop, Knight, Rook, Queen)
+                    else
+                    {
+                        // There can be 2 bishops, 2 knights, 2 rooks, and 1 queen for each group
+                        // There are 8 pawns for each group, so the indices are 0-7 for white and 8-15 for black.
+                        // I'm using 18 indices in total due to pawn promotions.
+                        if (value < 18)
+                            pieceIndex = value;
+                    }
                 }
             }
         }
