@@ -97,6 +97,28 @@ namespace Chess.GameBoard
             DisplayColumnLabels();
         }
 
+        // Method - Display board states - Debugging purpose
+        public void DisplayBoardStates()
+        {
+            Console.WriteLine("\n*** Board States ***");
+            
+            for (int row = 0; row < 8; row++)
+            {
+                for (int col = 0; col < 8; col++)
+                {
+                    Console.Write($"Position: ({row}, {col}), Symbol: ");
+                    Cell cell = Grid[row, col];
+                    cell.Display();
+                    Console.WriteLine();
+
+                    cell.PieceToken_.Display();
+
+                    Console.WriteLine();
+                }
+                Console.WriteLine();
+            }
+        }
+
         // Method - Check position validity
         public bool IsValidPosition(Position position)
         {
@@ -122,7 +144,7 @@ namespace Chess.GameBoard
                 throw new ArgumentOutOfRangeException("Position is out of bounds.");
             
             // Update the piece token at the specified position
-            Grid[position.Row, position.Column].PieceToken_ = pieceToken;
+            Grid[position.Row, position.Column].PieceToken_ = new PieceToken(pieceToken);
         }
 
         // Method - Place pieces on the board
@@ -131,6 +153,7 @@ namespace Chess.GameBoard
             for (int i = 0; i < pieces.Count; i++)
             {
                 var piece = pieces[i];
+
                 if (piece.CurrentPosition is not null)
                 {
                     Position position = piece.CurrentPosition;

@@ -51,6 +51,8 @@ namespace Chess
             board.PlaceAllPieces(new PieceHandler());
             board.Display();
 
+            board.DisplayBoardStates();
+
             //PawnPromotionMenu promotionMenu = new PawnPromotionMenu();
             //promotionMenu.Display();
             //promotionMenu.TakeInput();
