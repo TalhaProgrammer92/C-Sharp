@@ -3,20 +3,36 @@
   "WorkspaceRootPath": "D:\\Coding Project\\C-Sharp\\ASP.NET\\EcommerceBackend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3351B910-1EA7-4B5C-B6F6-7B4A358AD58D}|EcommerceBackend\\EcommerceBackend.csproj|d:\\coding project\\c-sharp\\asp.net\\ecommercebackend\\ecommercebackend\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3351B910-1EA7-4B5C-B6F6-7B4A358AD58D}|EcommerceBackend\\EcommerceBackend.csproj|solutionrelative:ecommercebackend\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3351B910-1EA7-4B5C-B6F6-7B4A358AD58D}|EcommerceBackend\\EcommerceBackend.csproj|d:\\coding project\\c-sharp\\asp.net\\ecommercebackend\\ecommercebackend\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3351B910-1EA7-4B5C-B6F6-7B4A358AD58D}|EcommerceBackend\\EcommerceBackend.csproj|solutionrelative:ecommercebackend\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3351B910-1EA7-4B5C-B6F6-7B4A358AD58D}|EcommerceBackend\\EcommerceBackend.csproj|d:\\coding project\\c-sharp\\asp.net\\ecommercebackend\\ecommercebackend\\models\\entities\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3351B910-1EA7-4B5C-B6F6-7B4A358AD58D}|EcommerceBackend\\EcommerceBackend.csproj|solutionrelative:ecommercebackend\\models\\entities\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3351B910-1EA7-4B5C-B6F6-7B4A358AD58D}|EcommerceBackend\\EcommerceBackend.csproj|d:\\coding project\\c-sharp\\asp.net\\ecommercebackend\\ecommercebackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3351B910-1EA7-4B5C-B6F6-7B4A358AD58D}|EcommerceBackend\\EcommerceBackend.csproj|solutionrelative:ecommercebackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3351B910-1EA7-4B5C-B6F6-7B4A358AD58D}|EcommerceBackend\\EcommerceBackend.csproj|d:\\coding project\\c-sharp\\asp.net\\ecommercebackend\\ecommercebackend\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3351B910-1EA7-4B5C-B6F6-7B4A358AD58D}|EcommerceBackend\\EcommerceBackend.csproj|solutionrelative:ecommercebackend\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3351B910-1EA7-4B5C-B6F6-7B4A358AD58D}|EcommerceBackend\\EcommerceBackend.csproj|d:\\coding project\\c-sharp\\asp.net\\ecommercebackend\\ecommercebackend\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3351B910-1EA7-4B5C-B6F6-7B4A358AD58D}|EcommerceBackend\\EcommerceBackend.csproj|solutionrelative:ecommercebackend\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3351B910-1EA7-4B5C-B6F6-7B4A358AD58D}|EcommerceBackend\\EcommerceBackend.csproj|d:\\coding project\\c-sharp\\asp.net\\ecommercebackend\\ecommercebackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3351B910-1EA7-4B5C-B6F6-7B4A358AD58D}|EcommerceBackend\\EcommerceBackend.csproj|solutionrelative:ecommercebackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3351B910-1EA7-4B5C-B6F6-7B4A358AD58D}|EcommerceBackend\\EcommerceBackend.csproj|d:\\coding project\\c-sharp\\asp.net\\ecommercebackend\\ecommercebackend\\models\\entities\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3351B910-1EA7-4B5C-B6F6-7B4A358AD58D}|EcommerceBackend\\EcommerceBackend.csproj|solutionrelative:ecommercebackend\\models\\entities\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3351B910-1EA7-4B5C-B6F6-7B4A358AD58D}|EcommerceBackend\\EcommerceBackend.csproj|d:\\coding project\\c-sharp\\asp.net\\ecommercebackend\\ecommercebackend\\models\\api\\loginresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3351B910-1EA7-4B5C-B6F6-7B4A358AD58D}|EcommerceBackend\\EcommerceBackend.csproj|solutionrelative:ecommercebackend\\models\\api\\loginresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3351B910-1EA7-4B5C-B6F6-7B4A358AD58D}|EcommerceBackend\\EcommerceBackend.csproj|d:\\coding project\\c-sharp\\asp.net\\ecommercebackend\\ecommercebackend\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3351B910-1EA7-4B5C-B6F6-7B4A358AD58D}|EcommerceBackend\\EcommerceBackend.csproj|solutionrelative:ecommercebackend\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3351B910-1EA7-4B5C-B6F6-7B4A358AD58D}|EcommerceBackend\\EcommerceBackend.csproj|d:\\coding project\\c-sharp\\asp.net\\ecommercebackend\\ecommercebackend\\models\\api\\loginrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,20 +43,8 @@
       "RelativeMoniker": "D:0:0:{3351B910-1EA7-4B5C-B6F6-7B4A358AD58D}|EcommerceBackend\\EcommerceBackend.csproj|solutionrelative:ecommercebackend\\models\\entities\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3351B910-1EA7-4B5C-B6F6-7B4A358AD58D}|EcommerceBackend\\EcommerceBackend.csproj|d:\\coding project\\c-sharp\\asp.net\\ecommercebackend\\ecommercebackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3351B910-1EA7-4B5C-B6F6-7B4A358AD58D}|EcommerceBackend\\EcommerceBackend.csproj|solutionrelative:ecommercebackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3351B910-1EA7-4B5C-B6F6-7B4A358AD58D}|EcommerceBackend\\EcommerceBackend.csproj|d:\\coding project\\c-sharp\\asp.net\\ecommercebackend\\ecommercebackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{3351B910-1EA7-4B5C-B6F6-7B4A358AD58D}|EcommerceBackend\\EcommerceBackend.csproj|solutionrelative:ecommercebackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3351B910-1EA7-4B5C-B6F6-7B4A358AD58D}|EcommerceBackend\\EcommerceBackend.csproj|d:\\coding project\\c-sharp\\asp.net\\ecommercebackend\\ecommercebackend\\dtos\\pretdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3351B910-1EA7-4B5C-B6F6-7B4A358AD58D}|EcommerceBackend\\EcommerceBackend.csproj|solutionrelative:ecommercebackend\\dtos\\pretdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3351B910-1EA7-4B5C-B6F6-7B4A358AD58D}|EcommerceBackend\\EcommerceBackend.csproj|d:\\coding project\\c-sharp\\asp.net\\ecommercebackend\\ecommercebackend\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3351B910-1EA7-4B5C-B6F6-7B4A358AD58D}|EcommerceBackend\\EcommerceBackend.csproj|solutionrelative:ecommercebackend\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3351B910-1EA7-4B5C-B6F6-7B4A358AD58D}|EcommerceBackend\\EcommerceBackend.csproj|d:\\coding project\\c-sharp\\asp.net\\ecommercebackend\\ecommercebackend\\models\\entities\\herosection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -87,19 +91,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\ASP.NET\\EcommerceBackend\\EcommerceBackend\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "EcommerceBackend\\Controllers\\AdminController.cs",
+              "ToolTip": "D:\\Coding Project\\C-Sharp\\ASP.NET\\EcommerceBackend\\EcommerceBackend\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "EcommerceBackend\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-11T09:39:40.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\ASP.NET\\EcommerceBackend\\EcommerceBackend\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "EcommerceBackend\\Data\\AppDbContext.cs",
               "ToolTip": "D:\\Coding Project\\C-Sharp\\ASP.NET\\EcommerceBackend\\EcommerceBackend\\Data\\AppDbContext.cs",
               "RelativeToolTip": "EcommerceBackend\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAI4AAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwI4AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-09T09:15:34.75Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "LoginResponseModel.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\ASP.NET\\EcommerceBackend\\EcommerceBackend\\Models\\API\\LoginResponseModel.cs",
               "RelativeDocumentMoniker": "EcommerceBackend\\Models\\API\\LoginResponseModel.cs",
@@ -112,7 +129,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "LoginRequestModel.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\ASP.NET\\EcommerceBackend\\EcommerceBackend\\Models\\API\\LoginRequestModel.cs",
               "RelativeDocumentMoniker": "EcommerceBackend\\Models\\API\\LoginRequestModel.cs",
@@ -125,7 +142,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "OrderItem.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\ASP.NET\\EcommerceBackend\\EcommerceBackend\\Models\\Entities\\OrderItem.cs",
               "RelativeDocumentMoniker": "EcommerceBackend\\Models\\Entities\\OrderItem.cs",
@@ -144,27 +161,27 @@
               "RelativeDocumentMoniker": "EcommerceBackend\\Services\\JWTService.cs",
               "ToolTip": "D:\\Coding Project\\C-Sharp\\ASP.NET\\EcommerceBackend\\EcommerceBackend\\Services\\JWTService.cs",
               "RelativeToolTip": "EcommerceBackend\\Services\\JWTService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAmwD8AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-08T09:42:53.975Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\ASP.NET\\EcommerceBackend\\EcommerceBackend\\Program.cs",
               "RelativeDocumentMoniker": "EcommerceBackend\\Program.cs",
               "ToolTip": "D:\\Coding Project\\C-Sharp\\ASP.NET\\EcommerceBackend\\EcommerceBackend\\Program.cs",
               "RelativeToolTip": "EcommerceBackend\\Program.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAqwDkAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAqwCwAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-08T09:27:46.704Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 3,
               "Title": "ProductDTO.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\ASP.NET\\EcommerceBackend\\EcommerceBackend\\DTOs\\ProductDTO.cs",
               "RelativeDocumentMoniker": "EcommerceBackend\\DTOs\\ProductDTO.cs",
@@ -177,7 +194,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\ASP.NET\\EcommerceBackend\\EcommerceBackend\\appsettings.json",
               "RelativeDocumentMoniker": "EcommerceBackend\\appsettings.json",
@@ -190,7 +207,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "HeroSection.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\ASP.NET\\EcommerceBackend\\EcommerceBackend\\Models\\Entities\\HeroSection.cs",
               "RelativeDocumentMoniker": "EcommerceBackend\\Models\\Entities\\HeroSection.cs",
@@ -198,12 +215,11 @@
               "RelativeToolTip": "EcommerceBackend\\Models\\Entities\\HeroSection.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T01:36:37.396Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-08T01:36:37.396Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "InstagramPost.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\ASP.NET\\EcommerceBackend\\EcommerceBackend\\Models\\Entities\\InstagramPost.cs",
               "RelativeDocumentMoniker": "EcommerceBackend\\Models\\Entities\\InstagramPost.cs",
@@ -211,12 +227,11 @@
               "RelativeToolTip": "EcommerceBackend\\Models\\Entities\\InstagramPost.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T01:34:54.549Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-08T01:34:54.549Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Pret.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\ASP.NET\\EcommerceBackend\\EcommerceBackend\\Models\\Entities\\Pret.cs",
               "RelativeDocumentMoniker": "EcommerceBackend\\Models\\Entities\\Pret.cs",
@@ -224,12 +239,11 @@
               "RelativeToolTip": "EcommerceBackend\\Models\\Entities\\Pret.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAxwAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T01:34:06.71Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-08T01:34:06.71Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Luxury.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\ASP.NET\\EcommerceBackend\\EcommerceBackend\\Models\\Entities\\Luxury.cs",
               "RelativeDocumentMoniker": "EcommerceBackend\\Models\\Entities\\Luxury.cs",
@@ -237,12 +251,11 @@
               "RelativeToolTip": "EcommerceBackend\\Models\\Entities\\Luxury.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T01:32:35.863Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-08T01:32:35.863Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "Admin.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\ASP.NET\\EcommerceBackend\\EcommerceBackend\\Models\\Entities\\Admin.cs",
               "RelativeDocumentMoniker": "EcommerceBackend\\Models\\Entities\\Admin.cs",
@@ -250,12 +263,11 @@
               "RelativeToolTip": "EcommerceBackend\\Models\\Entities\\Admin.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T06:20:28.538Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-07T06:20:28.538Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "PretDTO.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\ASP.NET\\EcommerceBackend\\EcommerceBackend\\DTOs\\PretDTO.cs",
               "RelativeDocumentMoniker": "EcommerceBackend\\DTOs\\PretDTO.cs",
@@ -263,12 +275,11 @@
               "RelativeToolTip": "EcommerceBackend\\DTOs\\PretDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T01:54:39.306Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-08T01:54:39.306Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "FeaturedProduct.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\ASP.NET\\EcommerceBackend\\EcommerceBackend\\Models\\Entities\\FeaturedProduct.cs",
               "RelativeDocumentMoniker": "EcommerceBackend\\Models\\Entities\\FeaturedProduct.cs",
@@ -276,12 +287,11 @@
               "RelativeToolTip": "EcommerceBackend\\Models\\Entities\\FeaturedProduct.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAiwCsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T01:25:04.74Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-08T01:25:04.74Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Order.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\ASP.NET\\EcommerceBackend\\EcommerceBackend\\Models\\Entities\\Order.cs",
               "RelativeDocumentMoniker": "EcommerceBackend\\Models\\Entities\\Order.cs",
@@ -289,12 +299,11 @@
               "RelativeToolTip": "EcommerceBackend\\Models\\Entities\\Order.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAIBJwDEAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T01:21:34.132Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-08T01:21:34.132Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Product.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\ASP.NET\\EcommerceBackend\\EcommerceBackend\\Models\\Entities\\Product.cs",
               "RelativeDocumentMoniker": "EcommerceBackend\\Models\\Entities\\Product.cs",
@@ -302,8 +311,7 @@
               "RelativeToolTip": "EcommerceBackend\\Models\\Entities\\Product.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAA8wCkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T06:23:34.65Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-07T06:23:34.65Z"
             }
           ]
         }

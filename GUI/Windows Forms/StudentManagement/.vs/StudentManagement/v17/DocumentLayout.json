@@ -11,12 +11,12 @@
       "RelativeMoniker": "D:0:0:{DF8E5E43-F2FF-4168-A3C8-37BCF0BF98F6}|StudentManagement\\StudentManagement.csproj|solutionrelative:studentmanagement\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF8E5E43-F2FF-4168-A3C8-37BCF0BF98F6}|StudentManagement\\StudentManagement.csproj|d:\\coding project\\c-sharp\\gui\\windows forms\\studentmanagement\\studentmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF8E5E43-F2FF-4168-A3C8-37BCF0BF98F6}|StudentManagement\\StudentManagement.csproj|solutionrelative:studentmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DF8E5E43-F2FF-4168-A3C8-37BCF0BF98F6}|StudentManagement\\StudentManagement.csproj|d:\\coding project\\c-sharp\\gui\\windows forms\\studentmanagement\\studentmanagement\\dbms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DF8E5E43-F2FF-4168-A3C8-37BCF0BF98F6}|StudentManagement\\StudentManagement.csproj|solutionrelative:studentmanagement\\dbms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF8E5E43-F2FF-4168-A3C8-37BCF0BF98F6}|StudentManagement\\StudentManagement.csproj|d:\\coding project\\c-sharp\\gui\\windows forms\\studentmanagement\\studentmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF8E5E43-F2FF-4168-A3C8-37BCF0BF98F6}|StudentManagement\\StudentManagement.csproj|solutionrelative:studentmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +34,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\GUI\\Windows Forms\\StudentManagement\\StudentManagement\\Program.cs",
               "RelativeDocumentMoniker": "StudentManagement\\Program.cs",
@@ -46,15 +46,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "DBMS.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\GUI\\Windows Forms\\StudentManagement\\StudentManagement\\DBMS.cs",
               "RelativeDocumentMoniker": "StudentManagement\\DBMS.cs",
               "ToolTip": "D:\\Coding Project\\C-Sharp\\GUI\\Windows Forms\\StudentManagement\\StudentManagement\\DBMS.cs",
               "RelativeToolTip": "StudentManagement\\DBMS.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAADgAAAAAAAAAAAAIwAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T10:34:55.805Z"
+              "WhenOpened": "2025-07-30T10:34:55.805Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -64,7 +65,7 @@
               "RelativeDocumentMoniker": "StudentManagement\\Manager.cs",
               "ToolTip": "D:\\Coding Project\\C-Sharp\\GUI\\Windows Forms\\StudentManagement\\StudentManagement\\Manager.cs",
               "RelativeToolTip": "StudentManagement\\Manager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-30T10:34:32.89Z",
               "EditorCaption": ""
@@ -78,7 +79,8 @@
               "ToolTip": "D:\\Coding Project\\C-Sharp\\GUI\\Windows Forms\\StudentManagement\\StudentManagement\\Manager.cs [Design]",
               "RelativeToolTip": "StudentManagement\\Manager.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T10:03:18.232Z"
+              "WhenOpened": "2025-07-30T10:03:18.232Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

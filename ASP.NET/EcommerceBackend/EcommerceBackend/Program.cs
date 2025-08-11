@@ -42,6 +42,7 @@ namespace EcommerceBackend
                 };
             });
             builder.Services.AddAuthorization();
+            builder.Services.AddScoped<Services.JWTService>();
 
             var app = builder.Build();
 
