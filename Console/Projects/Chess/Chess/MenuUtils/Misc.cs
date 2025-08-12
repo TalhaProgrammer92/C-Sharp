@@ -29,7 +29,7 @@ namespace Chess.MenuUtils
                 Console.Write(" ");
 
             // Text
-            text.display();
+            text.Display();
 
             // Padding - Right
             for (int i = 0; i < padding_right; i++)

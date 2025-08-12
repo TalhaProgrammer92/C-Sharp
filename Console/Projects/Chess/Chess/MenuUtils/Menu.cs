@@ -14,7 +14,7 @@ namespace Chess.MenuUtils
         {
             this.header = header;
             this.options = options;
-            maxLength = header.text.Length;
+            maxLength = header.Data.Length;
             FindMaxLength();
         }
 
@@ -23,8 +23,8 @@ namespace Chess.MenuUtils
         {
             foreach (Text option in options)
             {
-                if (option.text.Length > maxLength)
-                    maxLength = option.text.Length;
+                if (option.Data.Length > maxLength)
+                    maxLength = option.Data.Length;
             }
         }
 
@@ -34,23 +34,23 @@ namespace Chess.MenuUtils
             options.Add(option);
 
             // Update max length if the new option is longer
-            if (option.text.Length > maxLength)
-                maxLength = option.text.Length;
+            if (option.Data.Length > maxLength)
+                maxLength = option.Data.Length;
         }
 
         // Display the menu
         public void Display()
         {
             // Display the header
-            Offset offset = new Offset(Math.Abs(header.text.Length - maxLength) + Convert.ToString(options.Count).Length + 3);
+            Offset offset = new Offset(Math.Abs(header.Data.Length - maxLength) + Convert.ToString(options.Count).Length + 3);
             header.display(offset);
 
             // Display the options
             for (int i = 0; i < options.Count; i++)
             {
-                string text = $"[{i + 1}] {options[i].text}";
+                string text = $"[{i + 1}] {options[i].Data}";
                 //int totalLength = header.padding_left + header.padding_right + text.Length;
-                offset = new Offset(Math.Abs(options[i].text.Length - maxLength));
+                offset = new Offset(Math.Abs(options[i].Data.Length - maxLength));
 
                 // Debugging purpose
                 //Console.WriteLine($"Text: {text.Length} - Padding (Left): {header.padding_left} - Padding (Right): {header.padding_right} - Total: {totalLength} - Max (Text): {maxLength} - Max (Length): {GetMaxLength()} - Offset: {offset.GetValue()}");
@@ -64,7 +64,7 @@ namespace Chess.MenuUtils
             }
 
             // Separator line
-            offset = new Offset(Math.Abs(header.text.Length - maxLength) + Convert.ToString(options.Count).Length + 3);
+            offset = new Offset(Math.Abs(header.Data.Length - maxLength) + Convert.ToString(options.Count).Length + 3);
             Misc.PrintSeparator(header.decorator, header.GetTotalLength() + offset.GetValue());
         }
 

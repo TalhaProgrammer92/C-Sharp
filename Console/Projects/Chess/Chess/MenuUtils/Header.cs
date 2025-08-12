@@ -27,7 +27,7 @@ namespace Chess.MenuUtils
         // Get total length of the header
         public int GetTotalLength()
         {
-            return padding_left + text.Length + padding_right + 2; // +2 for the decorators on both sides
+            return padding_left + Data.Length + padding_right + 2; // +2 for the decorators on both sides
         }
 
         // Print separator line
@@ -43,7 +43,7 @@ namespace Chess.MenuUtils
             PrintSeparator(offset);
 
             Misc.PrintTextWithPadding(
-                new Text(base.text, base.color), 
+                new Text(base.Data, base.color), 
                 padding_left + offset.GetValue() / 2,
                 padding_right + offset.GetValue() / 2 + offset.GetValue() % 2,
                 decorator

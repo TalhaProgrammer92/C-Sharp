@@ -47,15 +47,19 @@ namespace Chess
             //if (isValidDestination) pawn.UpdatePosition(destination); 
             //pawn.Print();
 
-            Board board = new Board();
-            board.PlaceAllPieces(new PieceHandler());
-            board.Display();
+            //Board board = new Board();
+            //board.PlaceAllPieces(new PieceHandler());
+            //board.Display();
 
-            board.DisplayBoardStates();
+            //board.DisplayBoardStates();
 
             //PawnPromotionMenu promotionMenu = new PawnPromotionMenu();
             //promotionMenu.Display();
             //promotionMenu.TakeInput();
+
+            Player player = new Player("Talha Ahmad");
+            player.Score_.Increase(10);
+            player.Display();
         }
     }
 }

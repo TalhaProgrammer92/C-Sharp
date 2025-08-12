@@ -9,25 +9,25 @@ namespace Chess.MenuUtils
     class Text
     {
         // Attributes
-        public string text { get; }
+        public string Data { get; set; }
         public ConsoleColor color { get; }
 
         // Constructor
         public Text(string text, ConsoleColor color)
         {
-            this.text = text;
+            this.Data = text;
             this.color = color;
         }
 
         // Display
-        public void display(bool line_break = false)
+        public void Display(bool line_break = false)
         {
             Console.ForegroundColor = color;
 
             if (line_break)
-                Console.WriteLine(text);
+                Console.WriteLine(Data);
             else
-                Console.Write(text);
+                Console.Write(Data);
 
             Console.ResetColor();
         }
