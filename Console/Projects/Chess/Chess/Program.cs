@@ -57,9 +57,7 @@ namespace Chess
             //promotionMenu.Display();
             //promotionMenu.TakeInput();
 
-            Player player = new Player("Talha Ahmad");
-            player.Score_.Increase(10);
-            player.Display();
+            Player.GetPlayerViaInput();
         }
     }
 }

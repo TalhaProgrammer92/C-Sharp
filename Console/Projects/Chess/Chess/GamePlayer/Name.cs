@@ -14,6 +14,9 @@ namespace Chess.GamePlayer
         // Constructor
         public Name(string name)
         { this.name = name; }
+        public Name(Name name)
+        { this.name = name.Get(); }
+        public Name() : this("") { }
 
         // Getter
         public string Get() { return name; }
@@ -21,7 +24,7 @@ namespace Chess.GamePlayer
         // Check if name is valid
         public static bool IsValid(string name)
         {
-            return !(name.Length < 3 || string.IsNullOrEmpty(name));
+            return name.Length >= 3 && !string.IsNullOrEmpty(name) && !string.IsNullOrWhiteSpace(name);
         }
 
         // Check if two names are same
@@ -43,6 +46,14 @@ namespace Chess.GamePlayer
         public static bool operator !=(Name name1, Name name2)
         {
             return !(name1 == name2);
+        }
+
+        public void ChangeName(string? newName)
+        {
+            if (newName is not null && IsValid(newName))
+            {
+                name = newName;
+            }
         }
     }
 }

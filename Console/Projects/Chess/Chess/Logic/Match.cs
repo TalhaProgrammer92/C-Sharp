@@ -12,34 +12,49 @@ namespace Chess.Logic
     class Match
     {
         // Attributes
-        List<Player> players;
-        Board board;
-        PieceHandler pieceHandler;
-        bool isGameOver;
-        int movesCount;
+        List<Player> players = new List<Player>();
+        Board board = new Board();
+        PieceHandler pieceHandler = new PieceHandler();
+        bool isGameOver = false;
+        int movesCount = 0;
 
         // Constructor
         public Match()
         {
-            players = new List<Player>();
-            board = new Board();
-            pieceHandler = new PieceHandler();
-            isGameOver = false;
-            movesCount = 0;
         }
-        public Match(List<Player> players, Board board, PieceHandler pieceHandler, int movesCount, bool isGameOver = false)
+        public Match(List<Player> players, PieceHandler pieceHandler, int movesCount, bool isGameOver = false)
         {
             this.players = players;
-            this.board = board;
             this.pieceHandler = pieceHandler;
             this.movesCount = movesCount;
             this.isGameOver = isGameOver;
+
+            // Initializing the board
+            board.PlaceAllPieces(pieceHandler);
         }
 
         // Method - Initialize the match
-        void InitializeMatch()
+        void InitializePlayers()
         {
-            
+            // Adding players
+            players.Add(Player.GetPlayerViaInput());
+            players.Add(Player.GetPlayerViaInput(players[0].Name_));
+        }
+
+        // Method - Reset the match
+        public void ResetMatch()
+        {
+            foreach (Player player in players)
+                player.Reset();
+
+            board = new Board();
+            pieceHandler = new PieceHandler();
+            movesCount = 0;
+            isGameOver = false;
+            InitializePlayers();
+
+            // Initializing the board
+            board.PlaceAllPieces(pieceHandler);
         }
     }
 }
