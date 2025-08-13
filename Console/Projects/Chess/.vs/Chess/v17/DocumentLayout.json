@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3CA3E75C-FA2F-48AD-80FC-6EEFD0DED7A5}|Chess\\Chess.csproj|d:\\coding project\\c-sharp\\console\\projects\\chess\\chess\\menuutils\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CA3E75C-FA2F-48AD-80FC-6EEFD0DED7A5}|Chess\\Chess.csproj|solutionrelative:chess\\menuutils\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CA3E75C-FA2F-48AD-80FC-6EEFD0DED7A5}|Chess\\Chess.csproj|d:\\coding project\\c-sharp\\console\\projects\\chess\\chess\\controller\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CA3E75C-FA2F-48AD-80FC-6EEFD0DED7A5}|Chess\\Chess.csproj|solutionrelative:chess\\controller\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CA3E75C-FA2F-48AD-80FC-6EEFD0DED7A5}|Chess\\Chess.csproj|d:\\coding project\\c-sharp\\console\\projects\\chess\\chess\\miscutils\\keyhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CA3E75C-FA2F-48AD-80FC-6EEFD0DED7A5}|Chess\\Chess.csproj|solutionrelative:chess\\miscutils\\keyhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CA3E75C-FA2F-48AD-80FC-6EEFD0DED7A5}|Chess\\Chess.csproj|d:\\coding project\\c-sharp\\console\\projects\\chess\\chess\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CA3E75C-FA2F-48AD-80FC-6EEFD0DED7A5}|Chess\\Chess.csproj|solutionrelative:chess\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3CA3E75C-FA2F-48AD-80FC-6EEFD0DED7A5}|Chess\\Chess.csproj|d:\\coding project\\c-sharp\\console\\projects\\chess\\chess\\logic\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3CA3E75C-FA2F-48AD-80FC-6EEFD0DED7A5}|Chess\\Chess.csproj|solutionrelative:chess\\logic\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3CA3E75C-FA2F-48AD-80FC-6EEFD0DED7A5}|Chess\\Chess.csproj|d:\\coding project\\c-sharp\\console\\projects\\chess\\chess\\gameplayer\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3CA3E75C-FA2F-48AD-80FC-6EEFD0DED7A5}|Chess\\Chess.csproj|solutionrelative:chess\\gameplayer\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CA3E75C-FA2F-48AD-80FC-6EEFD0DED7A5}|Chess\\Chess.csproj|d:\\coding project\\c-sharp\\console\\projects\\chess\\chess\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CA3E75C-FA2F-48AD-80FC-6EEFD0DED7A5}|Chess\\Chess.csproj|solutionrelative:chess\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3CA3E75C-FA2F-48AD-80FC-6EEFD0DED7A5}|Chess\\Chess.csproj|d:\\coding project\\c-sharp\\console\\projects\\chess\\chess\\menuutils\\text.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -79,10 +91,6 @@
       "RelativeMoniker": "D:0:0:{3CA3E75C-FA2F-48AD-80FC-6EEFD0DED7A5}|Chess\\Chess.csproj|solutionrelative:chess\\menuutils\\pawnpromotionmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3CA3E75C-FA2F-48AD-80FC-6EEFD0DED7A5}|Chess\\Chess.csproj|d:\\coding project\\c-sharp\\console\\projects\\chess\\chess\\menuutils\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CA3E75C-FA2F-48AD-80FC-6EEFD0DED7A5}|Chess\\Chess.csproj|solutionrelative:chess\\menuutils\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3CA3E75C-FA2F-48AD-80FC-6EEFD0DED7A5}|Chess\\Chess.csproj|d:\\coding project\\c-sharp\\console\\projects\\chess\\chess\\menuutils\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3CA3E75C-FA2F-48AD-80FC-6EEFD0DED7A5}|Chess\\Chess.csproj|solutionrelative:chess\\menuutils\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -134,7 +142,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -142,33 +150,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MenuController.cs",
+              "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\Controller\\MenuController.cs",
+              "RelativeDocumentMoniker": "Chess\\Controller\\MenuController.cs",
+              "ToolTip": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\Controller\\MenuController.cs",
+              "RelativeToolTip": "Chess\\Controller\\MenuController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T09:48:12.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Message.cs",
-              "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\MiscUtils\\Message.cs",
-              "RelativeDocumentMoniker": "Chess\\MiscUtils\\Message.cs",
-              "ToolTip": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\MiscUtils\\Message.cs",
-              "RelativeToolTip": "Chess\\MiscUtils\\Message.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAwwCgAAAAAAAAAAAAAAA==",
+              "Title": "KeyHandler.cs",
+              "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\MiscUtils\\KeyHandler.cs",
+              "RelativeDocumentMoniker": "Chess\\MiscUtils\\KeyHandler.cs",
+              "ToolTip": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\MiscUtils\\KeyHandler.cs",
+              "RelativeToolTip": "Chess\\MiscUtils\\KeyHandler.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAUwCgAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T04:59:17.521Z",
+              "WhenOpened": "2025-08-13T09:20:50.547Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Match.cs",
-              "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\Logic\\Match.cs",
-              "RelativeDocumentMoniker": "Chess\\Logic\\Match.cs",
-              "ToolTip": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\Logic\\Match.cs",
-              "RelativeToolTip": "Chess\\Logic\\Match.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAYwDwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-12T02:20:07.707Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Board.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\GameBoard\\Board.cs",
               "RelativeDocumentMoniker": "Chess\\GameBoard\\Board.cs",
@@ -176,12 +184,11 @@
               "RelativeToolTip": "Chess\\GameBoard\\Board.cs",
               "ViewState": "AgIAAFwAAAAAAAAAAAAowHgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-02T02:12:52.009Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-02T02:12:52.009Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Name.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\GamePlayer\\Name.cs",
               "RelativeDocumentMoniker": "Chess\\GamePlayer\\Name.cs",
@@ -189,12 +196,11 @@
               "RelativeToolTip": "Chess\\GamePlayer\\Name.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAkwCoAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T07:56:50.312Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T07:56:50.312Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "Position.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\MiscUtils\\Position.cs",
               "RelativeDocumentMoniker": "Chess\\MiscUtils\\Position.cs",
@@ -206,7 +212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Header.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\MenuUtils\\Header.cs",
               "RelativeDocumentMoniker": "Chess\\MenuUtils\\Header.cs",
@@ -218,7 +224,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Text.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\MenuUtils\\Text.cs",
               "RelativeDocumentMoniker": "Chess\\MenuUtils\\Text.cs",
@@ -226,25 +232,61 @@
               "RelativeToolTip": "Chess\\MenuUtils\\Text.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAowAoAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T10:06:56.711Z",
+              "WhenOpened": "2025-07-27T10:06:56.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\MenuUtils\\Menu.cs",
+              "RelativeDocumentMoniker": "Chess\\MenuUtils\\Menu.cs",
+              "ToolTip": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\MenuUtils\\Menu.cs",
+              "RelativeToolTip": "Chess\\MenuUtils\\Menu.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAcwFYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T03:42:39.347Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\Program.cs",
               "RelativeDocumentMoniker": "Chess\\Program.cs",
               "ToolTip": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\Program.cs",
               "RelativeToolTip": "Chess\\Program.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAmwDsAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAmwEAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-20T07:50:29.899Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
+              "Title": "Match.cs",
+              "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\Logic\\Match.cs",
+              "RelativeDocumentMoniker": "Chess\\Logic\\Match.cs",
+              "ToolTip": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\Logic\\Match.cs",
+              "RelativeToolTip": "Chess\\Logic\\Match.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAYwDkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-12T02:20:07.707Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Message.cs",
+              "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\MiscUtils\\Message.cs",
+              "RelativeDocumentMoniker": "Chess\\MiscUtils\\Message.cs",
+              "ToolTip": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\MiscUtils\\Message.cs",
+              "RelativeToolTip": "Chess\\MiscUtils\\Message.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAwwCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T04:59:17.521Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Player.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\GamePlayer\\Player.cs",
               "RelativeDocumentMoniker": "Chess\\GamePlayer\\Player.cs",
@@ -252,12 +294,11 @@
               "RelativeToolTip": "Chess\\GamePlayer\\Player.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAcwCcAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-12T02:31:41.089Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-12T02:31:41.089Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "PieceToken.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\Pieces\\PieceToken.cs",
               "RelativeDocumentMoniker": "Chess\\Pieces\\PieceToken.cs",
@@ -269,7 +310,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "Score.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\GamePlayer\\Score.cs",
               "RelativeDocumentMoniker": "Chess\\GamePlayer\\Score.cs",
@@ -281,7 +322,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "Cell.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\GameBoard\\Cell.cs",
               "RelativeDocumentMoniker": "Chess\\GameBoard\\Cell.cs",
@@ -293,7 +334,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "Rook.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\Pieces\\Rook.cs",
               "RelativeDocumentMoniker": "Chess\\Pieces\\Rook.cs",
@@ -305,7 +346,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "Pawn.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\Pieces\\Pawn.cs",
               "RelativeDocumentMoniker": "Chess\\Pieces\\Pawn.cs",
@@ -317,7 +358,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "Piece.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\Pieces\\Piece.cs",
               "RelativeDocumentMoniker": "Chess\\Pieces\\Piece.cs",
@@ -329,7 +370,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "PawnPromotionMenu.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\MenuUtils\\PawnPromotionMenu.cs",
               "RelativeDocumentMoniker": "Chess\\MenuUtils\\PawnPromotionMenu.cs",
@@ -341,7 +382,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "PieceHandler.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\Pieces\\PieceHandler.cs",
               "RelativeDocumentMoniker": "Chess\\Pieces\\PieceHandler.cs",
@@ -353,7 +394,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "Utils.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\MiscUtils\\Utils.cs",
               "RelativeDocumentMoniker": "Chess\\MiscUtils\\Utils.cs",
@@ -365,7 +406,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "Symbol.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\MiscUtils\\Symbol.cs",
               "RelativeDocumentMoniker": "Chess\\MiscUtils\\Symbol.cs",
@@ -377,7 +418,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "CSVHandler.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\Data\\CSVHandler.cs",
               "RelativeDocumentMoniker": "Chess\\Data\\CSVHandler.cs",
@@ -389,19 +430,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Menu.cs",
-              "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\MenuUtils\\Menu.cs",
-              "RelativeDocumentMoniker": "Chess\\MenuUtils\\Menu.cs",
-              "ToolTip": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\MenuUtils\\Menu.cs",
-              "RelativeToolTip": "Chess\\MenuUtils\\Menu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T03:42:39.347Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "Knight.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\Pieces\\Knight.cs",
               "RelativeDocumentMoniker": "Chess\\Pieces\\Knight.cs",
@@ -413,7 +442,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "MainMenu.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\MenuUtils\\MainMenu.cs",
               "RelativeDocumentMoniker": "Chess\\MenuUtils\\MainMenu.cs",
@@ -425,7 +454,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "Bishop.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\Pieces\\Bishop.cs",
               "RelativeDocumentMoniker": "Chess\\Pieces\\Bishop.cs",
@@ -437,7 +466,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "Unicode.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\GameBoard\\Unicode.cs",
               "RelativeDocumentMoniker": "Chess\\GameBoard\\Unicode.cs",
@@ -449,7 +478,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "Queen.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\Pieces\\Queen.cs",
               "RelativeDocumentMoniker": "Chess\\Pieces\\Queen.cs",
@@ -461,7 +490,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "King.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\Pieces\\King.cs",
               "RelativeDocumentMoniker": "Chess\\Pieces\\King.cs",
@@ -473,7 +502,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "Decorator.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\MenuUtils\\Decorator.cs",
               "RelativeDocumentMoniker": "Chess\\MenuUtils\\Decorator.cs",
@@ -485,7 +514,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "Misc.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\MenuUtils\\Misc.cs",
               "RelativeDocumentMoniker": "Chess\\MenuUtils\\Misc.cs",
@@ -497,7 +526,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "Unicode.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\Pieces\\Unicode.cs",
               "RelativeDocumentMoniker": "Chess\\Pieces\\Unicode.cs",
@@ -509,7 +538,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "Offset.cs",
               "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\Chess\\Chess\\MiscUtils\\Offset.cs",
               "RelativeDocumentMoniker": "Chess\\MiscUtils\\Offset.cs",

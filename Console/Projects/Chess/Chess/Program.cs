@@ -57,7 +57,14 @@ namespace Chess
             //promotionMenu.Display();
             //promotionMenu.TakeInput();
 
-            Player.GetPlayerViaInput();
+            //Player.GetPlayerViaInput();
+            //KeyHandler.Test();
+
+            MainMenu mainMenu = new MainMenu();
+            mainMenu.Display();
+
+            int option = mainMenu.TakeInput();
+            Console.WriteLine($"You Selected: {mainMenu.GetOptionName(option)}");
         }
     }
 }

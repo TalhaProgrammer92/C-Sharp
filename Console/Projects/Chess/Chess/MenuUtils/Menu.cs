@@ -1,4 +1,5 @@
 ﻿using Chess.MiscUtils;
+using Chess.Controller;
 
 namespace Chess.MenuUtils
 {
@@ -8,6 +9,7 @@ namespace Chess.MenuUtils
         protected Header header;
         protected List<Text> options;
         protected int maxLength;
+        protected MenuController menuController;
 
         // Constructor
         public Menu(Header header, List<Text> options)
@@ -15,6 +17,7 @@ namespace Chess.MenuUtils
             this.header = header;
             this.options = options;
             maxLength = header.Data.Length;
+            menuController = new MenuController();
             FindMaxLength();
         }
 
@@ -71,20 +74,16 @@ namespace Chess.MenuUtils
         // Take input
         public int TakeInput()
         {
-            int choice;
-            do
-            {
-                char key = Console.ReadKey(true).KeyChar;   // Read a key from the console
-                choice = (int)char.GetNumericValue(key);    // Direct numeric conversion
+            return menuController.GetOption(1, options.Count);
+        }
 
-                if (choice > 0 && choice <= options.Count)
-                    break;  // Valid choice, exit the loop
-            }
-            while (!(choice > 0 && choice <= options.Count));
+        // Get name of the option
+        public string? GetOptionName(int option)
+        {
+            if (option < 1 || option > options.Count)
+                return null;
 
-            Console.Clear();  // Clear the console after input - Debugging purpose
-
-            return choice;
+            return options[option - 1].Data;
         }
     }
 }
