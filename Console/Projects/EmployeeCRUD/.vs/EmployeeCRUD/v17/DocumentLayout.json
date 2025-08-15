@@ -1,0 +1,160 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\EmployeeCRUD\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8258FAD3-27C6-41FF-B04F-71BA2F1401CB}|EmployeeCRUD\\EmployeeCRUD.csproj|d:\\coding project\\c-sharp\\console\\projects\\employeecrud\\employeecrud\\ui\\cell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8258FAD3-27C6-41FF-B04F-71BA2F1401CB}|EmployeeCRUD\\EmployeeCRUD.csproj|solutionrelative:employeecrud\\ui\\cell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8258FAD3-27C6-41FF-B04F-71BA2F1401CB}|EmployeeCRUD\\EmployeeCRUD.csproj|d:\\coding project\\c-sharp\\console\\projects\\employeecrud\\employeecrud\\ui\\box.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8258FAD3-27C6-41FF-B04F-71BA2F1401CB}|EmployeeCRUD\\EmployeeCRUD.csproj|solutionrelative:employeecrud\\ui\\box.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8258FAD3-27C6-41FF-B04F-71BA2F1401CB}|EmployeeCRUD\\EmployeeCRUD.csproj|d:\\coding project\\c-sharp\\console\\projects\\employeecrud\\employeecrud\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8258FAD3-27C6-41FF-B04F-71BA2F1401CB}|EmployeeCRUD\\EmployeeCRUD.csproj|solutionrelative:employeecrud\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8258FAD3-27C6-41FF-B04F-71BA2F1401CB}|EmployeeCRUD\\EmployeeCRUD.csproj|d:\\coding project\\c-sharp\\console\\projects\\employeecrud\\employeecrud\\ui\\text.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8258FAD3-27C6-41FF-B04F-71BA2F1401CB}|EmployeeCRUD\\EmployeeCRUD.csproj|solutionrelative:employeecrud\\ui\\text.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8258FAD3-27C6-41FF-B04F-71BA2F1401CB}|EmployeeCRUD\\EmployeeCRUD.csproj|d:\\coding project\\c-sharp\\console\\projects\\employeecrud\\employeecrud\\ui\\color.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8258FAD3-27C6-41FF-B04F-71BA2F1401CB}|EmployeeCRUD\\EmployeeCRUD.csproj|solutionrelative:employeecrud\\ui\\color.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8258FAD3-27C6-41FF-B04F-71BA2F1401CB}|EmployeeCRUD\\EmployeeCRUD.csproj|d:\\coding project\\c-sharp\\console\\projects\\employeecrud\\employeecrud\\ui\\decorator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8258FAD3-27C6-41FF-B04F-71BA2F1401CB}|EmployeeCRUD\\EmployeeCRUD.csproj|solutionrelative:employeecrud\\ui\\decorator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8258FAD3-27C6-41FF-B04F-71BA2F1401CB}|EmployeeCRUD\\EmployeeCRUD.csproj|d:\\coding project\\c-sharp\\console\\projects\\employeecrud\\employeecrud\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8258FAD3-27C6-41FF-B04F-71BA2F1401CB}|EmployeeCRUD\\EmployeeCRUD.csproj|solutionrelative:employeecrud\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8258FAD3-27C6-41FF-B04F-71BA2F1401CB}|EmployeeCRUD\\EmployeeCRUD.csproj|d:\\coding project\\c-sharp\\console\\projects\\employeecrud\\employeecrud\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8258FAD3-27C6-41FF-B04F-71BA2F1401CB}|EmployeeCRUD\\EmployeeCRUD.csproj|solutionrelative:employeecrud\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 1045,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Color.cs",
+              "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\EmployeeCRUD\\EmployeeCRUD\\UI\\Color.cs",
+              "RelativeDocumentMoniker": "EmployeeCRUD\\UI\\Color.cs",
+              "ToolTip": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\EmployeeCRUD\\EmployeeCRUD\\UI\\Color.cs",
+              "RelativeToolTip": "EmployeeCRUD\\UI\\Color.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T18:41:43.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Decorator.cs",
+              "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\EmployeeCRUD\\EmployeeCRUD\\UI\\Decorator.cs",
+              "RelativeDocumentMoniker": "EmployeeCRUD\\UI\\Decorator.cs",
+              "ToolTip": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\EmployeeCRUD\\EmployeeCRUD\\UI\\Decorator.cs",
+              "RelativeToolTip": "EmployeeCRUD\\UI\\Decorator.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA3wBwAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T18:34:15.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Box.cs",
+              "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\EmployeeCRUD\\EmployeeCRUD\\UI\\Box.cs",
+              "RelativeDocumentMoniker": "EmployeeCRUD\\UI\\Box.cs",
+              "ToolTip": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\EmployeeCRUD\\EmployeeCRUD\\UI\\Box.cs",
+              "RelativeToolTip": "EmployeeCRUD\\UI\\Box.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAwwCMAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T18:30:56.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Cell.cs",
+              "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\EmployeeCRUD\\EmployeeCRUD\\UI\\Cell.cs",
+              "RelativeDocumentMoniker": "EmployeeCRUD\\UI\\Cell.cs",
+              "ToolTip": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\EmployeeCRUD\\EmployeeCRUD\\UI\\Cell.cs",
+              "RelativeToolTip": "EmployeeCRUD\\UI\\Cell.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAwwC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T18:27:15.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Text.cs",
+              "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\EmployeeCRUD\\EmployeeCRUD\\UI\\Text.cs",
+              "RelativeDocumentMoniker": "EmployeeCRUD\\UI\\Text.cs",
+              "ToolTip": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\EmployeeCRUD\\EmployeeCRUD\\UI\\Text.cs",
+              "RelativeToolTip": "EmployeeCRUD\\UI\\Text.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAiwB8AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T18:23:15.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Department.cs",
+              "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\EmployeeCRUD\\EmployeeCRUD\\Models\\Department.cs",
+              "RelativeDocumentMoniker": "EmployeeCRUD\\Models\\Department.cs",
+              "ToolTip": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\EmployeeCRUD\\EmployeeCRUD\\Models\\Department.cs",
+              "RelativeToolTip": "EmployeeCRUD\\Models\\Department.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T18:18:53.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\EmployeeCRUD\\EmployeeCRUD\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "EmployeeCRUD\\Models\\Employee.cs",
+              "ToolTip": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\EmployeeCRUD\\EmployeeCRUD\\Models\\Employee.cs",
+              "RelativeToolTip": "EmployeeCRUD\\Models\\Employee.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T18:17:55.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\EmployeeCRUD\\EmployeeCRUD\\Program.cs",
+              "RelativeDocumentMoniker": "EmployeeCRUD\\Program.cs",
+              "ToolTip": "D:\\Coding Project\\C-Sharp\\Console\\Projects\\EmployeeCRUD\\EmployeeCRUD\\Program.cs",
+              "RelativeToolTip": "EmployeeCRUD\\Program.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAIAxwA4AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T18:17:17.255Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
