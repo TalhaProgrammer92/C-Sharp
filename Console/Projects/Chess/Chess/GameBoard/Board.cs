@@ -37,6 +37,15 @@ namespace Chess.GameBoard
             //Grid[0, 0].Symbol_.Unicode = Pieces.Unicode.WhiteRook;
         }
 
+        // Method - Highlight a cell
+        public void HighlightCell(Position position, bool highlightStatus = true)
+        {
+            // Validate position
+            if (IsValidPosition(position))
+                // Highlight or unhighlight the cell
+                Grid[position.Row, position.Column].IsHighlighted = highlightStatus;
+        }
+
         // Display - Column Labels
         void DisplayColumnLabels()
         {

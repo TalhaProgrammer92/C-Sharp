@@ -3,6 +3,7 @@ using Chess.MenuUtils;
 using Chess.Pieces;
 using Chess.MiscUtils;
 using Chess.GameBoard;
+using Chess.Logic;
 
 namespace Chess
 {
@@ -60,11 +61,15 @@ namespace Chess
             //Player.GetPlayerViaInput();
             //KeyHandler.Test();
 
-            MainMenu mainMenu = new MainMenu();
-            mainMenu.Display();
+            //MainMenu mainMenu = new MainMenu();
+            //mainMenu.Display();
 
-            int option = mainMenu.TakeInput();
-            Console.WriteLine($"You Selected: {mainMenu.GetOptionName(option)}");
+            //int option = mainMenu.TakeInput();
+            //Console.WriteLine($"You Selected: {mainMenu.GetOptionName(option)}");
+
+            Match match = new Match();
+            //match.InitializePlayers();
+            match.Start();
         }
     }
 }

@@ -15,6 +15,7 @@ namespace Chess.GameBoard
         public Position Position_ { get; }
         public bool IsOccupied { get { return Symbol_.Unicode != Unicode.WhiteCell && Symbol_.Unicode != Unicode.BlackCell; } }
         public PieceToken PieceToken_ { get; set; } // Token to hold the piece (ID) information for piece handler
+        public bool IsHighlighted { get; set; }
 
         // Cpmstructpr
         public Cell(Symbol symbol, Position position)
@@ -28,6 +29,9 @@ namespace Chess.GameBoard
         public void Display()
         {
             //Console.SetCursorPosition(position.Column * 2, position.Row);
+            if (IsHighlighted)
+                Console.BackgroundColor = ConsoleColor.DarkGray;
+            
             Symbol_.Display();
         }
 
