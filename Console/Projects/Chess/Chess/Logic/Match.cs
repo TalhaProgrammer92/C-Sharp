@@ -140,9 +140,22 @@ namespace Chess.Logic
                 }
                 else if (gameController.IsEnterPressed())
                 {
-                    // Handle piece selection and movement logic here
-                    // For now, just break the loop to end input control
-                    break;
+                    if (board.IsCellEmpty(pointerPosition))
+                    {
+                        Message.Warning("The selected cell is empty!");
+                    }
+                    else
+                    {
+                        if (board.IsCellOccupiedByGroup(pointerPosition, turn))
+                        {
+                            //Message.Info(board.GetCellInfo(pointerPosition)!);
+                            Message.Info($"{Position.ToLabeledPosition(pointerPosition)} - {board.GetPieceTypeAt(pointerPosition)}");
+                        }
+                        else
+                        {
+                            Message.Warning("You cannot select a piece of the opponent!");
+                        }
+                    }
                 }
 
                 if (isPointerMoved)
@@ -156,12 +169,17 @@ namespace Chess.Logic
         // Method - Start the match
         public void Start()
         {
-            // Display the board
-            board.Display();
+            while (!isGameOver)
+            {
+                // Display the board
+                board.Display();
 
-            ControlPlayerInput();
+                // Control player input
+                ControlPlayerInput();
 
-            UpdateMatch();
+                // Update the match state
+                UpdateMatch();
+            }
         }
     }
 }

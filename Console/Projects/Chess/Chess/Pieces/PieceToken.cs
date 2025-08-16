@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -86,6 +87,36 @@ namespace Chess.Pieces
             }
         }
 
+        // Method - Get piece type
+        public string GetPieceType()
+        {
+            return pieceType switch
+            {
+                0 => "King",
+                1 => "Pawn",
+                2 => "Bishop",
+                3 => "Knight",
+                4 => "Rook",
+                5 => "Queen",
+                _ => "Unknown"
+            };
+        }
+
+        // Method - Get information string
+        public string GetInfo()
+        {
+            if (!HoldsPiece)
+            {
+                return "The cell is empty.";
+            }
+
+            string group = groupIndex == 0 ? "White" : "Black";
+
+            string type = GetPieceType();
+
+            return $"Group: {group}, Type: {type}, Index: {pieceIndex}";
+        }
+
         // Method - Display the piece token information
         public void Display()
         {
@@ -96,22 +127,7 @@ namespace Chess.Pieces
                 return;
             }
 
-            // Determine the group name based on the group index
-            string group = groupIndex == 0 ? "White" : "Black";
-
-            // Determine the piece type name based on the piece type index
-            string type = pieceType switch
-            {
-                0 => "King",
-                1 => "Pawn",
-                2 => "Bishop",
-                3 => "Knight",
-                4 => "Rook",
-                5 => "Queen",
-                _ => "Unknown"
-            };
-
-            Console.WriteLine($"Group: {group}, Type: {type}, Index: {pieceIndex}");
+            Console.WriteLine(GetInfo());
         }
 
         // Properties - Get piece types

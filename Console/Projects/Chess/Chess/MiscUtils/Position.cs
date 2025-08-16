@@ -57,9 +57,29 @@ namespace Chess.MiscUtils
 
             char columnChar = labeledPosition[0];
             int row = int.Parse(labeledPosition[1].ToString());
+            
             // Convert column character to numeric index (A=1, B=2, ..., H=8)
             int column = char.ToUpper(columnChar) - 'A' + 1;
             return new Position(row, column);
+        }
+
+        // Method - Convert numeric position to labeled position
+        public static string ToLabeledPosition(Position position)
+        {
+            string row = (position.Row + 1).ToString();
+            string column = position.Column switch
+            {
+                0 => "A",
+                1 => "B",
+                2 => "C",
+                3 => "D",
+                4 => "E",
+                5 => "F",
+                6 => "G",
+                _ => string.Empty
+            };
+
+            return column + row;
         }
 
         // Methods - Check if two positions' equality

@@ -36,5 +36,19 @@ namespace Chess.MiscUtils
             Text successText = new Text(message, ConsoleColor.Green);
             successText.Display(true);
         }
+
+        // Information message
+        public static void Info(string message)
+        {
+            Text infoText = new Text(message, ConsoleColor.Cyan);
+            infoText.Display(true);
+        }
+
+        // Hold message
+        public static void Hold()
+        {
+            Prompt("Press any key to continue...");
+            Console.ReadKey(true);
+        }
     }
 }

@@ -37,6 +37,48 @@ namespace Chess.GameBoard
             //Grid[0, 0].Symbol_.Unicode = Pieces.Unicode.WhiteRook;
         }
 
+        // Method - Check if a cell is empty
+        public bool IsCellEmpty(Position position)
+        {
+            // Validate position
+            if (IsValidPosition(position))
+                return !Grid[position.Row, position.Column].PieceToken_.HoldsPiece;
+            
+            return false;
+        }
+
+        // Method - Check if selected cell contains piece of the specified group
+        public bool IsCellOccupiedByGroup(Position position, int groupIndex)
+        {
+            // Validate position
+            if (IsValidPosition(position))
+            {
+                Cell cell = Grid[position.Row, position.Column];
+                return cell.PieceToken_.HoldsPiece && cell.PieceToken_.GroupIndex == groupIndex;
+            }
+            
+            return false;
+        }
+
+        // Method - Get info string of a cell
+        public string? GetCellInfo(Position position)
+        {
+            // Validate position
+            if (IsValidPosition(position))
+            {
+                Cell cell = Grid[position.Row, position.Column];
+                return cell.PieceToken_.GetInfo();
+            }
+
+            return null;
+        }
+
+        // Method - Get piece type at specific cell
+        public string GetPieceTypeAt(Position position)
+        {
+            return Grid[position.Row, position.Column].PieceToken_.GetPieceType();
+        }
+
         // Method - Highlight a cell
         public void HighlightCell(Position position, bool highlightStatus = true)
         {
