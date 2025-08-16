@@ -102,6 +102,12 @@ namespace Chess.Pieces
             };
         }
 
+        // Method - Get piece group
+        public string GetPieceGroup()
+        {
+            return groupIndex == 0 ? "White" : "Black";
+        }
+
         // Method - Get information string
         public string GetInfo()
         {
@@ -110,7 +116,7 @@ namespace Chess.Pieces
                 return "The cell is empty.";
             }
 
-            string group = groupIndex == 0 ? "White" : "Black";
+            string group = GetPieceGroup();
 
             string type = GetPieceType();
 

@@ -146,22 +146,35 @@ namespace Chess.Logic
                     }
                     else
                     {
-                        if (board.IsCellOccupiedByGroup(pointerPosition, turn))
-                        {
-                            //Message.Info(board.GetCellInfo(pointerPosition)!);
-                            Message.Info($"{Position.ToLabeledPosition(pointerPosition)} - {board.GetPieceTypeAt(pointerPosition)}");
-                        }
-                        else
+                        if (!board.IsCellOccupiedByGroup(pointerPosition, turn))
                         {
                             Message.Warning("You cannot select a piece of the opponent!");
                         }
                     }
+                }
+                else if (gameController.IsTurnSkipKeyPressed())
+                {
+                    turn ^= 1;
                 }
 
                 if (isPointerMoved)
                 {
                     // Display the board after moving the pointer
                     board.Display();
+                    PieceToken token = board.Grid[pointerPosition.Row, pointerPosition.Column].PieceToken_;
+                    string message = $"{Position.ToLabeledPosition(pointerPosition)} - ";
+
+                    if (token.HoldsPiece)
+                    {
+                        message += $"{token.GetPieceType()} - {token.GetPieceGroup()}";
+
+                        if (!board.IsCellOccupiedByGroup(pointerPosition, turn))
+                            message += " [Opponent Piece]";
+                    }
+                    else
+                        message += "Empty Cell!";
+
+                    Message.Info(message);
                 }
             }
         }

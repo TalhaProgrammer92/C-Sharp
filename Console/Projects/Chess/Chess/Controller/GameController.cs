@@ -58,5 +58,10 @@ namespace Chess.Controller
         {
             return key.Key == ConsoleKey.R;
         }
+
+        public bool IsTurnSkipKeyPressed()
+        {
+            return key.Key == ConsoleKey.T;
+        }
     }
 }
