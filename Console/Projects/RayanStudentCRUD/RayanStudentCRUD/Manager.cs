@@ -155,7 +155,7 @@ namespace RayanStudentCRUD
         {
             Console.Clear();
 
-            Console.WriteLine("Enter the Student's Roll No to update:");
+            Console.WriteLine("Enter the Student's Roll No to delete:");
             int rollNo = GetIntInput();
 
             for (int i = 0; i < students.Count; i++)
