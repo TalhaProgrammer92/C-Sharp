@@ -86,7 +86,7 @@ namespace RayanStudentCRUD
             Console.Clear();
 
             Console.WriteLine("Enter the Student's Roll No to view details:");
-            int rollNo = Convert.ToInt32(Console.ReadLine());
+            int rollNo = GetIntInput();
 
             foreach (Student student in students)
             {
@@ -127,7 +127,7 @@ namespace RayanStudentCRUD
             Console.Clear();
 
             Console.WriteLine("Enter the Student's Roll No to update:");
-            int rollNo = Convert.ToInt32(Console.ReadLine());
+            int rollNo = GetIntInput();
 
             for (int i = 0; i < students.Count; i++)
             {
@@ -156,7 +156,7 @@ namespace RayanStudentCRUD
             Console.Clear();
 
             Console.WriteLine("Enter the Student's Roll No to update:");
-            int rollNo = Convert.ToInt32(Console.ReadLine());
+            int rollNo = GetIntInput();
 
             for (int i = 0; i < students.Count; i++)
             {
