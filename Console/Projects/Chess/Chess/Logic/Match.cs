@@ -152,10 +152,10 @@ namespace Chess.Logic
                         }
                     }
                 }
-                else if (gameController.IsTurnSkipKeyPressed())
-                {
-                    turn ^= 1;
-                }
+                //else if (gameController.IsTurnSkipKeyPressed())
+                //{
+                //    turn ^= 1;
+                //}
 
                 if (isPointerMoved)
                 {

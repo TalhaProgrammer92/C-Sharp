@@ -1,5 +1,10 @@
 
+using EcommerceBackend.Data;
+using EcommerceBackend.Models.Entities;
+using EcommerceBackend.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 
 namespace EcommerceBackend
@@ -41,8 +46,14 @@ namespace EcommerceBackend
                     ValidateIssuerSigningKey = true,
                 };
             });
-            builder.Services.AddAuthorization();
-            builder.Services.AddScoped<Services.JWTService>();
+            //builder.Services.AddIdentity<User, IdentityRole>()
+            //    .AddEntityFrameworkStores<AppDbContext>();
+
+
+            builder.Services.AddDbContext<AppDbContext>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+            builder.Services.AddScoped<JWTService>();
 
             var app = builder.Build();
 

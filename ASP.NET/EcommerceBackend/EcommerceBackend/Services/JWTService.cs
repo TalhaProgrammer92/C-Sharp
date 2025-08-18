@@ -17,7 +17,7 @@ namespace EcommerceBackend.Services
         // Constructor
         public JWTService(AppDbContext dbContext, IConfiguration config)
         {
-            _dbContext = dbContext;
+            _dbContext = dbContext ?? throw new ArgumentNullException(nameof(_dbContext));
             _config = config;
         }
 
@@ -49,7 +49,7 @@ namespace EcommerceBackend.Services
                 SigningCredentials = new SigningCredentials(
                     new SymmetricSecurityKey(Encoding.ASCII.GetBytes(key)),
                     SecurityAlgorithms.HmacSha512Signature),
-                    //SecurityAlgorithms.HmacSha256Signature)
+                //SecurityAlgorithms.HmacSha256Signature),
             };
 
             var tokenHandler = new JwtSecurityTokenHandler();

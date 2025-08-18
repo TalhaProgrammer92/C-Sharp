@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace EcommerceBackend.Data
 {
-    public class AppDbContext : IdentityDbContext<Admin>
+    public class AppDbContext : IdentityDbContext<User>
     {
         // Cosntructor
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
@@ -17,7 +17,7 @@ namespace EcommerceBackend.Data
         public DbSet<Product> Products { get; set; }
         public DbSet<FeaturedProduct> FeaturedProducts { get; set; }
         public DbSet<ProductImage> ProductImages { get; set; }
-        public DbSet<Admin> Admins { get; set; }
+        public DbSet<User> Admins { get; set; }
         public DbSet<Luxury> Luxuries { get; set; }
         public DbSet<HeroSection> HeroSections { get; set; }
         public DbSet<InstagramPost> InstagramPosts { get; set; }
@@ -28,6 +28,7 @@ namespace EcommerceBackend.Data
             base.OnModelCreating(modelBuilder);
 
             // Configure entity relationships and constraints
+            modelBuilder.Entity<User>();
 
             // HeroSection configuration
             modelBuilder.Entity<HeroSection>(entity =>
@@ -49,6 +50,26 @@ namespace EcommerceBackend.Data
                     .HasDefaultValueSql("GETUTCDATE()");
 
                 entity.HasIndex(e => e.CreatedAt);  // Index on CreatedAt for efficient querying
+            });
+
+            // Product Configuration
+            modelBuilder.Entity<Product>(entity =>
+            {
+                entity.Property(e => e.OriginalPrice)
+                    .HasPrecision(18, 2);
+                
+                entity.Property(e => e.SalePrice)
+                    .HasPrecision(18, 2);
+            });
+
+            // Featured Product configuration
+            modelBuilder.Entity<FeaturedProduct>(entity =>
+            {
+                entity.Property(e => e.OriginalPrice)
+                    .HasPrecision(18, 2);
+
+                entity.Property(e => e.SalePrice)
+                    .HasPrecision(18, 2);
             });
 
             // Order configuration

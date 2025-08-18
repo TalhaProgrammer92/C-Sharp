@@ -10,7 +10,7 @@ namespace EcommerceBackend.DTOs
         public string ShippingAddress { get; set; }
 
         [Required]
-        public List<OrderItemDTO> Items { get; set; };
+        public List<OrderItemDTO> Items { get; set; }
         public decimal Subtotal { get; set; }
         public decimal ShippingCost { get; set; }
         public decimal Total { get; set; }
