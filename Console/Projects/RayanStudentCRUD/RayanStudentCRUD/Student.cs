@@ -77,10 +77,10 @@ namespace RayanStudentCRUD
 
         public void Display()
         {
-            Console.WriteLine("\nName: " + Name);
-            Console.WriteLine("Roll No: " + rollno);
-            Console.WriteLine("Major: " + major);
-            Console.WriteLine("Section: " + section);
+            Console.WriteLine("\nRoll No:\t" + rollno);
+            Console.WriteLine("Name:\t\t" + Name);
+            Console.WriteLine("Major:\t\t" + major);
+            Console.WriteLine("Section:\t" + section);
         }
     }
 }
