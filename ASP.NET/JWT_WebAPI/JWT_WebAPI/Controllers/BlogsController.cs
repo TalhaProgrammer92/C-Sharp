@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using JWT_WebAPI.Data;
 using JWT_WebAPI.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace JWT_WebAPI.Controllers
 {
+    //[Authorize] // To make sure only logged-in user can have access
     [Route("api/[controller]")]
     [ApiController]
     public class BlogsController : ControllerBase

@@ -9,12 +9,12 @@ using Microsoft.AspNetCore.Identity;
 var builder = WebApplication.CreateBuilder(args);
 
 // Create some secret bytes for issuer signing key in JWT Authentication
-byte[] bytes = new byte[64];
-using (var random = RandomNumberGenerator.Create())
-{
-    random.GetBytes(bytes);
-}
-string key = Convert.ToBase64String(bytes);
+//byte[] bytes = new byte[64];
+//using (var random = RandomNumberGenerator.Create())
+//{
+//    random.GetBytes(bytes);
+//}
+string key = builder.Configuration["Jwt:Key"]!;
 
 // Add services to the container.
 
@@ -44,7 +44,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     });
 
 // Authorization
-builder.Services.AddAuthentication();
+//builder.Services.AddAuthentication();
 
 builder.Services.AddIdentityApiEndpoints<IdentityUser>(options =>
 {
@@ -71,6 +71,7 @@ app.MapIdentityApi<IdentityUser>();
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
