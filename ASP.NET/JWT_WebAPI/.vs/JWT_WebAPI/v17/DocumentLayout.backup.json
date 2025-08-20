@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "D:\\Coding\\C-Sharp\\ASP.NET\\JWT_WebAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8D5077FC-7D6C-4D52-A1E8-0BB557B9D9EC}|JWT_WebAPI\\JWT_WebAPI.csproj|d:\\coding\\c-sharp\\asp.net\\jwt_webapi\\jwt_webapi\\controllers\\blogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D5077FC-7D6C-4D52-A1E8-0BB557B9D9EC}|JWT_WebAPI\\JWT_WebAPI.csproj|solutionrelative:jwt_webapi\\controllers\\blogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D5077FC-7D6C-4D52-A1E8-0BB557B9D9EC}|JWT_WebAPI\\JWT_WebAPI.csproj|d:\\coding\\c-sharp\\asp.net\\jwt_webapi\\jwt_webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D5077FC-7D6C-4D52-A1E8-0BB557B9D9EC}|JWT_WebAPI\\JWT_WebAPI.csproj|solutionrelative:jwt_webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D5077FC-7D6C-4D52-A1E8-0BB557B9D9EC}|JWT_WebAPI\\JWT_WebAPI.csproj|d:\\coding\\c-sharp\\asp.net\\jwt_webapi\\jwt_webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8D5077FC-7D6C-4D52-A1E8-0BB557B9D9EC}|JWT_WebAPI\\JWT_WebAPI.csproj|solutionrelative:jwt_webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D5077FC-7D6C-4D52-A1E8-0BB557B9D9EC}|JWT_WebAPI\\JWT_WebAPI.csproj|d:\\coding\\c-sharp\\asp.net\\jwt_webapi\\jwt_webapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D5077FC-7D6C-4D52-A1E8-0BB557B9D9EC}|JWT_WebAPI\\JWT_WebAPI.csproj|solutionrelative:jwt_webapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D5077FC-7D6C-4D52-A1E8-0BB557B9D9EC}|JWT_WebAPI\\JWT_WebAPI.csproj|d:\\coding\\c-sharp\\asp.net\\jwt_webapi\\jwt_webapi\\models\\blogs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D5077FC-7D6C-4D52-A1E8-0BB557B9D9EC}|JWT_WebAPI\\JWT_WebAPI.csproj|solutionrelative:jwt_webapi\\models\\blogs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8D5077FC-7D6C-4D52-A1E8-0BB557B9D9EC}|JWT_WebAPI\\JWT_WebAPI.csproj|d:\\coding\\c-sharp\\asp.net\\jwt_webapi\\jwt_webapi\\packages.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{8D5077FC-7D6C-4D52-A1E8-0BB557B9D9EC}|JWT_WebAPI\\JWT_WebAPI.csproj|solutionrelative:jwt_webapi\\packages.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
@@ -19,12 +39,77 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "BlogsController.cs",
+              "DocumentMoniker": "D:\\Coding\\C-Sharp\\ASP.NET\\JWT_WebAPI\\JWT_WebAPI\\Controllers\\BlogsController.cs",
+              "RelativeDocumentMoniker": "JWT_WebAPI\\Controllers\\BlogsController.cs",
+              "ToolTip": "D:\\Coding\\C-Sharp\\ASP.NET\\JWT_WebAPI\\JWT_WebAPI\\Controllers\\BlogsController.cs",
+              "RelativeToolTip": "JWT_WebAPI\\Controllers\\BlogsController.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAmwFYAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T07:28:26.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Coding\\C-Sharp\\ASP.NET\\JWT_WebAPI\\JWT_WebAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "JWT_WebAPI\\appsettings.json",
+              "ToolTip": "D:\\Coding\\C-Sharp\\ASP.NET\\JWT_WebAPI\\JWT_WebAPI\\appsettings.json",
+              "RelativeToolTip": "JWT_WebAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-20T07:05:36.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Coding\\C-Sharp\\ASP.NET\\JWT_WebAPI\\JWT_WebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "JWT_WebAPI\\Program.cs",
+              "ToolTip": "D:\\Coding\\C-Sharp\\ASP.NET\\JWT_WebAPI\\JWT_WebAPI\\Program.cs",
+              "RelativeToolTip": "JWT_WebAPI\\Program.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAAAEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T07:03:46.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\Coding\\C-Sharp\\ASP.NET\\JWT_WebAPI\\JWT_WebAPI\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "JWT_WebAPI\\Data\\AppDbContext.cs",
+              "ToolTip": "D:\\Coding\\C-Sharp\\ASP.NET\\JWT_WebAPI\\JWT_WebAPI\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "JWT_WebAPI\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T07:01:31.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Blogs.cs",
+              "DocumentMoniker": "D:\\Coding\\C-Sharp\\ASP.NET\\JWT_WebAPI\\JWT_WebAPI\\Models\\Blogs.cs",
+              "RelativeDocumentMoniker": "JWT_WebAPI\\Models\\Blogs.cs",
+              "ToolTip": "D:\\Coding\\C-Sharp\\ASP.NET\\JWT_WebAPI\\JWT_WebAPI\\Models\\Blogs.cs",
+              "RelativeToolTip": "JWT_WebAPI\\Models\\Blogs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T06:58:13.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Packages.txt",
               "DocumentMoniker": "D:\\Coding\\C-Sharp\\ASP.NET\\JWT_WebAPI\\JWT_WebAPI\\Packages.txt",
               "RelativeDocumentMoniker": "JWT_WebAPI\\Packages.txt",
               "ToolTip": "D:\\Coding\\C-Sharp\\ASP.NET\\JWT_WebAPI\\JWT_WebAPI\\Packages.txt",
               "RelativeToolTip": "JWT_WebAPI\\Packages.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2025-08-20T06:43:03.208Z",
               "EditorCaption": ""
