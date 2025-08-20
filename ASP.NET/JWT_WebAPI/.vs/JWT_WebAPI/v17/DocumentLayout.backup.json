@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Coding\\C-Sharp\\ASP.NET\\JWT_WebAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8D5077FC-7D6C-4D52-A1E8-0BB557B9D9EC}|JWT_WebAPI\\JWT_WebAPI.csproj|d:\\coding\\c-sharp\\asp.net\\jwt_webapi\\jwt_webapi\\packages.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{8D5077FC-7D6C-4D52-A1E8-0BB557B9D9EC}|JWT_WebAPI\\JWT_WebAPI.csproj|solutionrelative:jwt_webapi\\packages.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Packages.txt",
+              "DocumentMoniker": "D:\\Coding\\C-Sharp\\ASP.NET\\JWT_WebAPI\\JWT_WebAPI\\Packages.txt",
+              "RelativeDocumentMoniker": "JWT_WebAPI\\Packages.txt",
+              "ToolTip": "D:\\Coding\\C-Sharp\\ASP.NET\\JWT_WebAPI\\JWT_WebAPI\\Packages.txt",
+              "RelativeToolTip": "JWT_WebAPI\\Packages.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-08-20T06:43:03.208Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

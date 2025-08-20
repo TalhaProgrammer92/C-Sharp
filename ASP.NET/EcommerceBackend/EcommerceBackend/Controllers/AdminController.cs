@@ -42,6 +42,9 @@ namespace EcommerceBackend.Controllers
             return response;
         }
 
+        //[HttpGet]
+        //public async Task<ActionResult<>>
+
         // POST: [Normal]
         //[HttpPost]
         //public IActionResult AddUser(UserDTO userDto)

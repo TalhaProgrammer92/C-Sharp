@@ -116,6 +116,8 @@ node_modules/
 *.vssscc
 *.vsidx
 *.zip
+*.rar
+*.sfx
 
 # Folders
 # ASP.NET/Backend
