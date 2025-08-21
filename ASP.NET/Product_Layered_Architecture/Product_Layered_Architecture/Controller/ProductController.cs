@@ -22,6 +22,12 @@ namespace Product_Layered_Architecture.Controller
             return Ok(_service.GetAll());
         }
 
+        //[HttpGet("{price}")]
+        //public IActionResult GetByPrice(int price)
+        //{
+        //    return Ok(_service.GetByPrice(price));
+        //}
+
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
         {

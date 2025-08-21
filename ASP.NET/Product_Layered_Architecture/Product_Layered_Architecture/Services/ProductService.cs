@@ -17,6 +17,11 @@ namespace Product_Layered_Architecture.Services
             return _repository.GetAll().Where(p => p.IsActive); // Get only active products - Business Rule
         }
 
+        //public IEnumerable<Product> GetByPrice(int price)
+        //{
+        //    return _repository.GetAll().Where(p => (p.Price == price));
+        //}
+
         public Product? GetById(int id) => _repository.GetById(id);
 
         public void Create(Product product)
