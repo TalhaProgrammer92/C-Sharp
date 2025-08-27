@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\Coding\\C-Sharp\\ASP.NET\\CPC_API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{208BC541-8DA4-4B71-B2A2-84C5995C40D8}|CPC_API\\CPC_API.csproj|d:\\coding\\c-sharp\\asp.net\\cpc_api\\cpc_api\\services\\countryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{208BC541-8DA4-4B71-B2A2-84C5995C40D8}|CPC_API\\CPC_API.csproj|solutionrelative:cpc_api\\services\\countryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{208BC541-8DA4-4B71-B2A2-84C5995C40D8}|CPC_API\\CPC_API.csproj|d:\\coding\\c-sharp\\asp.net\\cpc_api\\cpc_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{208BC541-8DA4-4B71-B2A2-84C5995C40D8}|CPC_API\\CPC_API.csproj|solutionrelative:cpc_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{208BC541-8DA4-4B71-B2A2-84C5995C40D8}|CPC_API\\CPC_API.csproj|d:\\coding\\c-sharp\\asp.net\\cpc_api\\cpc_api\\services\\countryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{208BC541-8DA4-4B71-B2A2-84C5995C40D8}|CPC_API\\CPC_API.csproj|solutionrelative:cpc_api\\services\\countryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{208BC541-8DA4-4B71-B2A2-84C5995C40D8}|CPC_API\\CPC_API.csproj|d:\\coding\\c-sharp\\asp.net\\cpc_api\\cpc_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -86,21 +86,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 219,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "20250827111158_CPC_Province.cs",
-              "DocumentMoniker": "D:\\Coding\\C-Sharp\\ASP.NET\\CPC_API\\CPC_API\\Migrations\\Province\\20250827111158_CPC_Province.cs",
-              "RelativeDocumentMoniker": "CPC_API\\Migrations\\Province\\20250827111158_CPC_Province.cs",
-              "ToolTip": "D:\\Coding\\C-Sharp\\ASP.NET\\CPC_API\\CPC_API\\Migrations\\Province\\20250827111158_CPC_Province.cs",
-              "RelativeToolTip": "CPC_API\\Migrations\\Province\\20250827111158_CPC_Province.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-27T11:11:58.507Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 5,
@@ -129,13 +116,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Coding\\C-Sharp\\ASP.NET\\CPC_API\\CPC_API\\Program.cs",
               "RelativeDocumentMoniker": "CPC_API\\Program.cs",
               "ToolTip": "D:\\Coding\\C-Sharp\\ASP.NET\\CPC_API\\CPC_API\\Program.cs",
               "RelativeToolTip": "CPC_API\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAABhAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-27T11:02:33.461Z",
               "EditorCaption": ""
@@ -168,15 +155,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CountryService.cs",
               "DocumentMoniker": "D:\\Coding\\C-Sharp\\ASP.NET\\CPC_API\\CPC_API\\Services\\CountryService.cs",
               "RelativeDocumentMoniker": "CPC_API\\Services\\CountryService.cs",
               "ToolTip": "D:\\Coding\\C-Sharp\\ASP.NET\\CPC_API\\CPC_API\\Services\\CountryService.cs",
               "RelativeToolTip": "CPC_API\\Services\\CountryService.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAQwB0AAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAQwDUAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-27T10:11:04.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20250827111158_CPC_Province.cs",
+              "DocumentMoniker": "D:\\Coding\\C-Sharp\\ASP.NET\\CPC_API\\CPC_API\\Migrations\\Province\\20250827111158_CPC_Province.cs",
+              "RelativeDocumentMoniker": "CPC_API\\Migrations\\Province\\20250827111158_CPC_Province.cs",
+              "ToolTip": "D:\\Coding\\C-Sharp\\ASP.NET\\CPC_API\\CPC_API\\Migrations\\Province\\20250827111158_CPC_Province.cs",
+              "RelativeToolTip": "CPC_API\\Migrations\\Province\\20250827111158_CPC_Province.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T11:11:58.507Z",
               "EditorCaption": ""
             },
             {
