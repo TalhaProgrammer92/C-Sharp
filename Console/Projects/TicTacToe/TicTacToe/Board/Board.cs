@@ -9,7 +9,7 @@ namespace TicTacToe.Board
     public class Board
     {
         // Attributes
-        public char[3,3] Grid { get; set; }
+        public char[,] Grid { get; set; }
 
         // Constructor
         public Board()
