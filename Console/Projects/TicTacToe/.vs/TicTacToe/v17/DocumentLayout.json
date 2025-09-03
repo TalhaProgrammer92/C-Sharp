@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "D:\\Coding\\C-Sharp\\Console\\Projects\\TicTacToe\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D4863160-ADC9-425D-98C3-D604AE8E1B8A}|TicTacToe\\TicTacToe.csproj|d:\\coding\\c-sharp\\console\\projects\\tictactoe\\tictactoe\\misc\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4863160-ADC9-425D-98C3-D604AE8E1B8A}|TicTacToe\\TicTacToe.csproj|solutionrelative:tictactoe\\misc\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D4863160-ADC9-425D-98C3-D604AE8E1B8A}|TicTacToe\\TicTacToe.csproj|d:\\coding\\c-sharp\\console\\projects\\tictactoe\\tictactoe\\board\\board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4863160-ADC9-425D-98C3-D604AE8E1B8A}|TicTacToe\\TicTacToe.csproj|solutionrelative:tictactoe\\board\\board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D4863160-ADC9-425D-98C3-D604AE8E1B8A}|TicTacToe\\TicTacToe.csproj|d:\\coding\\c-sharp\\console\\projects\\tictactoe\\tictactoe\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D4863160-ADC9-425D-98C3-D604AE8E1B8A}|TicTacToe\\TicTacToe.csproj|solutionrelative:tictactoe\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4863160-ADC9-425D-98C3-D604AE8E1B8A}|TicTacToe\\TicTacToe.csproj|d:\\coding\\c-sharp\\console\\projects\\tictactoe\\tictactoe\\misc\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4863160-ADC9-425D-98C3-D604AE8E1B8A}|TicTacToe\\TicTacToe.csproj|solutionrelative:tictactoe\\misc\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D4863160-ADC9-425D-98C3-D604AE8E1B8A}|TicTacToe\\TicTacToe.csproj|d:\\coding\\c-sharp\\console\\projects\\tictactoe\\tictactoe\\player\\score.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,12 +39,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Board.cs",
+              "DocumentMoniker": "D:\\Coding\\C-Sharp\\Console\\Projects\\TicTacToe\\TicTacToe\\Board\\Board.cs",
+              "RelativeDocumentMoniker": "TicTacToe\\Board\\Board.cs",
+              "ToolTip": "D:\\Coding\\C-Sharp\\Console\\Projects\\TicTacToe\\TicTacToe\\Board\\Board.cs",
+              "RelativeToolTip": "TicTacToe\\Board\\Board.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T13:04:04.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Position.cs",
               "DocumentMoniker": "D:\\Coding\\C-Sharp\\Console\\Projects\\TicTacToe\\TicTacToe\\Misc\\Position.cs",
               "RelativeDocumentMoniker": "TicTacToe\\Misc\\Position.cs",
               "ToolTip": "D:\\Coding\\C-Sharp\\Console\\Projects\\TicTacToe\\TicTacToe\\Misc\\Position.cs",
               "RelativeToolTip": "TicTacToe\\Misc\\Position.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAIwCsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAIwC0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-03T10:56:03.267Z",
               "EditorCaption": ""
@@ -53,14 +70,14 @@
               "RelativeDocumentMoniker": "TicTacToe\\Player\\Player.cs",
               "ToolTip": "D:\\Coding\\C-Sharp\\Console\\Projects\\TicTacToe\\TicTacToe\\Player\\Player.cs",
               "RelativeToolTip": "TicTacToe\\Player\\Player.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-03T10:52:08.783Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Score.cs",
               "DocumentMoniker": "D:\\Coding\\C-Sharp\\Console\\Projects\\TicTacToe\\TicTacToe\\Player\\Score.cs",
               "RelativeDocumentMoniker": "TicTacToe\\Player\\Score.cs",
@@ -68,12 +85,11 @@
               "RelativeToolTip": "TicTacToe\\Player\\Score.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAgwCYAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T10:49:35.365Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T10:49:35.365Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Name.cs",
               "DocumentMoniker": "D:\\Coding\\C-Sharp\\Console\\Projects\\TicTacToe\\TicTacToe\\Player\\Name.cs",
               "RelativeDocumentMoniker": "TicTacToe\\Player\\Name.cs",
@@ -81,12 +97,11 @@
               "RelativeToolTip": "TicTacToe\\Player\\Name.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAQwBsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T10:44:44.094Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T10:44:44.094Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Coding\\C-Sharp\\Console\\Projects\\TicTacToe\\TicTacToe\\Program.cs",
               "RelativeDocumentMoniker": "TicTacToe\\Program.cs",
@@ -94,8 +109,7 @@
               "RelativeToolTip": "TicTacToe\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T10:44:03.679Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T10:44:03.679Z"
             }
           ]
         }
