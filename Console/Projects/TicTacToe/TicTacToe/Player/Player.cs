@@ -11,14 +11,14 @@ namespace TicTacToe.Player
         // Attributes
         public Name? Name { get; set; }
         public Score? Score { get; set; }
-        public char Symbol { get; }
+        public char? Symbol { get; }
 
         // Constructor
         public Player()
         {
             Name = null;
             Score = null;
-            Symbol = '';
+            Symbol = null;
         }
         public Player(Name name, Score score, char symbol)
         {

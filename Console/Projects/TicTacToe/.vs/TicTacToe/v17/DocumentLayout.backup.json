@@ -3,16 +3,36 @@
   "WorkspaceRootPath": "D:\\Coding\\C-Sharp\\Console\\Projects\\TicTacToe\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D4863160-ADC9-425D-98C3-D604AE8E1B8A}|TicTacToe\\TicTacToe.csproj|d:\\coding\\c-sharp\\console\\projects\\tictactoe\\tictactoe\\board\\board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4863160-ADC9-425D-98C3-D604AE8E1B8A}|TicTacToe\\TicTacToe.csproj|solutionrelative:tictactoe\\board\\board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D4863160-ADC9-425D-98C3-D604AE8E1B8A}|TicTacToe\\TicTacToe.csproj|d:\\coding\\c-sharp\\console\\projects\\tictactoe\\tictactoe\\menu\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4863160-ADC9-425D-98C3-D604AE8E1B8A}|TicTacToe\\TicTacToe.csproj|solutionrelative:tictactoe\\menu\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4863160-ADC9-425D-98C3-D604AE8E1B8A}|TicTacToe\\TicTacToe.csproj|d:\\coding\\c-sharp\\console\\projects\\tictactoe\\tictactoe\\misc\\text.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4863160-ADC9-425D-98C3-D604AE8E1B8A}|TicTacToe\\TicTacToe.csproj|solutionrelative:tictactoe\\misc\\text.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4863160-ADC9-425D-98C3-D604AE8E1B8A}|TicTacToe\\TicTacToe.csproj|d:\\coding\\c-sharp\\console\\projects\\tictactoe\\tictactoe\\misc\\option.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4863160-ADC9-425D-98C3-D604AE8E1B8A}|TicTacToe\\TicTacToe.csproj|solutionrelative:tictactoe\\misc\\option.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4863160-ADC9-425D-98C3-D604AE8E1B8A}|TicTacToe\\TicTacToe.csproj|d:\\coding\\c-sharp\\console\\projects\\tictactoe\\tictactoe\\misc\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4863160-ADC9-425D-98C3-D604AE8E1B8A}|TicTacToe\\TicTacToe.csproj|solutionrelative:tictactoe\\misc\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4863160-ADC9-425D-98C3-D604AE8E1B8A}|TicTacToe\\TicTacToe.csproj|d:\\coding\\c-sharp\\console\\projects\\tictactoe\\tictactoe\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4863160-ADC9-425D-98C3-D604AE8E1B8A}|TicTacToe\\TicTacToe.csproj|solutionrelative:tictactoe\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4863160-ADC9-425D-98C3-D604AE8E1B8A}|TicTacToe\\TicTacToe.csproj|d:\\coding\\c-sharp\\console\\projects\\tictactoe\\tictactoe\\misc\\colorproperty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4863160-ADC9-425D-98C3-D604AE8E1B8A}|TicTacToe\\TicTacToe.csproj|solutionrelative:tictactoe\\misc\\colorproperty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D4863160-ADC9-425D-98C3-D604AE8E1B8A}|TicTacToe\\TicTacToe.csproj|d:\\coding\\c-sharp\\console\\projects\\tictactoe\\tictactoe\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D4863160-ADC9-425D-98C3-D604AE8E1B8A}|TicTacToe\\TicTacToe.csproj|solutionrelative:tictactoe\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4863160-ADC9-425D-98C3-D604AE8E1B8A}|TicTacToe\\TicTacToe.csproj|d:\\coding\\c-sharp\\console\\projects\\tictactoe\\tictactoe\\misc\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4863160-ADC9-425D-98C3-D604AE8E1B8A}|TicTacToe\\TicTacToe.csproj|solutionrelative:tictactoe\\misc\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D4863160-ADC9-425D-98C3-D604AE8E1B8A}|TicTacToe\\TicTacToe.csproj|d:\\coding\\c-sharp\\console\\projects\\tictactoe\\tictactoe\\board\\gameboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4863160-ADC9-425D-98C3-D604AE8E1B8A}|TicTacToe\\TicTacToe.csproj|solutionrelative:tictactoe\\board\\gameboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D4863160-ADC9-425D-98C3-D604AE8E1B8A}|TicTacToe\\TicTacToe.csproj|d:\\coding\\c-sharp\\console\\projects\\tictactoe\\tictactoe\\player\\score.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D4863160-ADC9-425D-98C3-D604AE8E1B8A}|TicTacToe\\TicTacToe.csproj|d:\\coding\\c-sharp\\console\\projects\\tictactoe\\tictactoe\\player\\name.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D4863160-ADC9-425D-98C3-D604AE8E1B8A}|TicTacToe\\TicTacToe.csproj|solutionrelative:tictactoe\\player\\name.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4863160-ADC9-425D-98C3-D604AE8E1B8A}|TicTacToe\\TicTacToe.csproj|d:\\coding\\c-sharp\\console\\projects\\tictactoe\\tictactoe\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4863160-ADC9-425D-98C3-D604AE8E1B8A}|TicTacToe\\TicTacToe.csproj|solutionrelative:tictactoe\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,50 +50,98 @@
       "DocumentGroups": [
         {
           "DockedWidth": 202,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Board.cs",
-              "DocumentMoniker": "D:\\Coding\\C-Sharp\\Console\\Projects\\TicTacToe\\TicTacToe\\Board\\Board.cs",
-              "RelativeDocumentMoniker": "TicTacToe\\Board\\Board.cs",
-              "ToolTip": "D:\\Coding\\C-Sharp\\Console\\Projects\\TicTacToe\\TicTacToe\\Board\\Board.cs",
-              "RelativeToolTip": "TicTacToe\\Board\\Board.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Option.cs",
+              "DocumentMoniker": "D:\\Coding\\C-Sharp\\Console\\Projects\\TicTacToe\\TicTacToe\\Misc\\Option.cs",
+              "RelativeDocumentMoniker": "TicTacToe\\Misc\\Option.cs",
+              "ToolTip": "D:\\Coding\\C-Sharp\\Console\\Projects\\TicTacToe\\TicTacToe\\Misc\\Option.cs",
+              "RelativeToolTip": "TicTacToe\\Misc\\Option.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T13:04:04.182Z",
+              "WhenOpened": "2025-09-08T01:44:23.986Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Position.cs",
-              "DocumentMoniker": "D:\\Coding\\C-Sharp\\Console\\Projects\\TicTacToe\\TicTacToe\\Misc\\Position.cs",
-              "RelativeDocumentMoniker": "TicTacToe\\Misc\\Position.cs",
-              "ToolTip": "D:\\Coding\\C-Sharp\\Console\\Projects\\TicTacToe\\TicTacToe\\Misc\\Position.cs",
-              "RelativeToolTip": "TicTacToe\\Misc\\Position.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAIwC0AAAAJAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "D:\\Coding\\C-Sharp\\Console\\Projects\\TicTacToe\\TicTacToe\\Menu\\Menu.cs",
+              "RelativeDocumentMoniker": "TicTacToe\\Menu\\Menu.cs",
+              "ToolTip": "D:\\Coding\\C-Sharp\\Console\\Projects\\TicTacToe\\TicTacToe\\Menu\\Menu.cs",
+              "RelativeToolTip": "TicTacToe\\Menu\\Menu.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAIwE8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T10:56:03.267Z",
+              "WhenOpened": "2025-09-07T06:25:27.499Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Text.cs",
+              "DocumentMoniker": "D:\\Coding\\C-Sharp\\Console\\Projects\\TicTacToe\\TicTacToe\\Misc\\Text.cs",
+              "RelativeDocumentMoniker": "TicTacToe\\Misc\\Text.cs",
+              "ToolTip": "D:\\Coding\\C-Sharp\\Console\\Projects\\TicTacToe\\TicTacToe\\Misc\\Text.cs",
+              "RelativeToolTip": "TicTacToe\\Misc\\Text.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA5wCQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T12:48:36.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ColorProperty.cs",
+              "DocumentMoniker": "D:\\Coding\\C-Sharp\\Console\\Projects\\TicTacToe\\TicTacToe\\Misc\\ColorProperty.cs",
+              "RelativeDocumentMoniker": "TicTacToe\\Misc\\ColorProperty.cs",
+              "ToolTip": "D:\\Coding\\C-Sharp\\Console\\Projects\\TicTacToe\\TicTacToe\\Misc\\ColorProperty.cs",
+              "RelativeToolTip": "TicTacToe\\Misc\\ColorProperty.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAiwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T12:41:56.738Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GameBoard.cs",
+              "DocumentMoniker": "D:\\Coding\\C-Sharp\\Console\\Projects\\TicTacToe\\TicTacToe\\Board\\GameBoard.cs",
+              "RelativeDocumentMoniker": "TicTacToe\\Board\\GameBoard.cs",
+              "ToolTip": "D:\\Coding\\C-Sharp\\Console\\Projects\\TicTacToe\\TicTacToe\\Board\\GameBoard.cs",
+              "RelativeToolTip": "TicTacToe\\Board\\GameBoard.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T13:04:04.182Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Position.cs",
+              "DocumentMoniker": "D:\\Coding\\C-Sharp\\Console\\Projects\\TicTacToe\\TicTacToe\\Misc\\Position.cs",
+              "RelativeDocumentMoniker": "TicTacToe\\Misc\\Position.cs",
+              "ToolTip": "D:\\Coding\\C-Sharp\\Console\\Projects\\TicTacToe\\TicTacToe\\Misc\\Position.cs",
+              "RelativeToolTip": "TicTacToe\\Misc\\Position.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowC0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T10:56:03.267Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Player.cs",
               "DocumentMoniker": "D:\\Coding\\C-Sharp\\Console\\Projects\\TicTacToe\\TicTacToe\\Player\\Player.cs",
               "RelativeDocumentMoniker": "TicTacToe\\Player\\Player.cs",
               "ToolTip": "D:\\Coding\\C-Sharp\\Console\\Projects\\TicTacToe\\TicTacToe\\Player\\Player.cs",
               "RelativeToolTip": "TicTacToe\\Player\\Player.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAApwBQAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T10:52:08.783Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T10:52:08.783Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "Score.cs",
               "DocumentMoniker": "D:\\Coding\\C-Sharp\\Console\\Projects\\TicTacToe\\TicTacToe\\Player\\Score.cs",
               "RelativeDocumentMoniker": "TicTacToe\\Player\\Score.cs",
@@ -89,7 +153,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "Name.cs",
               "DocumentMoniker": "D:\\Coding\\C-Sharp\\Console\\Projects\\TicTacToe\\TicTacToe\\Player\\Name.cs",
               "RelativeDocumentMoniker": "TicTacToe\\Player\\Name.cs",
@@ -101,13 +165,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Coding\\C-Sharp\\Console\\Projects\\TicTacToe\\TicTacToe\\Program.cs",
               "RelativeDocumentMoniker": "TicTacToe\\Program.cs",
               "ToolTip": "D:\\Coding\\C-Sharp\\Console\\Projects\\TicTacToe\\TicTacToe\\Program.cs",
               "RelativeToolTip": "TicTacToe\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-03T10:44:03.679Z"
             }
