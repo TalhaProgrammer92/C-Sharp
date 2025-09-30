@@ -1,0 +1,235 @@
+﻿using Chess.MiscUtils;
+using Chess.Pieces;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Chess.GameBoard
+{
+    class Board
+    {
+        // Attributes
+        public Cell[,] Grid { get; set; }
+
+        // Constructor
+        public Board()
+        {
+            Grid = new Cell[8, 8];
+            InitializeBoard();
+        }
+
+        // Method - Initialize the board
+        private void InitializeBoard()
+        {
+            for (int row = 0; row < 8; row++)
+            {
+                for (int col = 0; col < 8; col++)
+                {
+                    // Create a cell with a default symbol
+                    Position position = new Position(row, col);
+                    Grid[row, col] = new Cell(Cell.GetEmptyCellSymbol(position), position);
+                }
+            }
+
+            // Debugging Purpose
+            //Grid[0, 0].Symbol_.Unicode = Pieces.Unicode.WhiteRook;
+        }
+
+        // Method - Check if a cell is empty
+        public bool IsCellEmpty(Position position)
+        {
+            // Validate position
+            if (IsValidPosition(position))
+                return !Grid[position.Row, position.Column].PieceToken_.HoldsPiece;
+            
+            return false;
+        }
+
+        // Method - Check if selected cell contains piece of the specified group
+        public bool IsCellOccupiedByGroup(Position position, int groupIndex)
+        {
+            // Validate position
+            if (IsValidPosition(position))
+            {
+                Cell cell = Grid[position.Row, position.Column];
+                return cell.PieceToken_.HoldsPiece && cell.PieceToken_.GroupIndex == groupIndex;
+            }
+            
+            return false;
+        }
+
+        // Method - Get info string of a cell
+        public string? GetCellInfo(Position position)
+        {
+            // Validate position
+            if (IsValidPosition(position))
+            {
+                Cell cell = Grid[position.Row, position.Column];
+                return cell.PieceToken_.GetInfo();
+            }
+
+            return null;
+        }
+
+        // Method - Get piece type at specific cell
+        public string GetPieceTypeAt(Position position)
+        {
+            return Grid[position.Row, position.Column].PieceToken_.GetPieceType();
+        }
+
+        // Method - Highlight a cell
+        public void HighlightCell(Position position, bool highlightStatus = true)
+        {
+            // Validate position
+            if (IsValidPosition(position))
+                // Highlight or unhighlight the cell
+                Grid[position.Row, position.Column].IsHighlighted = highlightStatus;
+        }
+
+        // Display - Column Labels
+        void DisplayColumnLabels()
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write("  ");
+            for (char label = 'a'; label <= 'h'; label++)
+                Console.Write($"{label} ");
+            Console.ResetColor();
+            Console.WriteLine();
+        }
+
+        // Display - Row Label
+        void DisplayRowLabel(int row, bool extraSpace = true)
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            
+            if (extraSpace)    // Left Side
+                Console.Write($"{row + 1} ");
+            else    // Right Side
+                Console.Write($"{row + 1}");
+            
+            Console.ResetColor();
+        }
+
+        // Display - Board Grid
+        void DisplayGrid()
+        {
+            for (int row = 0; row < 8; row++)
+            {
+                // Labels - Row
+                DisplayRowLabel(row);
+
+                // Cells
+                for (int col = 0; col < 8; col++)
+                {
+                    Grid[row, col].Display();
+                    Console.Write(" "); // Add space between cells
+                }
+
+                // Labels - Row
+                DisplayRowLabel(row, false);
+
+                Console.WriteLine(); // New line after each row
+            }
+        }
+
+        // Method - Display the board
+        public void Display()
+        {
+            Console.Clear();
+
+            // Labels - Column
+            DisplayColumnLabels();
+
+            // Grid
+            DisplayGrid();
+
+            DisplayColumnLabels();
+        }
+
+        // Method - Display board states - Debugging purpose
+        public void DisplayBoardStates()
+        {
+            Console.WriteLine("\n*** Board States ***");
+            
+            for (int row = 0; row < 8; row++)
+            {
+                for (int col = 0; col < 8; col++)
+                {
+                    // Display position and symbol
+                    Console.Write($"Position: ({row}, {col}), Symbol: ");
+                    Cell cell = Grid[row, col];
+                    cell.Display();
+                    Console.WriteLine();
+
+                    // Display piece token information
+                    cell.PieceToken_.Display();
+
+                    Console.WriteLine();
+                }
+                Console.WriteLine();
+            }
+        }
+
+        // Method - Check position validity
+        public bool IsValidPosition(Position position)
+        {
+            return position.Row >= 0 && position.Row < 8 && position.Column >= 0 && position.Column < 8;
+        }
+
+        // Method - Update the board with a new cell
+        public void UpdateCell(Position position, Symbol symbol)
+        {
+            // Validate position
+            if (!IsValidPosition(position))
+                throw new ArgumentOutOfRangeException("Position is out of bounds.");
+
+            // Update the cell at the specified position
+            Grid[position.Row, position.Column].Symbol_ = symbol;
+        }
+
+        // Method - Update the piece token at a specific position
+        public void UpdatePieceToken(Position position, PieceToken pieceToken)
+        {
+            // Validate position
+            if (!IsValidPosition(position))
+                throw new ArgumentOutOfRangeException("Position is out of bounds.");
+            
+            // Update the piece token at the specified position
+            Grid[position.Row, position.Column].PieceToken_ = new PieceToken(pieceToken);
+        }
+
+        // Method - Place pieces on the board
+        private void PlacePieces<PieceType>(List<PieceType> pieces, int pieceId) where PieceType : Piece    // Includes every child classes as well
+        {
+            for (int i = 0; i < pieces.Count; i++)
+            {
+                var piece = pieces[i];
+
+                if (piece.CurrentPosition is not null)
+                {
+                    Position position = piece.CurrentPosition;
+
+                    // Update cell with the piece's symbol
+                    UpdateCell(position, piece.Symbol_);
+
+                    // Update the piece token
+                    UpdatePieceToken(position, new PieceToken(i, pieceId, i % 2));
+                }
+            }
+        }
+
+        // Method - Place pieces
+        public void PlaceAllPieces(Pieces.PieceHandler handler)
+        {
+            PlacePieces(handler.Pawns, PieceToken.PawnId);
+            PlacePieces(handler.Rooks, PieceToken.RookId);
+            PlacePieces(handler.Knights, PieceToken.KnightId);
+            PlacePieces(handler.Bishops, PieceToken.BishopId);
+            PlacePieces(handler.Queens, PieceToken.QueenId);
+            PlacePieces(handler.Kings, PieceToken.KingId);
+        }
+    }
+}

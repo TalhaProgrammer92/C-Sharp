@@ -1,0 +1,10 @@
+Microsoft.AspNetCore.Identity.EntityFrameworkCore
+Microsoft.AspNetCore.OpenApi
+Microsoft.VisualStudio.Web.CodeGeneration.Design
+Microsoft.AspNetCore.Authentication.JWTBearer
+
+[Base]
+Microsoft.EntityFrameworkCore
+Microsoft.EntityFrameworkCore.Design
+Microsoft.EntityFrameworkCore.SqlServer
+Microsoft.EntityFrameworkCore.Tools
