@@ -5,21 +5,33 @@
 [Bb]in/
 [Oo]bj/
 [Ll]og/
-*.user
+[Ll]ogs/
+*.pidb
+*.mdb
+*.opendb
+
+# User-specific files
+*.rsuser
 *.suo
+*.user
 *.userosscache
 *.sln.docstates
 
-# Uncomment if using Rider
-#.idea/
+# Visual Studio
+.vs/
 
-# Visual Studio Code workspace files
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+# Visual Studio Code
 .vscode/
 
 # Auto-generated files
 *.generated.cs
 *.g.cs
 *.g.i.cs
+*.AssemblyAttributes.cs
 
 # NuGet
 *.nupkg
@@ -35,6 +47,7 @@ packages/
 # Dotnet CLI
 project.assets.json
 project.runtimeconfig.json
+*.deps.json
 
 # Build folders
 build/
@@ -46,6 +59,8 @@ TestResults/
 *.publish/
 *.azurePubxml
 *.azurePubxml.user
+.publishsettings
+app.publish/
 
 # Entity Framework
 Migrations/
@@ -53,25 +68,35 @@ Migrations/
 # ASP.NET Scaffolding
 ScaffoldingReadMe.txt
 
-# Rider
-.idea/
-*.sln.iml
+# ASP.NET (MVC, Razor, Blazor, WebForms)
+*.dbmdl
+*.bak
+*.bak2
+*.ldf
+*.mdf
+*.ndf
+*.log
+*.sql
+*.cache
+wwwroot/dist/
+wwwroot/lib/
+wwwroot/node_modules/
+wwwroot/css/
+wwwroot/js/
 
-# Resharper
-_ReSharper*/
-*.[Rr]e[Ss]harper
-*.DotSettings.user
+# Razor
+Areas/**/Pages/**/Generated/
+obj/Debug/net*/Razor/
+
+# Blazor / MAUI
+bin/
+obj/
+Platforms/
+wwwroot/
 
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
-
-# User-specific files
-*.rsuser
-*.suo
-*.user
-*.userosscache
-*.sln.docstates
 
 # Windows Installer files
 *.cab
@@ -83,11 +108,9 @@ ehthumbs.db
 *.dotCover
 
 # VS for Mac
-.vscode/
-.idea/
 *.sln.dotsettings
 
-# Xamarin
+# Xamarin / MAUI
 *.apk
 *.ap_
 *.dex
@@ -103,21 +126,30 @@ ehthumbs.db
 *.plist
 *.m
 
-# Dotnet MAUI
-Platforms/
-wwwroot/
-
-# Others
+# Node / JS tooling (Blazor WASM, ASP.NET + npm)
 node_modules/
+npm-debug.log
+yarn-error.log
+.pnpm-debug.log
+package-lock.json
+yarn.lock
+
+# Cache / temp
 *.tmp
 *.bak
 *.cache
 *.vspscc
 *.vssscc
 *.vsidx
-*.zip
-*.rar
-*.sfx
+*.suo
+*.orig
+*.swp
 
-# Folders
-# ASP.NET/Backend
+# GitHub workflows (optional to ignore .github folder)
+.github/
+
+# Others
+*.sfx
+*.rar
+*.zip
+*.7z
