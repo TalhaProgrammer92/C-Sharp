@@ -1,6 +1,6 @@
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddControllersWithViews(); // Adds services for controllers and views to the DI container
+builder.Services.AddControllersWithViews(); // Adds services for controllers and views to the DI container [Routing]
 
 var app = builder.Build();
 
@@ -12,11 +12,16 @@ var app = builder.Build();
 //    await context.Response.WriteAsync("Hello from custom middleware!");
 //});
 
+//// Convention based Routing
 //app.MapDefaultControllerRoute(); // Sets up default routing for controllers
-app.MapControllerRoute(
-    name: "default", // You can set any name for the route
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+//app.MapControllerRoute(
+//    name: "default", // You can set any name for the route
+//    pattern: "{controller=Home}/{action=Index}/{id?}");
 
+//// Attribute based routing
+app.MapControllers(); // Maps attribute-routed controllers
+
+//// Middlewares
 //app.Use(async (context, next) =>
 //{
 //    // Do something before the next middleware/component
