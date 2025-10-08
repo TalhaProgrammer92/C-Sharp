@@ -4,4 +4,29 @@
 }
 
 <h1>Home Index</h1>
+<h4>Current Date/Time is @DateTime.Now</h4>
+<h5>Current Year is @DateTime.Now.Year</h5>
+<h5>Current Month is @DateTime.Now.Month</h5>
 
+@{
+    var name = "Talha Ahmad";
+    var age = 20;
+}
+
+@{
+    if (age >= 18)
+    {
+        <p>My name is <b>@name</b> and I am <i>@age</i> years old.</p>
+    }
+    else
+    {
+        <p>Kids not allowed!!!</p>
+    }
+}
+
+@{
+    for(int i = 1; i <= 10; i++)
+    {
+        <p>Iteration @i</p>
+    }
+}
