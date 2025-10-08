@@ -5,29 +5,24 @@ var app = builder.Build();
 app.UseRouting();
 app.UseEndpoints(endpoints =>
 {
-    endpoints.MapGet("/RETRIEVE", async (context) =>
+    endpoints.MapGet("/", async (context) =>
     {
         await context.Response.WriteAsync("Hello World! - GET");
     });
 
-    endpoints.MapPost("/CREATE", async (context) =>
+    endpoints.MapPost("/", async (context) =>
     {
         await context.Response.WriteAsync("Hello World! - POST");
     });
     
-    endpoints.MapPut("/UPDATE", async (context) =>
+    endpoints.MapPut("/", async (context) =>
     {
         await context.Response.WriteAsync("Hello World! - PUT");
     });
     
-    endpoints.MapDelete("/DELETE", async (context) =>
+    endpoints.MapDelete("/", async (context) =>
     {
         await context.Response.WriteAsync("Hello World! - DELETE");
-    });
-    
-    endpoints.Map("/ANY", async (context) =>
-    {
-        await context.Response.WriteAsync("Hello World! - ANY");
     });
 });
 
