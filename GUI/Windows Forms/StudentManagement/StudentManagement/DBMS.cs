@@ -12,7 +12,7 @@ namespace StudentManagement
     class DBMS
     {
         // Attributes
-        static readonly string connectionString = @"Data Source=DESKTOP-Q33I9BI\SQLEXPRESS;Initial Catalog=StudentData;Integrated Security=True;Trust Server Certificate=True";
+        static readonly string connectionString = @"Data Source=DESKTOP-SK1FN69\SQLDESKTOP;Initial Catalog=StudentData;Integrated Security=True;Trust Server Certificate=True";
         public static SqlConnection sqlConnection = new SqlConnection(connectionString);
         private SqlCommand command;
         private DataTable dataTable;
