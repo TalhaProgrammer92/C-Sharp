@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PizzaStore.Application\PizzaStore.Application.csproj" />
+    <ProjectReference Include="..\PizzaStore.Core\PizzaStore.Core.csproj" />
+  </ItemGroup>
+
 </Project>

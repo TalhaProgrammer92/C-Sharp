@@ -8,4 +8,8 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PizzaStore.Application\PizzaStore.Application.csproj" />
+  </ItemGroup>
+
 </Project>
