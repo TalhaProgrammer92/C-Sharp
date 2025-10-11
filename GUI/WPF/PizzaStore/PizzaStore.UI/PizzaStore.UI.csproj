@@ -9,6 +9,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.9" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="9.0.9" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.9" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.9" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Configuration" Version="9.0.9" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\PizzaStore.Application\PizzaStore.Application.csproj" />
   </ItemGroup>
 
