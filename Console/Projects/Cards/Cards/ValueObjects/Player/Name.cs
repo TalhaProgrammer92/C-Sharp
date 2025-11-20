@@ -8,7 +8,7 @@
         // Constructors
         public Name()
         {
-            Value = string.Empty;
+            Value = "Unknown Player";
         }
         public Name(string value)
         {
@@ -21,7 +21,7 @@
         // Method - Check if name is valid or not
         public static bool IsValidName(string name)
         {
-            return !string.IsNullOrWhiteSpace(name);
+            return !string.IsNullOrWhiteSpace(name) && !string.IsNullOrEmpty(name);
         }
 
         // Override ToString method

@@ -11,13 +11,6 @@ namespace Cards.Entities
         public bool IsShown { get; set; }
 
         // Constructors
-        public Card()
-        {
-            CardNumber = new CardNumber();
-            CardType = CardType.Heart;
-            IsShown = false;
-        }
-
         public Card(CardNumber cardNumber, CardType cardType)
         {
             CardNumber = cardNumber;
