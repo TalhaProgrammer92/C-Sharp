@@ -1,4 +1,5 @@
-﻿using Cards.ValueObjects.Player;
+﻿using Cards.Utils;
+using Cards.ValueObjects.Player;
 
 namespace Cards.Entities
 {
@@ -7,18 +8,28 @@ namespace Cards.Entities
         // Attributes
         public Name Name { get; }
         public Score Score { get; private set; }
+        public Hand Hand { get; }
 
         // Constructors
         public Player()
         {
             Name = new Name();
             Score = new Score();
+            Hand = new Hand();
         }
 
         public Player(Name name)
         {
             Name = name;
             Score = new Score();
+            Hand = new Hand();
+        }
+
+        public Player(Name name, Hand hand)
+        {
+            Name = name;
+            Score = new Score();
+            Hand = hand;
         }
 
         // Method - Add points to the player's score
@@ -27,10 +38,10 @@ namespace Cards.Entities
             Score = Score.AddPoints(points);
         }
 
-        // Override ToString method
-        public override string ToString()
+        // Method - Display the player's information
+        public void DisplayInfo()
         {
-            return $"Player: {Name} | Score: {Score.Value}";
+            Message.Info($"Player: {Name}, Score: {Score}, Cards in Hand: {Hand.Cards.Count}");
         }
     }
 }
