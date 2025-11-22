@@ -20,7 +20,7 @@ namespace Cards.Entities
         // Method - Add player to the desk
         public void AddPlayer(Player player)
         {
-            if (Players.Count > Settings.GameSettings.MaxPlayers)
+            if (Players.Count == Settings.GameSettings.MaxPlayers)
                 throw new InvalidOperationException($"Maximum number '{Settings.GameSettings.MaxPlayers}' of players reached.");
 
             Players.Add(player);

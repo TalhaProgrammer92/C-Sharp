@@ -33,11 +33,11 @@ namespace Cards.Entities
         }
 
         // Method - Get specific cards by type from hand
-        public Collection<Card>? GetByCardType(CardType cardType)
+        public Collection<Card> GetByCardType(CardType cardType)
         {
             // Check if hand has the specified card type
             if (!HasCardType(cardType))
-                return null;
+                return new Collection<Card>();
 
             // Filter cards by specified type
             Collection<Card> filteredCards = new Collection<Card>();

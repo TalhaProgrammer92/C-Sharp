@@ -41,7 +41,7 @@ namespace Cards.Entities
         // Method - Display the player's information
         public void DisplayInfo()
         {
-            Message.Info($"Player: {Name}, Score: {Score}, Cards in Hand: {Hand.Cards.Count}");
+            Message.Info($"Player: {Name.ToString()}, Score: {Score.ToString()}, Cards in Hand: {Hand.Cards.Count}");
         }
     }
 }

@@ -25,5 +25,11 @@
                 throw new Exception("Points to add cannot be negative.");
             return new Score(Value + points);
         }
+
+        // Method - Override ToString
+        public override string ToString()
+        {
+            return Value.ToString();
+        }
     }
 }
