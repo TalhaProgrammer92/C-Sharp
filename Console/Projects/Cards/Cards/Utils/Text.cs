@@ -18,12 +18,7 @@ namespace Cards.Utils
         // Method - Display text with color
         public void Display(bool lineBreak = false)
         {
-            Console.ForegroundColor = ColorObject.Color;
-            
-            Console.Write(Value);
-            if (lineBreak) Console.WriteLine();
-            
-            Console.ResetColor();
+            Misc.PrintColoredMessage(Value, ColorObject, lineBreak);
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using Cards.ValueObjects.Utils;
+﻿using Cards.Enums;
+using Cards.ValueObjects.Utils;
 
 namespace Cards.Settings
 {
@@ -10,5 +11,13 @@ namespace Cards.Settings
         public static readonly ColorObject Error = new ColorObject(ConsoleColor.Red);
         public static readonly ColorObject Success = new ColorObject(ConsoleColor.Green);
         public static readonly ColorObject Default = new ColorObject(ConsoleColor.White);
+
+        public static readonly Dictionary<CardType, ColorObject> CardTypeColors = new()
+        {
+            { CardType.Hearts, new ColorObject(ConsoleColor.Red) },
+            { CardType.Diamonds, new ColorObject(ConsoleColor.Magenta) },
+            { CardType.Clubs, new ColorObject(ConsoleColor.Blue) },
+            { CardType.Spades, new ColorObject(ConsoleColor.Green) }
+        };
     }
 }

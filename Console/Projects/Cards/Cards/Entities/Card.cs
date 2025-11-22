@@ -1,4 +1,5 @@
 ﻿using Cards.Enums;
+using Cards.Utils;
 using Cards.ValueObjects.Card;
 
 namespace Cards.Entities
@@ -16,10 +17,10 @@ namespace Cards.Entities
             CardType = cardType;
         }
 
-        // Override ToString method
-        public override string ToString()
+        // Method - Display card information
+        public void Display()
         {
-            return $"{CardRank} of {CardType}";
+            Misc.PrintColoredMessage($"{CardRank} of {CardType}", Settings.TextColor.CardTypeColors[CardType]);
         }
     }
 }

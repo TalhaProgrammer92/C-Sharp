@@ -49,7 +49,7 @@ namespace Cards.ValueObjects.Card
         {
             foreach (var card in Cards)
             {
-                Console.WriteLine(card);
+                card.Display();
             }
         }
     }
