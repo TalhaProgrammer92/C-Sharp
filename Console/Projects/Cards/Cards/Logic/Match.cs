@@ -7,12 +7,18 @@ namespace Cards.Logic
         // Attributes
         public CardsDesk Desk { get; }
         public List<Player> Players { get; }
+        public bool GameOver { get; private set; }
+        public readonly string Word;
+        private int playerTurn;
 
         // Constructor
-        public Match()
+        public Match(string? word = null)
         {
             Desk = new CardsDesk();
             Players = new List<Player>();
+            GameOver = false;
+            playerTurn = -1;    // Because there are no players at the beginning
+            Word = word ?? Settings.GameSettings.DefaultWord;
         }
 
         // Method - Add player to the desk
@@ -46,19 +52,21 @@ namespace Cards.Logic
         // Method - Reset the match
         public void ResetMatch()
         {
+            // Refresh the cards desk
             Desk.RefreshDesk();
-            
+
             // Remove cards from players' hands
             foreach (var player in Players)
             {
                 player.Hand.ClearCards();
             }
-            
-            DistributeStarterCards();
+
+            // Distribute starter cards among players
+            DistributeStarterCardsAmongPlayers();
         }
 
         // Method - Distribute starter cards to players
-        public void DistributeStarterCards()
+        public void DistributeStarterCardsAmongPlayers()
         {
             for (int i = 0; i < Settings.GameSettings.CardsPerPlayer; i++)
             {
@@ -76,6 +84,40 @@ namespace Cards.Logic
                     }
                 }
             }
+        }
+
+        // Method - Check if there's only one player left who has cards
+        public bool IsOnlyOnePlayerLeftWithCards()
+        {
+            int playersWithCards = Players.Count(player => player.Hand.Cards.Count > 0);
+            return playersWithCards == 1;
+        }
+
+        // Method - Get loser player (the one who still has cards)
+        public Player? GetLoserPlayer()
+        {
+            return (GameOver) ? Players.FirstOrDefault(player => player.Hand.Cards.Count > 0) : null;
+        }
+
+        // Method - Update match status
+        public void UpdateMatchStatus()
+        {
+            // Revolve the turn to the around players
+            UpdateTurn();
+
+            // Update game over status
+            GameOver = IsOnlyOnePlayerLeftWithCards();
+        }
+
+        // Method - Update turn
+        private void UpdateTurn()
+        {
+            if (GameOver) return;
+
+            do
+            {
+                playerTurn = (playerTurn < Players.Count - 1) ? playerTurn + 1 : 0;
+            } while (Players[playerTurn].HasCompletedWord);
         }
     }
 }

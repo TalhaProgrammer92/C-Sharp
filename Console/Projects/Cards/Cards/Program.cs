@@ -19,6 +19,6 @@ using Cards.ValueObjects.Player;
 //Message.Error("This is an error message.");
 //Message.Success("This is a success message.");
 
-CardsDeck deck = new CardsDeck();
-deck.Shuffle();
-deck.Display();
+//CardsDeck deck = new CardsDeck();
+//deck.Shuffle();
+//deck.Display();
