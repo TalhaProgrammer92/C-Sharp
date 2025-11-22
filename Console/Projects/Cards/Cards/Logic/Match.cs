@@ -40,12 +40,19 @@ namespace Cards.Logic
         // Method - Distribute cards of removed player to other players
         private void DistributeRemovedPlayerCards(Player removedPlayer)
         {
-            int playerCount = Players.Count;
-            int cardIndex = 0;
+            var cards = removedPlayer.Hand.Cards;
+            int playerIndex = 0;
 
-            foreach (var card in removedPlayer.Hand.Cards)
+            foreach (var card in cards)
             {
-                Players[cardIndex++ % playerCount].Hand.AddCard(card);
+                // Reset the player index to prevent out of range exception
+                if (playerIndex >= Players.Count)
+                    playerIndex = 0;
+
+                // Because card can't be distributed to an already lost player
+                if (Players[playerIndex++].Word.IsCompletlyFilled) continue;
+
+                Players[playerIndex++].Hand.Cards.Add(card);
             }
         }
 
@@ -72,6 +79,8 @@ namespace Cards.Logic
             {
                 foreach (var player in Players)
                 {
+                    if (player.Word.IsCompletlyFilled) continue;
+                    
                     var card = Desk.Deck.DrawCard();
 
                     if (card != null)
@@ -117,7 +126,7 @@ namespace Cards.Logic
             do
             {
                 playerTurn = (playerTurn < Players.Count - 1) ? playerTurn + 1 : 0;
-            } while (Players[playerTurn].HasCompletedWord);
+            } while (Players[playerTurn].Word.IsCompletlyFilled);
         }
     }
 }

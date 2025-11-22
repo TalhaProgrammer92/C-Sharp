@@ -9,46 +9,29 @@ namespace Cards.Entities
         public Name Name { get; }
         public Score Score { get; private set; }
         public Hand Hand { get; }
-        public string Word { get; private set; } = string.Empty;
-        public bool HasCompletedWord { get; private set; } = false;
+        public Word Word { get; }
 
         // Constructors
-        public Player()
-        {
-            Name = new Name();
-            Score = new Score();
-            Hand = new Hand();
-        }
-
-        public Player(Name name)
+        public Player(Name name, Word word)
         {
             Name = name;
             Score = new Score();
             Hand = new Hand();
+            Word = word;
         }
 
-        public Player(Name name, Hand hand)
+        public Player(Name name, Word word, Hand hand)
         {
             Name = name;
             Score = new Score();
             Hand = hand;
+            Word = word;
         }
 
         // Method - Add points to the player's score
         public void AddPointsToScore(int points = 1)
         {
             Score = Score.AddPoints(points);
-        }
-
-        // Method - Add word's letter to the player
-        public void AddWordLetter(string word)
-        {
-            if (HasCompletedWord)
-                throw new InvalidOperationException("All letters of the word have already been added.");
-
-            Word += word[Word.Length];
-
-            HasCompletedWord = Word.Length == word.Length;
         }
 
         // Method - Display the player's information
