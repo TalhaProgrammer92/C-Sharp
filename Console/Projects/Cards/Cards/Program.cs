@@ -14,7 +14,11 @@ using Cards.ValueObjects.Player;
 //);
 //Console.WriteLine(card);
 
-Message.Info("This is an informational message.");
-Message.Warning("This is a warning message.");
-Message.Error("This is an error message.");
-Message.Success("This is a success message.");
+//Message.Info("This is an informational message.");
+//Message.Warning("This is a warning message.");
+//Message.Error("This is an error message.");
+//Message.Success("This is a success message.");
+
+CardsDeck deck = new CardsDeck();
+deck.Shuffle();
+deck.Display();

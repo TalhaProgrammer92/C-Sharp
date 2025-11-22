@@ -6,22 +6,20 @@ namespace Cards.Entities
     public class Card
     {
         // Attributes
-        public CardNumber CardNumber { get; }
+        public CardRank CardRank { get; }
         public CardType CardType { get; }
-        public bool IsShown { get; set; }
 
         // Constructors
-        public Card(CardNumber cardNumber, CardType cardType)
+        public Card(CardRank cardRank, CardType cardType)
         {
-            CardNumber = cardNumber;
+            CardRank = cardRank;
             CardType = cardType;
-            IsShown = false;
         }
 
         // Override ToString method
         public override string ToString()
         {
-            return $"{CardNumber} of {CardType}";
+            return $"{CardRank} of {CardType}";
         }
     }
 }

@@ -2,9 +2,9 @@
 {
     public enum CardType
     {
-        Heart,
-        Diamond,
-        Club,
-        Spade
+        Hearts,
+        Diamonds,
+        Clubs,
+        Spades
     }
 }
