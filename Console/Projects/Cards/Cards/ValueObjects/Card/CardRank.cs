@@ -5,6 +5,21 @@
         // Attributes
         public string Value { get; }
 
+        // Static readonly fields for card ranks
+        public static readonly string Ace = "A";
+        public static readonly string Two = "2";
+        public static readonly string Three = "3";
+        public static readonly string Four = "4";
+        public static readonly string Five = "5";
+        public static readonly string Six = "6";
+        public static readonly string Seven = "7";
+        public static readonly string Eight = "8";
+        public static readonly string Nine = "9";
+        public static readonly string Ten = "10";
+        public static readonly string Jack = "J";
+        public static readonly string Queen = "Q";
+        public static readonly string King = "K";
+
         // Constructors
         public CardRank()
         {
@@ -22,7 +37,21 @@
         // Method - Get card ranks list
         public static string[] GetCardRanks()
         {
-            return new string[] { "A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K" };
+            return new string[] {
+                Ace,
+                Two,
+                Three,
+                Four,
+                Five,
+                Six,
+                Seven,
+                Eight,
+                Nine,
+                Ten,
+                Jack,
+                Queen,
+                King,
+            };
         }
 
         // Method - Check if card number is valid or not

@@ -1,4 +1,5 @@
 ﻿using Cards.Enums;
+using Cards.ValueObjects.Card;
 using System.Collections.ObjectModel;
 
 namespace Cards.Entities
@@ -125,7 +126,7 @@ namespace Cards.Entities
                 1. Player can change the card type if the rank of the player card is 'J'
                 2. Player can change the card type if the rank of the player card is same as the top card of the table hand
              */
-            return playerCard.CardRank.Value == "J" || playerCard.CardRank == GetTopCard()!.CardRank;
+            return playerCard.CardRank.Value == CardRank.Jack || playerCard.CardRank == GetTopCard()!.CardRank;
         }
 
         public void ResetTable(Card card)
