@@ -17,6 +17,20 @@ namespace Cards.Entities
             CardType = cardType;
         }
 
+        // Method - Check if cards are equal
+        public static bool operator==(Card left, Card right)
+        {
+            if (object.ReferenceEquals(left, right)) return true;
+            
+            if (left is null && right is null) return false;
+
+            return left.Equals(right);
+        }
+        public static bool operator !=(Card left, Card right)
+        {
+            return !(left == right);
+        }
+
         // Method - Display card information
         public void Display()
         {

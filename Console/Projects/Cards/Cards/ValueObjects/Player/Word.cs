@@ -5,7 +5,7 @@
         // Attributes
         private readonly string _fixedWord;
         private string _mutableWord;
-        public bool IsCompletlyFilled => _fixedWord.Length == _mutableWord.Length;
+        public bool IsFilled => _fixedWord.Length == _mutableWord.Length;
 
         // Constructor
         public Word(string? word = null)
@@ -17,9 +17,31 @@
         // Method - Fill the word with a character
         public void Fill()
         {
-            if (IsCompletlyFilled) return;
+            if (IsFilled) return;
 
-            _mutableWord += _fixedWord[_mutableWord.Length];
+            /*
+             !! LOGIC !!
+
+            Fw: Fixed Word
+            Mw: Mutable Word
+
+            [CASE 1]
+            Fw = "Donkey"
+            Mw = "Do"
+
+            IsFilled => false
+
+            index = Mw.Length => 2
+            Mw += Fw[index] => 'n'
+
+            [CASE 2]
+            Fw = "Donkey"
+            Mw = "Donkey"
+
+            IsFilled => true (Because both Fw and Mw have same length)
+             */
+            int index = _mutableWord.Length;
+            _mutableWord += _fixedWord[index];
         }
 
         // Method - Clear the word

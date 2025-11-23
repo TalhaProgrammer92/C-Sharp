@@ -1,4 +1,5 @@
 ﻿using Cards.Entities;
+using System.Collections.ObjectModel;
 
 namespace Cards.Logic
 {
@@ -31,28 +32,29 @@ namespace Cards.Logic
         }
 
         // Method - Remove player from the desk
-        public void RemovePlayer(Player player)
+        public void RemovePlayer(Player player, Collection<Card> cards)
         {
-            DistributeRemovedPlayerCards(player);
             Players.Remove(player);
+            DistributeRemovedPlayerCards(cards);
         }
 
         // Method - Distribute cards of removed player to other players
-        private void DistributeRemovedPlayerCards(Player removedPlayer)
+        private void DistributeRemovedPlayerCards(Collection<Card> cards)
         {
-            var cards = removedPlayer.Hand.Cards;
-            int playerIndex = 0;
+            int playerIndex = -1;
 
             foreach (var card in cards)
             {
+                playerIndex++;
+
                 // Reset the player index to prevent out of range exception
                 if (playerIndex >= Players.Count)
                     playerIndex = 0;
 
                 // Because card can't be distributed to an already lost player
-                if (Players[playerIndex++].Word.IsCompletlyFilled) continue;
+                if (Players[playerIndex].Word.IsFilled) continue;
 
-                Players[playerIndex++].Hand.Cards.Add(card);
+                Players[playerIndex].Hand.Cards.Add(card);
             }
         }
 
@@ -67,19 +69,20 @@ namespace Cards.Logic
             {
                 player.Hand.ClearCards();
             }
+            GameOver = false;
 
             // Distribute starter cards among players
             DistributeStarterCardsAmongPlayers();
         }
 
         // Method - Distribute starter cards to players
-        public void DistributeStarterCardsAmongPlayers()
+        private void DistributeStarterCardsAmongPlayers()
         {
             for (int i = 0; i < Settings.GameSettings.CardsPerPlayer; i++)
             {
                 foreach (var player in Players)
                 {
-                    if (player.Word.IsCompletlyFilled) continue;
+                    if (player.Word.IsFilled) continue;
                     
                     var card = Desk.Deck.DrawCard();
 
@@ -96,15 +99,20 @@ namespace Cards.Logic
         }
 
         // Method - Check if there's only one player left who has cards
-        public bool IsOnlyOnePlayerLeftWithCards()
+        private bool IsOnlyOnePlayerLeftWithCards()
         {
-            int playersWithCards = Players.Count(player => player.Hand.Cards.Count > 0);
-            return playersWithCards == 1;
+            if (!GameOver)
+            {
+                int playersWithCards = Players.Count(player => player.Hand.Cards.Count > 0);
+                return playersWithCards == 1;
+            }
+            return false;
         }
 
-        // Method - Get loser player (the one who still has cards)
-        public Player? GetLoserPlayer()
+        // Method - Get the lost player (the one who still has cards)
+        public Player? GetLostPlayer()
         {
+            // It might return a list of players, that's why I checked if game is over or not, just to make sure there's only 1 player left with cards
             return (GameOver) ? Players.FirstOrDefault(player => player.Hand.Cards.Count > 0) : null;
         }
 
@@ -115,7 +123,11 @@ namespace Cards.Logic
             UpdateTurn();
 
             // Update game over status
-            GameOver = IsOnlyOnePlayerLeftWithCards();
+            if (IsOnlyOnePlayerLeftWithCards())
+            {
+                GameOver = true;
+                Players[playerTurn].Word.Fill();
+            }
         }
 
         // Method - Update turn
@@ -125,8 +137,41 @@ namespace Cards.Logic
 
             do
             {
+                /*
+                 !! LOGIC !!
+
+                [CASE 1]
+                Players = {1, 2, 3, 4, 5, 6} (MAX)
+                ActivePlayers = {1, 2, 4, 6}
+                NonActivePlayers = {3, 5}
+                Turn = 1 (Player 2)
+
+                UpdateTurn:
+                    Turn = (Turn < Players.Count - 1) => (1 < 6 -1) => (1 < 5) => true
+                        {true} Turn = Turn + 1 => 1 + 1 => 2 (Player 3) ✔
+                        {false} Turn = 0
+
+                Players[Turn].Word.IsFilled => Players[2].Word.IsFilled => true (Because player 3 is not active)
+                    {true} GOTO UpdateTurn ✔
+                    {false} return
+
+                [CASE 2]
+                Players = {1, 2, 3, 4, 5, 6} (MAX)
+                ActivePlayers = {1, 2, 4, 6}
+                NonActivePlayers = {3, 5}
+                Turn = 0 (Player 1)
+
+                UpdateTurn:
+                    Turn = (Turn < Players.Count - 1) => (0 < 6 -1) => (0 < 5) => true
+                        {true} Turn = Turn + 1 => 0 + 1 => 1 (Player 2) ✔
+                        {false} Turn = 0
+
+                Players[Turn].Word.IsFilled => Players[1].Word.IsFilled => false (Because player 2 is active)
+                    {true} GOTO UpdateTurn
+                    {false} return ✔
+                 */
                 playerTurn = (playerTurn < Players.Count - 1) ? playerTurn + 1 : 0;
-            } while (Players[playerTurn].Word.IsCompletlyFilled);
+            } while (Players[playerTurn].Word.IsFilled);    // Skips the player who already had lost the game
         }
     }
 }

@@ -7,15 +7,14 @@ namespace Cards.Entities
     {
         // Attributes
         public Name Name { get; }
-        public Score Score { get; private set; }
         public Hand Hand { get; }
         public Word Word { get; }
+        public int MatchesWon { get; private set; } = 0;
 
         // Constructors
         public Player(Name name, Word word)
         {
             Name = name;
-            Score = new Score();
             Hand = new Hand();
             Word = word;
         }
@@ -23,21 +22,27 @@ namespace Cards.Entities
         public Player(Name name, Word word, Hand hand)
         {
             Name = name;
-            Score = new Score();
             Hand = hand;
             Word = word;
         }
 
-        // Method - Add points to the player's score
-        public void AddPointsToScore(int points = 1)
+        // Method - Increment matches won
+        public void IncrementMatchesWon()
         {
-            Score = Score.AddPoints(points);
+            MatchesWon++;
+        }
+
+        // Method - Reset player stats
+        public void Reset()
+        {
+            MatchesWon = 0;
+            Word.Clear();
         }
 
         // Method - Display the player's information
         public void DisplayInfo()
         {
-            Message.Info($"Player: {Name.ToString()}, Score: {Score.ToString()}, Cards in Hand: {Hand.Cards.Count}");
+            Message.Info($"Player: {Name.ToString()}, Matches Won: {MatchesWon}, Cards in Hand: {Hand.Cards.Count}");
         }
     }
 }

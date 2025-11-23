@@ -24,7 +24,17 @@ namespace Cards.Entities
         // Method - Remove card from hand
         public void RemoveCard(Card card)
         {
-            Cards.Remove(card);
+            bool succeed = Cards.Remove(card);
+
+            if (!succeed) throw new Exception("An error occurred while removing the card. Check your given object instance.");
+        }
+
+        // Method - Get card
+        public Card GetCard(int index)
+        {
+            var card = Cards[index];
+            RemoveCard(card);
+            return card;
         }
 
         // Method - Clear hand
