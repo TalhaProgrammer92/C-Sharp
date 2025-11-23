@@ -32,6 +32,9 @@ namespace Cards.Entities
         // Method - Get card
         public Card GetCard(int index)
         {
+            if (index < 0 || index >= Cards.Count)
+                throw new ArgumentOutOfRangeException(nameof(index));
+
             var card = Cards[index];
             RemoveCard(card);
             return card;

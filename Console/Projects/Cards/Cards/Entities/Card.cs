@@ -22,7 +22,7 @@ namespace Cards.Entities
         {
             if (object.ReferenceEquals(left, right)) return true;
             
-            if (left is null && right is null) return false;
+            if (left is null || right is null) return false;
 
             return left.Equals(right);
         }

@@ -41,20 +41,20 @@ namespace Cards.Logic
         // Method - Distribute cards of removed player to other players
         private void DistributeRemovedPlayerCards(Collection<Card> cards)
         {
-            int playerIndex = -1;
+            // If game is over
+            if (GameOver) return;
+
+            int playerIndex = 0;
+            var activePlayers = Players.Where(p => !p.Word.IsFilled).ToList();
 
             foreach (var card in cards)
             {
-                playerIndex++;
-
                 // Reset the player index to prevent out of range exception
-                if (playerIndex >= Players.Count)
+                if (playerIndex >= activePlayers.Count)
                     playerIndex = 0;
 
-                // Because card can't be distributed to an already lost player
-                if (Players[playerIndex].Word.IsFilled) continue;
-
-                Players[playerIndex].Hand.Cards.Add(card);
+                // Distribute the card to only an active player
+                activePlayers[playerIndex++].Hand.Cards.Add(card);
             }
         }
 
@@ -82,11 +82,12 @@ namespace Cards.Logic
             {
                 foreach (var player in Players)
                 {
+                    // Skips in-active player
                     if (player.Word.IsFilled) continue;
                     
                     var card = Desk.Deck.DrawCard();
 
-                    if (card != null)
+                    if (card is not null)
                     {
                         player.Hand.AddCard(card);
                     }
@@ -109,11 +110,10 @@ namespace Cards.Logic
             return false;
         }
 
-        // Method - Get the lost player (the one who still has cards)
-        public Player? GetLostPlayer()
+        // Method - Check if there's only one player left wo is not eliminated
+        public bool IsOnlyOneNonEliminatedPlayerLeft()
         {
-            // It might return a list of players, that's why I checked if game is over or not, just to make sure there's only 1 player left with cards
-            return (GameOver) ? Players.FirstOrDefault(player => player.Hand.Cards.Count > 0) : null;
+            return Players.Count(p => !p.Word.IsFilled) == 1;
         }
 
         // Method - Update match status
@@ -126,7 +126,7 @@ namespace Cards.Logic
             if (IsOnlyOnePlayerLeftWithCards())
             {
                 GameOver = true;
-                Players[playerTurn].Word.Fill();
+                Players[playerTurn].Word.Fill();    // Fill the word of lost player
             }
         }
 
@@ -143,7 +143,7 @@ namespace Cards.Logic
                 [CASE 1]
                 Players = {1, 2, 3, 4, 5, 6} (MAX)
                 ActivePlayers = {1, 2, 4, 6}
-                NonActivePlayers = {3, 5}
+                InActivePlayers = {3, 5}
                 Turn = 1 (Player 2)
 
                 UpdateTurn:
@@ -158,7 +158,7 @@ namespace Cards.Logic
                 [CASE 2]
                 Players = {1, 2, 3, 4, 5, 6} (MAX)
                 ActivePlayers = {1, 2, 4, 6}
-                NonActivePlayers = {3, 5}
+                InActivePlayers = {3, 5}
                 Turn = 0 (Player 1)
 
                 UpdateTurn:
