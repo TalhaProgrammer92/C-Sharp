@@ -1,4 +1,4 @@
-﻿namespace Cards.ValueObjects.Utils
+﻿namespace Cards.Utils
 {
     public class ColorObject
     {

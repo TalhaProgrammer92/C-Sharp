@@ -1,8 +1,7 @@
 ﻿using Cards.Enums;
 using Cards.Utils;
-using Cards.ValueObjects.Card;
 
-namespace Cards.Entities
+namespace Cards.ValueObjects.Card
 {
     public class Card
     {
@@ -20,11 +19,11 @@ namespace Cards.Entities
         // Method - Check if cards are equal
         public static bool operator==(Card left, Card right)
         {
-            if (object.ReferenceEquals(left, right)) return true;
+            if (ReferenceEquals(left, right)) return true;
             
             if (left is null || right is null) return false;
 
-            return left.Equals(right);
+            return left.CardRank == right.CardRank && left.CardType == right.CardType;
         }
         public static bool operator !=(Card left, Card right)
         {

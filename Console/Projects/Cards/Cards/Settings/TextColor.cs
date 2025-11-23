@@ -1,5 +1,5 @@
 ﻿using Cards.Enums;
-using Cards.ValueObjects.Utils;
+using Cards.Utils;
 
 namespace Cards.Settings
 {

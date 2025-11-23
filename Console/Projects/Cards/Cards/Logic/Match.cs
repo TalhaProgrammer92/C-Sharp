@@ -1,4 +1,5 @@
-﻿using Cards.Entities;
+﻿using Cards.ValueObjects.Card;
+using Cards.ValueObjects.Player;
 using System.Collections.ObjectModel;
 
 namespace Cards.Logic
@@ -6,7 +7,7 @@ namespace Cards.Logic
     public class Match
     {
         // Attributes
-        public CardsDesk Desk { get; }
+        public Table Desk { get; }
         public List<Player> Players { get; }
         public bool GameOver { get; private set; }
         public readonly string Word;
@@ -15,7 +16,7 @@ namespace Cards.Logic
         // Constructor
         public Match(string? word = null)
         {
-            Desk = new CardsDesk();
+            Desk = new Table();
             Players = new List<Player>();
             GameOver = false;
             playerTurn = -1;    // Because there are no players at the beginning

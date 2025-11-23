@@ -1,8 +1,7 @@
 ﻿using Cards.Enums;
-using Cards.ValueObjects.Card;
 using System.Collections.ObjectModel;
 
-namespace Cards.Entities
+namespace Cards.ValueObjects.Card
 {
     public class Hand
     {
@@ -132,14 +131,14 @@ namespace Cards.Entities
         }
 
         // Method - Check if player can change the card type
-        public bool CanChangeCardType(Card playerCard)
+        private bool CanChangeCardType(Card playerCard)
         {
             /*
              RULES:
                 1. Player can change the card type if the rank of the player card is 'J'
                 2. Player can change the card type if the rank of the player card is same as the top card of the table hand
              */
-            return playerCard.CardRank.Value == CardRank.Jack || playerCard.CardRank == GetTopCard()!.CardRank;
+            return playerCard.CardRank == CardRank.Jack || playerCard.CardRank == GetTopCard()!.CardRank;
         }
 
         public void ResetTable(Card card)

@@ -1,6 +1,4 @@
-﻿using Cards.ValueObjects.Utils;
-
-namespace Cards.Utils
+﻿namespace Cards.Utils
 {
     public class Text
     {

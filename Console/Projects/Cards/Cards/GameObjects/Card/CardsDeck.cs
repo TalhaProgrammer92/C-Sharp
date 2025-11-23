@@ -1,4 +1,5 @@
 ﻿using Cards.Enums;
+using Cards.Utils;
 using System.Collections.ObjectModel;
 
 namespace Cards.ValueObjects.Card
@@ -6,13 +7,13 @@ namespace Cards.ValueObjects.Card
     public class CardsDeck
     {
         // Attributes
-        public Collection<Entities.Card> Cards { get; }
+        public Collection<Card> Cards { get; }
         private Random random;
 
         // Constructor
         public CardsDeck()
         {
-            Cards = new Collection<Entities.Card>();
+            Cards = new Collection<Card>();
             Initialize();
             random = new Random();
             Shuffle();
@@ -21,14 +22,14 @@ namespace Cards.ValueObjects.Card
         // Method - Initialize deck with 52 cards
         private void Initialize()
         {
-            string[] ranks = CardRank.GetCardRanks();
+            var ranks = Misc.GetCardRanks();
             Array cardTypes = Enum.GetValues(typeof(CardType));
 
-            foreach (string rank in ranks)
+            foreach (var rank in ranks)
             {
                 foreach (CardType type in cardTypes)
                 {
-                    Cards.Add(new Entities.Card(new CardRank(rank), type));
+                    Cards.Add(new Card(rank, type));
                 }
             }
         }
@@ -43,7 +44,7 @@ namespace Cards.ValueObjects.Card
                 int k = random.Next(n--);
 
                 // Swap
-                Entities.Card temp = Cards[n];
+                Card temp = Cards[n];
                 Cards[n] = Cards[k];
                 Cards[k] = temp;
             }
@@ -59,12 +60,12 @@ namespace Cards.ValueObjects.Card
         }
 
         // Method - Get a card from the deck
-        public Entities.Card? DrawCard()
+        public Card? DrawCard()
         {
             if (Cards.Count == 0)
                 return null;
 
-            Entities.Card card = Cards[0];
+            Card card = Cards[0];
             Cards.RemoveAt(0);
 
             return card;

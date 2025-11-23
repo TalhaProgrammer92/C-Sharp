@@ -1,7 +1,7 @@
 ﻿using Cards.Utils;
-using Cards.ValueObjects.Player;
+using Cards.ValueObjects.Card;
 
-namespace Cards.Entities
+namespace Cards.ValueObjects.Player
 {
     public class Player
     {

@@ -1,15 +1,13 @@
-﻿using Cards.ValueObjects.Card;
-
-namespace Cards.Entities
+﻿namespace Cards.ValueObjects.Card
 {
-    public class CardsDesk
+    public class Table
     {
         // Attributes
         public CardsDeck Deck { get; }
         public TableHand TableHand { get; }
 
         // Constructor
-        public CardsDesk()
+        public Table()
         {
             Deck = new CardsDeck();
             TableHand = new TableHand(Deck.DrawCard()!);

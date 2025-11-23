@@ -1,4 +1,4 @@
-﻿using Cards.ValueObjects.Utils;
+﻿using Cards.Enums;
 
 namespace Cards.Utils
 {
@@ -19,6 +19,26 @@ namespace Cards.Utils
             }
             
             Console.ResetColor();
+        }
+
+        // Get a list of Card Ranks
+        public static List<CardRank> GetCardRanks()
+        {
+            return new List<CardRank> { 
+                CardRank.Ace,
+                CardRank.Two,
+                CardRank.Three,
+                CardRank.Four,
+                CardRank.Five,
+                CardRank.Six,
+                CardRank.Seven,
+                CardRank.Nine,
+                CardRank.Eight,
+                CardRank.Nine,
+                CardRank.Jack,
+                CardRank.Queen,
+                CardRank.King
+            };
         }
     }
 }
