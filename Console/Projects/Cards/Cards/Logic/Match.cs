@@ -7,16 +7,17 @@ namespace Cards.Logic
     public class Match
     {
         // Attributes
-        public Table Desk { get; }
+        private readonly Table cardsDesk;
         public List<Player> Players { get; }
         public bool GameOver { get; private set; }
         public readonly string Word;
         private int playerTurn;
+        public int MatchesPlayed { get; private set; }
 
         // Constructor
         public Match(string? word = null)
         {
-            Desk = new Table();
+            cardsDesk = new Table();
             Players = new List<Player>();
             GameOver = false;
             playerTurn = -1;    // Because there are no players at the beginning
@@ -63,7 +64,7 @@ namespace Cards.Logic
         public void ResetMatch()
         {
             // Refresh the cards desk
-            Desk.RefreshDesk();
+            cardsDesk.RefreshDesk();
 
             // Remove cards from players' hands
             foreach (var player in Players)
@@ -74,6 +75,30 @@ namespace Cards.Logic
 
             // Distribute starter cards among players
             DistributeStarterCardsAmongPlayers();
+
+            // Increment matches played
+            MatchesPlayed++;
+        }
+
+        // Method - Totally reset the match
+        public void ResetMatchTotally()
+        {
+            // Refresh the cards desk
+            cardsDesk.RefreshDesk();
+            
+            // Remove cards from players' hands and reset their words
+            foreach (var player in Players)
+            {
+                player.Hand.ClearCards();
+                player.Word.Clear();
+            }
+            GameOver = false;
+
+            // Distribute starter cards among players
+            DistributeStarterCardsAmongPlayers();
+
+            // Reset matches played
+            MatchesPlayed = 0;
         }
 
         // Method - Distribute starter cards to players
@@ -90,7 +115,7 @@ namespace Cards.Logic
                     // Skips in-active player
                     if (player.Word.IsFilled) continue;
                     
-                    var card = Desk.Deck.DrawCard();
+                    var card = cardsDesk.Deck.DrawCard();
 
                     if (card is not null)
                     {

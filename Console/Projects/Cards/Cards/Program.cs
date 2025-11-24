@@ -20,14 +20,27 @@ namespace Cards
                 new Name("Rayan Zulfiqar"),
                 word
             ));
+            match.AddPlayer(new Player(
+                new Name("Muhammad Raza"),
+                word
+            ));
 
             // Distributing 5 starter cards to each player
             match.DistributeStarterCardsAmongPlayers();
 
             // Filling some words
             match.Players[0].Word.Fill();
+            match.Players[0].Word.Fill();
+            match.Players[1].Word.Fill();
+            match.Players[2].Word.Fill();
             match.Players[1].Word.Fill();
             match.Players[1].Word.Fill();
+
+            // Matches won
+            match.Players[1].IncrementMatchesWon();
+            match.Players[0].IncrementMatchesWon();
+            match.Players[2].IncrementMatchesWon();
+            match.Players[2].IncrementMatchesWon();
 
             // Display players' stats
             foreach (Player player in match.Players)
@@ -35,7 +48,7 @@ namespace Cards
                 player.DisplayInfo();
                 player.Hand.Display();
                 Console.WriteLine($"Current Word: {player.Word.Current}");
-                Console.WriteLine(new String('-', 50));
+                Console.WriteLine(new String('-', 75));
             }
         }
     }
