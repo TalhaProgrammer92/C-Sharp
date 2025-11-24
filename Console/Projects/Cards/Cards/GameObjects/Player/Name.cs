@@ -1,4 +1,4 @@
-﻿namespace Cards.ValueObjects.Player
+﻿namespace Cards.GameObjects.Player
 {
     public class Name
     {

@@ -2,7 +2,7 @@
 using Cards.Utils;
 using System.Collections.ObjectModel;
 
-namespace Cards.ValueObjects.Card
+namespace Cards.GameObjects.Card
 {
     public class CardsDeck
     {

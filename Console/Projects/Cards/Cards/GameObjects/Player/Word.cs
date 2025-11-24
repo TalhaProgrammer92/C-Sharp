@@ -1,4 +1,6 @@
-﻿namespace Cards.ValueObjects.Player
+﻿using System.Net.Http.Headers;
+
+namespace Cards.GameObjects.Player
 {
     public class Word
     {
@@ -6,6 +8,17 @@
         private readonly string _fixedWord;
         private string _mutableWord;
         public bool IsFilled => _fixedWord.Length == _mutableWord.Length;
+
+        // Getters
+        public string Value
+        {
+            get => _fixedWord;
+        }
+        public string Current
+        {
+            get => _mutableWord;
+            private set { }
+        }
 
         // Constructor
         public Word(string? word = null)

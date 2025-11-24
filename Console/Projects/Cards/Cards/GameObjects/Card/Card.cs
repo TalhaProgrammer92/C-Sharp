@@ -1,7 +1,7 @@
 ﻿using Cards.Enums;
 using Cards.Utils;
 
-namespace Cards.ValueObjects.Card
+namespace Cards.GameObjects.Card
 {
     public class Card
     {

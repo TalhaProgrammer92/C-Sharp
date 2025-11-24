@@ -1,5 +1,5 @@
-﻿using Cards.ValueObjects.Card;
-using Cards.ValueObjects.Player;
+﻿using Cards.GameObjects.Card;
+using Cards.GameObjects.Player;
 using System.Collections.ObjectModel;
 
 namespace Cards.Logic
@@ -77,8 +77,12 @@ namespace Cards.Logic
         }
 
         // Method - Distribute starter cards to players
-        private void DistributeStarterCardsAmongPlayers()
+        public void DistributeStarterCardsAmongPlayers()
         {
+            // Check minimum players count
+            if (Players.Count < Settings.GameSettings.MinPlayers)
+                throw new InvalidOperationException($"Not enough players to start cards distribution. Minimum required players are {Settings.GameSettings.MinPlayers}.");
+
             for (int i = 0; i < Settings.GameSettings.CardsPerPlayer; i++)
             {
                 foreach (var player in Players)

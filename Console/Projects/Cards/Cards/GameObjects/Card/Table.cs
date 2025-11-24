@@ -1,4 +1,4 @@
-﻿namespace Cards.ValueObjects.Card
+﻿namespace Cards.GameObjects.Card
 {
     public class Table
     {

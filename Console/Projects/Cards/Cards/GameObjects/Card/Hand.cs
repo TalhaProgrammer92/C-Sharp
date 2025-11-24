@@ -1,7 +1,7 @@
 ﻿using Cards.Enums;
 using System.Collections.ObjectModel;
 
-namespace Cards.ValueObjects.Card
+namespace Cards.GameObjects.Card
 {
     public class Hand
     {
