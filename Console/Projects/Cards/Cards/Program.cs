@@ -1,5 +1,6 @@
 ﻿using Cards.Logic;
 using Cards.GameObjects.Player;
+using Cards.Utils;
 
 namespace Cards
 {
@@ -7,48 +8,53 @@ namespace Cards
     {
         public static void Main(String[] args)
         {
-            // Creating objects
-            Word word = new Word(Settings.GameSettings.DefaultWord);
-            Match match = new Match(word.Value);
-            
-            // Adding players
-            match.AddPlayer(new Player(
-                new Name("Talha Ahmad"),
-                word
-            ));
-            match.AddPlayer(new Player(
-                new Name("Rayan Zulfiqar"),
-                word
-            ));
-            match.AddPlayer(new Player(
-                new Name("Muhammad Raza"),
-                word
-            ));
+            //    // Creating objects
+            //    Word word = new Word(Settings.GameSettings.DefaultWord);
+            //    Match match = new Match(word.Value);
 
-            // Distributing 5 starter cards to each player
-            match.DistributeStarterCardsAmongPlayers();
+            //    // Adding players
+            //    match.AddPlayer(new Player(
+            //        new Name("Talha Ahmad"),
+            //        word
+            //    ));
+            //    match.AddPlayer(new Player(
+            //        new Name("Rayan Zulfiqar"),
+            //        word
+            //    ));
+            //    match.AddPlayer(new Player(
+            //        new Name("Muhammad Raza"),
+            //        word
+            //    ));
 
-            // Filling some words
-            match.Players[0].Word.Fill();
-            match.Players[0].Word.Fill();
-            match.Players[1].Word.Fill();
-            match.Players[2].Word.Fill();
-            match.Players[1].Word.Fill();
-            match.Players[1].Word.Fill();
+            //    // Distributing 5 starter cards to each player
+            //    match.DistributeStarterCardsAmongPlayers();
 
-            // Matches won
-            match.Players[1].IncrementMatchesWon();
-            match.Players[0].IncrementMatchesWon();
-            match.Players[2].IncrementMatchesWon();
-            match.Players[2].IncrementMatchesWon();
+            //    // Filling some words
+            //    match.Players[0].Word.Fill();
+            //    match.Players[0].Word.Fill();
+            //    match.Players[1].Word.Fill();
+            //    match.Players[2].Word.Fill();
+            //    match.Players[1].Word.Fill();
+            //    match.Players[1].Word.Fill();
 
-            // Display players' stats
-            foreach (Player player in match.Players)
+            //    // Matches won
+            //    match.Players[1].IncrementMatchesWon();
+            //    match.Players[0].IncrementMatchesWon();
+            //    match.Players[2].IncrementMatchesWon();
+            //    match.Players[2].IncrementMatchesWon();
+
+            //    // Display players' stats
+            //    foreach (Player player in match.Players)
+            //    {
+            //        player.DisplayInfo();
+            //        player.Hand.Display();
+            //        Console.WriteLine($"Current Word: {player.Word.Current}");
+            //        Console.WriteLine(new String('-', 75));
+            //    }
+
+            foreach (var option in Misc.GetOptionsRangeList(5, new ColorObject(ConsoleColor.Yellow)))
             {
-                player.DisplayInfo();
-                player.Hand.Display();
-                Console.WriteLine($"Current Word: {player.Word.Current}");
-                Console.WriteLine(new String('-', 75));
+                option.Display(true);
             }
         }
     }
