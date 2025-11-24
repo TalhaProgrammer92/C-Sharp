@@ -21,6 +21,11 @@ namespace Cards.GameObjects.Player
         }
 
         // Constructor
+        public Word(Word? word)
+        {
+            _fixedWord = word!._fixedWord ?? Settings.GameSettings.DefaultWord;
+            _mutableWord = string.Empty;
+        }
         public Word(string? word = null)
         {
             _fixedWord = word ?? Settings.GameSettings.DefaultWord;

@@ -12,18 +12,18 @@ namespace Cards.GameObjects.Player
         public int MatchesWon { get; private set; } = 0;
 
         // Constructors
-        public Player(Name name, Word word)
+        public Player(Name name, Word? word)
         {
             Name = name;
             Hand = new Hand();
-            Word = word;
+            Word = new Word(word);
         }
 
-        public Player(Name name, Word word, Hand hand)
+        public Player(Name name, Word? word, Hand hand)
         {
             Name = name;
             Hand = hand;
-            Word = word;
+            Word = new Word(word);
         }
 
         // Method - Increment matches won
