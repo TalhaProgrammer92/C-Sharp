@@ -1,6 +1,6 @@
 ﻿using Cards.Logic;
 using Cards.GameObjects.Player;
-using Cards.Utils;
+using Cards.Utils.Menu.Menu;
 
 namespace Cards
 {
@@ -52,10 +52,13 @@ namespace Cards
             //        Console.WriteLine(new String('-', 75));
             //    }
 
-            foreach (var option in Misc.GetOptionsRangeList(5, new ColorObject(ConsoleColor.Yellow)))
-            {
-                option.Display(true);
-            }
+            //foreach (var option in Misc.GetOptionsRangeList(5, new ColorObject(ConsoleColor.Yellow)))
+            //{
+            //    option.Display(true);
+            //}
+
+            MainMenu mainMenu = new MainMenu();
+            Console.WriteLine(mainMenu.DisplayAndTakeInput());
         }
     }
 }

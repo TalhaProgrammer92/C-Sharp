@@ -1,6 +1,6 @@
 ﻿using Cards.Settings;
 
-namespace Cards.Utils
+namespace Cards.Utils.Text
 {
     public class Message : Text
     {

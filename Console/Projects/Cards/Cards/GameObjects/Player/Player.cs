@@ -1,5 +1,5 @@
-﻿using Cards.Utils;
-using Cards.GameObjects.Card;
+﻿using Cards.GameObjects.Card;
+using Cards.Utils.Text;
 
 namespace Cards.GameObjects.Player
 {

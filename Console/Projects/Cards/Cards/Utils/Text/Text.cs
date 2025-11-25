@@ -1,4 +1,4 @@
-﻿namespace Cards.Utils
+﻿namespace Cards.Utils.Text
 {
     public class Text
     {

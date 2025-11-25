@@ -1,4 +1,5 @@
 ﻿using Cards.Enums;
+using Cards.Utils.Text;
 
 namespace Cards.Utils
 {
@@ -7,7 +8,8 @@ namespace Cards.Utils
         // Method - Print a message with color
         public static void PrintColoredMessage(string message, ColorObject colorObject, bool lineBreak = true)
         {
-            Console.ForegroundColor = colorObject.Color;
+            Console.ForegroundColor = colorObject.ForegroundColor;
+            Console.BackgroundColor = colorObject.BackgroundColor ?? ConsoleColor.Black;
             
             if (lineBreak)
             {
@@ -42,19 +44,61 @@ namespace Cards.Utils
         }
 
         // Get a list of Menu's option labels of a specific range
-        public static List<Text> GetOptionsRangeList(int range, ColorObject colorObject)
+        public static List<Text.Text> GetOptionsRangeList(int range, ColorObject colorObject)
         {
             if (range <= 0)
                 throw new ArgumentOutOfRangeException("Range must be greater than 0");
 
             // Generate options
-            List<Text> options = new List<Text>();
+            List<Text.Text> options = new List<Text.Text>();
             for (int i = 1; i <= range; i++)
             {
-                options.Add(new Text($"[{i}]", colorObject));
+                options.Add(new Text.Text($"[{i}]", colorObject));
             }
 
             return options;
+        }
+
+        // Do a line break
+        public static void LineBreak(int times = 1)
+        {
+            for (int i = 0; i < times; i++)
+            {
+                Console.WriteLine();
+            }
+        }
+
+        // Get number of digits of a number
+        public static int GetDigitsCount(int number)
+        {
+            if (number < 0) number *= -1;   // Make negative number positive
+
+            int digits = 0;
+
+            do
+            {
+                number /= 10;
+                digits++;
+            }
+            while (number > 0);
+
+            return digits;
+        }
+
+        // Get padding for menu title
+        public static Padding GetMenuTitlePadding(int longestOptionLength, int noOfOptions)
+        {
+            Padding padding = new Padding();
+            int brackets = 2,
+                gap = 1,
+                totalLength = longestOptionLength + brackets + GetDigitsCount(noOfOptions) + gap;
+
+            // Calculate left padding
+            padding.Left = totalLength / 2;
+            padding.Right = totalLength / 2;
+            if (totalLength % 2 == 1) padding.Right++;
+
+            return padding;
         }
     }
 }
