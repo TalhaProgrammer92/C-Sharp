@@ -87,9 +87,9 @@ namespace Cards.Utils.Menu
         {
             if (_options.Count == 0) return 0;
 
-            int length = _options[0].Value.Length;
+            int length = _title.Length;
 
-            for (int i = 1; i < _options.Count; i++)
+            for (int i = 0; i < _options.Count; i++)
             {
                 if (_options[i].Value.Length > length)
                     length = _options[i].Value.Length;

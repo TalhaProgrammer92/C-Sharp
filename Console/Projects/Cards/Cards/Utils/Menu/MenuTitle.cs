@@ -6,6 +6,7 @@ namespace Cards.Utils.Menu
     {
         // Attribute
         private string title;
+        public int Length => title.Length;
 
         // Constructor
         public MenuTitle(string title)
@@ -17,9 +18,9 @@ namespace Cards.Utils.Menu
         public Text.Text GetTitle(Padding padding, char? decorator)
         {
             string titleString = 
-                new string(decorator ?? Settings.MenuSettings.DefaultMenuDecorator, padding.Left - 1)
+                new string(decorator ?? Settings.MenuSettings.DefaultMenuDecorator, Math.Max(0, padding.Left - 1))
                 + $" {title} " +
-                new string(decorator ?? Settings.MenuSettings.DefaultMenuDecorator, padding.Right - 1);
+                new string(decorator ?? Settings.MenuSettings.DefaultMenuDecorator, Math.Max(0, padding.Right - 1));
 
             return new Text.Text(titleString, Settings.MenuSettings.MenuTitleColor);
         }
