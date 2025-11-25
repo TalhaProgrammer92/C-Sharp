@@ -3,16 +3,9 @@
     public class LoadGameMenu : GameMenu
     {
         // Constructor
-        public LoadGameMenu() : base("Load Game")
+        public LoadGameMenu() : base(new MenuTitle("Load Game", Settings.MenuSettings.SubMenuDecorator))
         {
-            AddOption("Go Back");
-        }
-
-        // Display method
-        public override int DisplayAndTakeInput()
-        {
-            Display(Settings.MenuSettings.SubMenuDecorator);
-            return SelectOption();
+            AddOption("Go Back", Enums.Action.OpenMainMenu);
         }
     }
 }

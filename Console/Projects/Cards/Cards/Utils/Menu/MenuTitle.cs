@@ -6,23 +6,31 @@ namespace Cards.Utils.Menu
     {
         // Attribute
         private string title;
+        private readonly char _decorator;
         public int Length => title.Length;
 
         // Constructor
-        public MenuTitle(string title)
+        public MenuTitle(string title, char? decorator = null)
         {
             this.title = title;
+            _decorator = decorator ?? Settings.MenuSettings.DefaultMenuDecorator;
         }
 
         // Method - Get title
-        public Text.Text GetTitle(Padding padding, char? decorator)
+        private Text.Text GetTitle(Padding padding)
         {
             string titleString = 
-                new string(decorator ?? Settings.MenuSettings.DefaultMenuDecorator, Math.Max(0, padding.Left - 1))
+                new string(_decorator, Math.Max(0, padding.Left - 1))
                 + $" {title} " +
-                new string(decorator ?? Settings.MenuSettings.DefaultMenuDecorator, Math.Max(0, padding.Right - 1));
+                new string(_decorator, Math.Max(0, padding.Right - 1));
 
             return new Text.Text(titleString, Settings.MenuSettings.MenuTitleColor);
+        }
+
+        // Method - Display
+        public void Display(Padding padding)
+        {
+            GetTitle(padding).Display(true);
         }
     }
 }

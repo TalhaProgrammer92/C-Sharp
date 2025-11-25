@@ -2,11 +2,19 @@
 {
     public enum Action
     {
-        ClearConsole,
-        SaveGame,
-        LoadGame,
+        // Menu actions
         OpenMainMenu,
         OpenGameMenu,
-        SwitchCards
+
+        // Main Menu actions
+        StartGame,
+        LoadGame,
+        OpenSettings,
+        Exit,
+
+        // Misc actions
+        ClearConsole,
+        SwitchCards,
+        SaveGame
     }
 }

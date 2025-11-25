@@ -3,18 +3,12 @@
     public class MainMenu : GameMenu
     {
         // Constructor
-        public MainMenu() : base("Main Menu")
+        public MainMenu() : base(new MenuTitle("Main Menu", Settings.MenuSettings.MainMenuDecorator))
         {
-            AddOption("Start Game");
-            AddOption("Load Game");
-            AddOption("Settings");
-            AddOption("Exit");
-        }
-
-        public override int DisplayAndTakeInput()
-        {
-            Display(Settings.MenuSettings.MainMenuDecorator);
-            return SelectOption();
+            AddOption("Start Game", Enums.Action.StartGame);
+            AddOption("Load Game", Enums.Action.LoadGame);
+            AddOption("Settings", Enums.Action.OpenSettings);
+            AddOption("Exit", Enums.Action.Exit);
         }
     }
 }

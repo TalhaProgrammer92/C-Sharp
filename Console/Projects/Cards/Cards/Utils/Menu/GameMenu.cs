@@ -5,53 +5,61 @@ namespace Cards.Utils.Menu
     public class GameMenu
     {
         // Attributes
-        protected readonly List<Text.Text> _options;
+        protected readonly Dictionary<int, MenuOption> _options;
         protected readonly MenuTitle _title;
         protected Padding Padding => Misc.GetMenuTitlePadding(
             GetLongestOptionLength(), _options.Count
         );
 
         // Constructor
-        public GameMenu(string title)
+        public GameMenu(MenuTitle title)
         {
-            _title = new MenuTitle(title);
-            _options = new List<Text.Text>();
+            _title = title;
+            _options = new Dictionary<int, MenuOption>();
+        }
+
+        // Method - Get option by index
+        public Enums.Action GetAction(int optionIndex)
+        {
+            return _options[optionIndex].Action;
         }
 
         // Method - Add option to the menu
-        protected void AddOption(string optionLabel)
+        protected void AddOption(string optionLabel, Enums.Action action)
         {
-            _options.Add(new Text.Text(optionLabel, Settings.MenuSettings.MenuOptionColor));
+            _options.Add(
+                _options.Count,
+                new MenuOption(
+                    optionLabel,
+                    action
+                )
+            );
         }
 
         // Method - Display the menu
-        protected void Display(char? decorator = null)
+        protected void Display()
         {
-            _title.GetTitle(Padding, decorator ?? Settings.MenuSettings.SimpleMenuDecorator).Display(true);
+            _title.Display(Padding);
 
             Misc.LineBreak();
 
-            var labels = Misc.GetOptionsRangeList(_options.Count, new Text.ColorObject(ConsoleColor.DarkYellow));
+            // Print options with numbered labels
+            var labels = Misc.GetOptionsRangeList(_options.Count, new ColorObject(ConsoleColor.DarkYellow));
             for (int i = 0; i <  _options.Count; i++)
             {
-                labels[i].Display();
+                labels[i].Display();    // Display option number
                 Console.Write(" ");
-                _options[i].Display(true);
+                _options[i].Text.Display(true); // Display option label
             }
-
-            Misc.LineBreak(2);
+            
+            Misc.LineBreak();
         }
 
         // Method - Select an options
         protected int SelectOption()
         {
             int selection = 0;
-            Text.Text prompt = new Text.Text(
-                "Select an option...",
-                Settings.TextColor.Prompt
-            );
 
-            prompt.Display(true);   // Display the prompt
             do
             {
                 // Take input
@@ -63,9 +71,8 @@ namespace Cards.Utils.Menu
                     // Clear the console
                     Console.Clear();
                     
-                    // Display menu and prompt
+                    // Display menu
                     Display();
-                    prompt.Display(true);
                     continue;
                 }
 
@@ -91,15 +98,15 @@ namespace Cards.Utils.Menu
 
             for (int i = 0; i < _options.Count; i++)
             {
-                if (_options[i].Value.Length > length)
-                    length = _options[i].Value.Length;
+                if (_options[i].Label.Length > length)
+                    length = _options[i].Label.Length;
             }
 
             return length;
         }
 
         // Method - Display and input
-        public virtual int DisplayAndTakeInput()
+        public int DisplayAndTakeInput()
         {
             Display();
             return SelectOption();

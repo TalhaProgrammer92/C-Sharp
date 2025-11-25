@@ -1,6 +1,7 @@
 ﻿using Cards.Logic;
 using Cards.GameObjects.Player;
 using Cards.Utils.Menu.Menu;
+using Cards.Utils.Text;
 
 namespace Cards
 {
@@ -58,7 +59,8 @@ namespace Cards
             //}
 
             MainMenu mainMenu = new MainMenu();
-            Console.WriteLine(mainMenu.DisplayAndTakeInput());
+            int option = mainMenu.DisplayAndTakeInput();
+            Message.Info($"Action: {mainMenu.GetAction(option)}");
         }
     }
 }
