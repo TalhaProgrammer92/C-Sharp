@@ -39,6 +39,12 @@ namespace Cards.GameObjects.Player
             Word.Clear();
         }
 
+        // Method - Check player's name uniqueness
+        public static bool IsNameUnique(string name, List<Player> players)
+        {
+            return !players.Any(p => p.Name.ToString().Equals(name, StringComparison.OrdinalIgnoreCase));
+        }
+
         // Method - Display the player's information
         public void DisplayInfo()
         {
