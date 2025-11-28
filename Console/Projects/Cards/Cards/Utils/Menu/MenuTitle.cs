@@ -20,9 +20,9 @@ namespace Cards.Utils.Menu
         private Text.Text GetTitle(Padding padding)
         {
             string titleString = 
-                new string(_decorator, Math.Max(0, padding.Left - 1))
+                new string(_decorator, Math.Max(1, padding.Left - 1))
                 + $" {title} " +
-                new string(_decorator, Math.Max(0, padding.Right - 1));
+                new string(_decorator, Math.Max(1, padding.Right - 1));
 
             return new Text.Text(titleString, Settings.MenuSettings.MenuTitleColor);
         }

@@ -10,12 +10,14 @@ namespace Cards.Logic
         public bool GameOver { get; private set; }
 
         // Constructor
-        public Game(Match? match)
+        public Game(Match? match = null)
         {
             Match = match ?? new Match();
             Winner = null;
             GameOver = false;
         }
+
+        // Method - 
 
         // Method - Reset the game
         public void ResetGame()

@@ -11,7 +11,7 @@ namespace Cards.Logic
         public List<Player> Players { get; }
         public bool GameOver { get; private set; }
         public readonly string Word;
-        private int playerTurn;
+        public int PlayerTurn { get; private set; }
         public int MatchesPlayed { get; private set; }
 
         // Constructor
@@ -20,7 +20,7 @@ namespace Cards.Logic
             cardsDesk = new Table();
             Players = new List<Player>();
             GameOver = false;
-            playerTurn = -1;    // Because there are no players at the beginning
+            PlayerTurn = -1;    // Because there are no players at the beginning
             Word = word ?? Settings.GameSettings.DefaultWord;
         }
 
@@ -156,7 +156,7 @@ namespace Cards.Logic
             if (IsOnlyOnePlayerLeftWithCards())
             {
                 GameOver = true;
-                Players[playerTurn].Word.Fill();    // Fill the word of lost player
+                Players[PlayerTurn].Word.Fill();    // Fill the word of lost player
             }
         }
 
@@ -200,8 +200,8 @@ namespace Cards.Logic
                     {true} GOTO UpdateTurn
                     {false} return ✔
                  */
-                playerTurn = (playerTurn < Players.Count - 1) ? playerTurn + 1 : 0;
-            } while (Players[playerTurn].Word.IsFilled);    // Skips the player who already had lost the game
+                PlayerTurn = (PlayerTurn < Players.Count - 1) ? PlayerTurn + 1 : 0;
+            } while (Players[PlayerTurn].Word.IsFilled);    // Skips the player who already had lost the game
         }
     }
 }
