@@ -25,32 +25,32 @@ namespace Cards.Utils.Text
         public static void Info(string text)
         {
             Message message = new Message(
-                new Text("[Info]", TextColor.Info),
-                text, TextColor.Default);
+                new Text("[Info]", TextSettings.Info),
+                text, TextSettings.Default);
             message.Display();
         }
 
         public static void Warning(string text)
         {
             Message message = new Message(
-                new Text("[Warning]", TextColor.Warning),
-                text, TextColor.Default);
+                new Text("[Warning]", TextSettings.Warning),
+                text, TextSettings.Default);
             message.Display();
         }
 
         public static void Error(string text)
         {
             Message message = new Message(
-                new Text("[Error]", TextColor.Error),
-                text, TextColor.Default);
+                new Text("[Error]", TextSettings.Error),
+                text, TextSettings.Default);
             message.Display();
         }
 
         public static void Success(string text)
         {
             Message message = new Message(
-                new Text("[Success]", TextColor.Success),
-                text, TextColor.Default);
+                new Text("[Success]", TextSettings.Success),
+                text, TextSettings.Default);
             message.Display();
         }
     }

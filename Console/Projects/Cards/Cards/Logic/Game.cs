@@ -1,6 +1,7 @@
 ﻿using Cards.GameObjects.Player;
 using Cards.Utils;
 using Cards.Utils.Text;
+using System.Text.RegularExpressions;
 
 namespace Cards.Logic
 {
@@ -22,37 +23,68 @@ namespace Cards.Logic
         // Method - Start Game
         public void StartGame()
         {
-            
+            // Get all players for the game
+            GetAllPlayers();
+
+            // For debugging
+            foreach (var player in Match.Players)
+            {
+                player.DisplayInfo();
+            }
         }
 
         // Method - Get all players
-        public void GetAllPlayers()
+        private void GetAllPlayers()
         {
             if (Match.Players.Count == 0)
             {
                 string name;
 
+                Heading heading = new("Players Data Entry", 20);
+                heading.Display(true);
+                Misc.LineBreak();
+
                 for (int i = 0; i < Settings.GameSettings.MaxPlayers; i++)
                 {
-                    // Print prompt
-                    Misc.PrintColoredMessage(
-                        $"Enter name for player {i + 1}: ", 
-                        Settings.TextColor.Prompt, 
-                        false);
-
-                    // Take input
-                    name = Console.ReadLine() ?? $"Player {i + 1}";
-
-                    // Check if the name is unique
-                    if (Player.IsNameUnique(name, Match.Players))
+                    try
                     {
-                        // Create player and add to match
-                        Match.AddPlayer(new Player(new Name(name), new Word(Match.Word)));
+                        // Print prompt
+                        Misc.PrintColoredMessage(
+                            $"Enter name for player {i + 1} - (\"Enter\" to break): ", 
+                            Settings.TextSettings.Prompt, 
+                            false);
+
+                        // Take input
+                        name = Console.ReadLine() ?? $"Player {i + 1}";
+
+                        // If user pressed "Enter"
+                        if (name is null || name.Length == 0)
+                        {
+                            if (Match.Players.Count < Settings.GameSettings.MinPlayers)
+                            {
+                                Message.Warning($"You need to enter at least {Settings.GameSettings.MinPlayers} players.");
+                                i--;
+                                continue;
+                            }
+
+                            break;
+                        }
+
+                        // Check if the name is unique
+                        if (Player.IsNameUnique(name, Match.Players))
+                        {
+                            // Create player and add to match
+                            Match.AddPlayer(new Player(new Name(name), new Word(Match.Word)));
+                        }
+                        else
+                        {
+                            Message.Warning("Name already taken. Please enter a unique name.");
+                            i--; // Decrement to retry
+                        }
                     }
-                    else
+                    catch (Exception e)
                     {
-                        Message.Error("Name already taken. Please enter a unique name.");
-                        i--; // Decrement to retry
+                        Message.Error($"Invalid name entry: {e.Message}");
                     }
                 }
             }

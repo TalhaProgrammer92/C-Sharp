@@ -58,9 +58,12 @@ namespace Cards
             //    option.Display(true);
             //}
 
-            MainMenu mainMenu = new MainMenu();
-            int option = mainMenu.DisplayAndTakeInput();
-            Message.Info($"Action: {mainMenu.GetAction(option)}");
+            //MainMenu mainMenu = new MainMenu();
+            //int option = mainMenu.DisplayAndTakeInput();
+            //Message.Info($"Action: {mainMenu.GetAction(option)}");
+
+            Game game = new Game();
+            game.StartGame();
         }
     }
 }

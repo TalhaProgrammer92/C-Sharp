@@ -13,6 +13,7 @@ namespace Cards.Logic
         public readonly string Word;
         public int PlayerTurn { get; private set; }
         public int MatchesPlayed { get; private set; }
+        public Card? TragetCard => cardsDesk.TableHand.GetTopCard();
 
         // Constructor
         public Match(string? word = null)

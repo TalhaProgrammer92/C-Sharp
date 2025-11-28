@@ -33,7 +33,7 @@ namespace Cards.GameObjects.Card
         // Method - Display card information
         public void Display()
         {
-            Misc.PrintColoredMessage($"{CardRank} of {CardType}", Settings.TextColor.CardTypeColors[CardType]);
+            Misc.PrintColoredMessage($"{CardRank} of {CardType}", Settings.TextSettings.CardTypeColors[CardType]);
         }
     }
 }
