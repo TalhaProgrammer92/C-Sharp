@@ -1,6 +1,10 @@
 ﻿using Cards.GameObjects.Card;
 using Cards.GameObjects.Player;
+using Cards.Utils;
+using Cards.Utils.Menu;
+using Cards.Utils.Text;
 using System.Collections.ObjectModel;
+using System.Reflection.Metadata.Ecma335;
 
 namespace Cards.Logic
 {
@@ -14,6 +18,7 @@ namespace Cards.Logic
         public int PlayerTurn { get; private set; }
         public int MatchesPlayed { get; private set; }
         public Card? TragetCard => cardsDesk.TableHand.GetTopCard();
+        public Player PlayingPlayer => Players[PlayerTurn];
 
         // Constructor
         public Match(string? word = null)
@@ -23,6 +28,72 @@ namespace Cards.Logic
             GameOver = false;
             PlayerTurn = -1;    // Because there are no players at the beginning
             Word = word ?? Settings.GameSettings.DefaultWord;
+        }
+
+        // Method - Display basic info
+        private void DisplayBasicInfo()
+        {
+            // Display target card
+            Misc.PrintColoredMessage(
+                "Table",
+                this.TragetCard.ToString(),
+                new ColorObject(ConsoleColor.DarkRed, ConsoleColor.Gray));
+
+            // Display player's turn
+            Misc.PrintColoredMessage(
+                "Turn",
+                PlayingPlayer.Name.Value,
+                new ColorObject(ConsoleColor.DarkGreen));
+        }
+
+        // Method - Select card from the player
+        private int SelectCards(InGameSelection options)
+        {
+            int? cardIndex;
+            do
+            {
+                cardIndex = options.ReadOption();
+
+                // Special actions triggered
+                if (cardIndex is null)
+                {
+                    if (options.TrigerredAction == Enums.Action.ClearConsole)
+                    {
+                        Console.Clear();
+                        DisplayBasicInfo();
+                    }
+                    else if (options.TrigerredAction == Enums.Action.InvalidOptionSelection)
+                    {
+                        Message.Error($"Invalid card selected. Press numeric keys in range 1 to {PlayingPlayer.Hand.Cards.Count}. Press \"{Settings.KeyMapping.Actions[Enums.Action.ClearConsole]}\"");
+                    }
+                }
+            } while (cardIndex is null);
+
+            return cardIndex.Value;
+        }
+
+        // Method - Start the match
+        public void StartMatch()
+        {
+            // Clear the screen
+            Console.Clear();
+
+            // Start the match
+            while (!GameOver)
+            {
+                // Display basic info
+                DisplayBasicInfo();
+                
+                // Create in-game selection menu to let player choose a card
+                var options = new InGameSelection();
+                foreach (var card in PlayingPlayer.Hand.Cards)
+                {
+                    options.AddOption(card.ToString(), Settings.TextSettings.CardTypeColors[card.CardType]);
+                }
+
+                // Select a card & do some special actions
+                int cardIndex = SelectCards(options);
+            }
         }
 
         // Method - Add player to the desk
@@ -109,6 +180,15 @@ namespace Cards.Logic
             if (Players.Count < Settings.GameSettings.MinPlayers)
                 throw new InvalidOperationException($"Not enough players to start cards distribution. Minimum required players are {Settings.GameSettings.MinPlayers}.");
 
+            // If game is over
+            if (GameOver)
+                throw new InvalidOperationException("Match is over! Cards distribution not allowed");
+
+            // If cards desk is empty
+            if (cardsDesk.IsEmpty)
+                cardsDesk.RefreshDesk();
+
+            // Distribute cards
             for (int i = 0; i < Settings.GameSettings.CardsPerPlayer; i++)
             {
                 foreach (var player in Players)

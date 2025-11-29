@@ -5,6 +5,7 @@
         // Attributes
         public CardsDeck Deck { get; }
         public TableHand TableHand { get; }
+        public bool IsEmpty => TableHand.Cards.Count == 0 && Deck.Cards.Count == 0;
 
         // Constructor
         public Table()

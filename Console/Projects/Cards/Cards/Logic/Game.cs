@@ -26,10 +26,17 @@ namespace Cards.Logic
             // Get all players for the game
             GetAllPlayers();
 
-            // For debugging
-            foreach (var player in Match.Players)
+            // Generate cards and distribute them
+            Match.DistributeStarterCardsAmongPlayers();
+
+            // Start the game
+            while (!GameOver)
             {
-                player.DisplayInfo();
+                // Start the match
+                Match.StartMatch();
+
+                // Update game states
+                UpdateGameState();
             }
         }
 
@@ -58,12 +65,12 @@ namespace Cards.Logic
                         name = Console.ReadLine() ?? $"Player {i + 1}";
 
                         // If user pressed "Enter"
-                        if (name is null || name.Length == 0)
+                        if (name.Length == 0)
                         {
                             if (Match.Players.Count < Settings.GameSettings.MinPlayers)
                             {
                                 Message.Warning($"You need to enter at least {Settings.GameSettings.MinPlayers} players.");
-                                i--;
+                                i--; // Decrement to retry
                                 continue;
                             }
 
@@ -87,6 +94,17 @@ namespace Cards.Logic
                         Message.Error($"Invalid name entry: {e.Message}");
                     }
                 }
+            }
+        }
+
+        // Method - Update game state
+        private void UpdateGameState()
+        {
+            GameOver = Match.IsOnlyOneNonEliminatedPlayerLeft();
+
+            if (GameOver)
+            {
+                Winner = Match.Players.FirstOrDefault(p => p.Word.IsFilled);
             }
         }
 

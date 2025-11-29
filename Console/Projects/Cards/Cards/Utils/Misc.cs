@@ -23,6 +23,15 @@ namespace Cards.Utils
             Console.ResetColor();
         }
 
+        // Method - Print colored info message
+        public static void PrintColoredMessage(string info, string message, ColorObject colorObject, bool lineBreak = true)
+        {
+            PrintColoredMessage($"{info}: ", colorObject, false);
+            Console.Write(message);
+
+            if (lineBreak) Console.WriteLine();
+        }
+
         // Get a list of Card Ranks
         public static List<CardRank> GetCardRanks()
         {

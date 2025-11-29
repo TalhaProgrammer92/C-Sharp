@@ -30,10 +30,16 @@ namespace Cards.GameObjects.Card
             return !(left == right);
         }
 
+        // Method - ToString
+        public override string ToString()
+        {
+            return $"{CardRank} of {CardType}";
+        }
+
         // Method - Display card information
         public void Display()
         {
-            Misc.PrintColoredMessage($"{CardRank} of {CardType}", Settings.TextSettings.CardTypeColors[CardType]);
+            Misc.PrintColoredMessage(ToString(), Settings.TextSettings.CardTypeColors[CardType]);
         }
     }
 }

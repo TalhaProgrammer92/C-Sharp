@@ -15,6 +15,8 @@
         // Misc actions
         ClearConsole,
         SwitchCards,
-        SaveGame
+        SaveGame,
+        OptionSelection,
+        InvalidOptionSelection
     }
 }
