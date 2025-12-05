@@ -13,10 +13,7 @@
                     arrivalTime: i + 2));
             }
 
-            foreach (var process in processes)
-            {
-                process.DisplayInfo();
-            }
+            GanttChart chart = Scheduler.FirstComeFirstServe(processes)!;
         }
     }
 }
