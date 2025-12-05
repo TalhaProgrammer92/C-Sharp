@@ -16,12 +16,12 @@
         public Process(int burstTime, int arrivalTime, string? label = null)
         {
             Label = label ?? $"P-{++number}";
-            BurstTime = burstTime;
-            ArrivalTime = arrivalTime;
+            BurstTime = Math.Abs(burstTime);
+            ArrivalTime = Math.Abs(arrivalTime);
             completionTime = null;
         }
 
-        // Setters
+        // Getters & Setters
         public int CompletionTime
         {
             get => (completionTime is null) ? ArrivalTime + BurstTime : completionTime.Value;
@@ -49,5 +49,14 @@
               + $"\nTurn Around Time:\t{TurnAroundTime}"
               + $"\nWaiting Time:\t\t{WaitingTime}");
         }
+
+        // Methods - Comparision Operators
+        public static bool operator==(Process left, Process right)
+        {
+            return left.Label.ToLower() == right.Label.ToLower()
+                && left.BurstTime == right.BurstTime
+                && left.ArrivalTime == right.ArrivalTime;
+        }
+        public static bool operator!=(Process left, Process right) => !(left == right);
     }
 }
